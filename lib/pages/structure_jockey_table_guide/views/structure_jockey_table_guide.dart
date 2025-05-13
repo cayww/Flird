@@ -65,7 +65,11 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                         ]),
                   ),
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      if (isAgreement.value) {
+                        Get.toNamed(Routes.login);
+                      }
+                    },
                     style: TextButton.styleFrom(
                         backgroundColor: Colors.transparent,
                         fixedSize: Size(315.w, 48.h)),
