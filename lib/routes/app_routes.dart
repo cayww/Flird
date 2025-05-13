@@ -1,0 +1,8 @@
+part of 'app_pages.dart';
+
+abstract class Routes {
+  Routes._();
+  static const splash = '/splash';
+  static const guide = '/guide';
+  static const main = '/main';
+}
