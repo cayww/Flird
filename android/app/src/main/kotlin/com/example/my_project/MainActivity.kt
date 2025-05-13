@@ -1,4 +1,4 @@
-package com.mycompany.flird
+package com.effortirony.flirdclean
 
 import io.flutter.embedding.android.FlutterActivity
 
