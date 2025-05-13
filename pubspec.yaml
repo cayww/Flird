@@ -91,7 +91,10 @@ flutter:
     - assets/databases/
     - assets/appImages/
     - assets/appVideos/
-
+  fonts:
+    - family: "ShuHeiTi"
+      fonts:
+        - asset: assets/fonts/ShuHeiTi.ttf
 flutter_launcher_icons:
   android: true
   ios: true

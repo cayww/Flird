@@ -21,8 +21,8 @@ void main() async {
   runApp(const MyApp());
   SystemUiOverlayStyle systemUiOverlayStyle = const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
-    statusBarBrightness: Brightness.light,
-    statusBarIconBrightness: Brightness.light,
+    statusBarBrightness: Brightness.dark,
+    statusBarIconBrightness: Brightness.dark,
   );
   SystemChrome.setSystemUIOverlayStyle(systemUiOverlayStyle);
 }
