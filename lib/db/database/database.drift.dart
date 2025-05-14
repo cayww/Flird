@@ -9,9 +9,11 @@ import 'package:flird/db/database/tables/scandal_protest_behind_block/scandal_pr
     as i3;
 import 'package:flird/db/database/tables/shrink_regret_completely_wallet/shrink_regret_completely_wallet.drift.dart'
     as i4;
-import 'package:flird/db/database/daos/invite_sensitive_broccoli_user_dao/invite_sensitive_broccoli_user_dao.dart'
+import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart'
     as i5;
-import 'package:flird/db/database/database.dart' as i6;
+import 'package:flird/db/database/daos/invite_sensitive_broccoli_user_dao/invite_sensitive_broccoli_user_dao.dart'
+    as i6;
+import 'package:flird/db/database/database.dart' as i7;
 
 abstract class $FlirdDriftDataBase extends i0.GeneratedDatabase {
   $FlirdDriftDataBase(i0.QueryExecutor e) : super(e);
@@ -26,8 +28,10 @@ abstract class $FlirdDriftDataBase extends i0.GeneratedDatabase {
   late final i4.$ShrinkRegretCompletelyWalletTable
       shrinkRegretCompletelyWallet =
       i4.$ShrinkRegretCompletelyWalletTable(this);
-  late final i5.InviteSensitiveBroccoliUserDao inviteSensitiveBroccoliUserDao =
-      i5.InviteSensitiveBroccoliUserDao(this as i6.FlirdDriftDataBase);
+  late final i5.$ScienceAcquitMagicPostTable scienceAcquitMagicPost =
+      i5.$ScienceAcquitMagicPostTable(this);
+  late final i6.InviteSensitiveBroccoliUserDao inviteSensitiveBroccoliUserDao =
+      i6.InviteSensitiveBroccoliUserDao(this as i7.FlirdDriftDataBase);
   @override
   Iterable<i0.TableInfo<i0.Table, Object?>> get allTables =>
       allSchemaEntities.whereType<i0.TableInfo<i0.Table, Object?>>();
@@ -36,7 +40,8 @@ abstract class $FlirdDriftDataBase extends i0.GeneratedDatabase {
         inviteSensitiveBroccoliUser,
         endorseProvincialSightFollow,
         scandalProtestBehindBlock,
-        shrinkRegretCompletelyWallet
+        shrinkRegretCompletelyWallet,
+        scienceAcquitMagicPost
       ];
   @override
   i0.DriftDatabaseOptions get options =>
@@ -62,4 +67,7 @@ class $FlirdDriftDataBaseManager {
       get shrinkRegretCompletelyWallet =>
           i4.$$ShrinkRegretCompletelyWalletTableTableManager(
               _db, _db.shrinkRegretCompletelyWallet);
+  i5.$$ScienceAcquitMagicPostTableTableManager get scienceAcquitMagicPost =>
+      i5.$$ScienceAcquitMagicPostTableTableManager(
+          _db, _db.scienceAcquitMagicPost);
 }

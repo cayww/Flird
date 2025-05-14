@@ -5,6 +5,7 @@ import 'package:flird/db/database/database.drift.dart';
 import 'package:flird/db/database/tables/endorse_provincial_sight_follow/endorse_provincial_sight_follow.dart';
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.dart';
 import 'package:flird/db/database/tables/scandal_protest_behind_block/scandal_protest_behind_block.dart';
+import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.dart';
 import 'package:flird/db/database/tables/shrink_regret_completely_wallet/shrink_regret_completely_wallet.dart';
 import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
@@ -22,6 +23,7 @@ import 'package:path/path.dart' as path;
   EndorseProvincialSightFollow,
   ScandalProtestBehindBlock,
   ShrinkRegretCompletelyWallet,
+  ScienceAcquitMagicPost,
 ], daos: [
   InviteSensitiveBroccoliUserDao,
 ])

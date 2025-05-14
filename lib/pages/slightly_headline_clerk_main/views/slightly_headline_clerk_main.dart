@@ -309,7 +309,7 @@ class WheatBreezeMarginMenu extends StatelessWidget {
               fit: BoxFit.contain,
             ),
             title: Text(
-              '0 Coins',
+              '${AppState().currentUserEntity.evidenceSweetDigressCoin} Coins',
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: GoogleFonts.roboto(
