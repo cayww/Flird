@@ -1,5 +1,9 @@
+import 'package:flird/pages/debut_maximum_council_wallet/bindings/motion_tolerate_wallet_binding.dart';
+import 'package:flird/pages/debut_maximum_council_wallet/views/motion_tolerate_chance_wallet.dart';
 import 'package:flird/pages/gossip_retain_sacrifice_splash/bindings/gossip_retain_splash_binding.dart';
 import 'package:flird/pages/gossip_retain_sacrifice_splash/views/gossip_retain_sacrifice_splash.dart';
+import 'package:flird/pages/implicit_letter_tease_post/bindings/implicit_letter_post_binding.dart';
+import 'package:flird/pages/implicit_letter_tease_post/views/implicit_letter_tease_post.dart';
 import 'package:flird/pages/recovery_tribute_decay_sign/bindings/recovery_tribute_login_binding.dart';
 import 'package:flird/pages/recovery_tribute_decay_sign/bindings/recovery_tribute_register_binding.dart';
 import 'package:flird/pages/recovery_tribute_decay_sign/views/recovery_tribute_decay_login.dart';
@@ -46,5 +50,18 @@ class AppPages {
       transitionDuration: transitionDuraiton,
       transition: Transition.rightToLeft,
     ),
+    GetPage(
+      name: Routes.post,
+      binding: ImplicitLetterPostBinding(),
+      page: () => const ImplicitLetterTeasePost(),
+      transitionDuration: transitionDuraiton,
+      transition: Transition.rightToLeft,
+    ),
+    GetPage(
+        name: Routes.wallet,
+        binding: MotionTolerateWalletBinding(),
+        page: () => const MotionTolerateChanceWallet(),
+        transition: Transition.rightToLeft,
+        transitionDuration: transitionDuraiton),
   ];
 }

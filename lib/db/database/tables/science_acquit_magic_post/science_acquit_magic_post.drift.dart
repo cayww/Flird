@@ -17,6 +17,7 @@ typedef $$ScienceAcquitMagicPostTableCreateCompanionBuilder
   required String powerQuarterEnlargeCover,
   required String enlargeProductKeyFirst,
   required String rangeBrassKeySecond,
+  required String appetiteBirdsBishopType,
 });
 typedef $$ScienceAcquitMagicPostTableUpdateCompanionBuilder
     = i1.ScienceAcquitMagicPostCompanion Function({
@@ -26,6 +27,7 @@ typedef $$ScienceAcquitMagicPostTableUpdateCompanionBuilder
   i0.Value<String> powerQuarterEnlargeCover,
   i0.Value<String> enlargeProductKeyFirst,
   i0.Value<String> rangeBrassKeySecond,
+  i0.Value<String> appetiteBirdsBishopType,
 });
 
 final class $$ScienceAcquitMagicPostTableReferences extends i0.BaseReferences<
@@ -98,6 +100,10 @@ class $$ScienceAcquitMagicPostTableFilterComposer
       column: $table.rangeBrassKeySecond,
       builder: (column) => i0.ColumnFilters(column));
 
+  i0.ColumnFilters<String> get appetiteBirdsBishopType => $composableBuilder(
+      column: $table.appetiteBirdsBishopType,
+      builder: (column) => i0.ColumnFilters(column));
+
   i3.$$InviteSensitiveBroccoliUserTableFilterComposer
       get consciousExcessElectUser {
     final i3.$$InviteSensitiveBroccoliUserTableFilterComposer composer =
@@ -154,6 +160,10 @@ class $$ScienceAcquitMagicPostTableOrderingComposer
       column: $table.rangeBrassKeySecond,
       builder: (column) => i0.ColumnOrderings(column));
 
+  i0.ColumnOrderings<String> get appetiteBirdsBishopType => $composableBuilder(
+      column: $table.appetiteBirdsBishopType,
+      builder: (column) => i0.ColumnOrderings(column));
+
   i3.$$InviteSensitiveBroccoliUserTableOrderingComposer
       get consciousExcessElectUser {
     final i3.$$InviteSensitiveBroccoliUserTableOrderingComposer composer =
@@ -204,6 +214,9 @@ class $$ScienceAcquitMagicPostTableAnnotationComposer
 
   i0.GeneratedColumn<String> get rangeBrassKeySecond => $composableBuilder(
       column: $table.rangeBrassKeySecond, builder: (column) => column);
+
+  i0.GeneratedColumn<String> get appetiteBirdsBishopType => $composableBuilder(
+      column: $table.appetiteBirdsBishopType, builder: (column) => column);
 
   i3.$$InviteSensitiveBroccoliUserTableAnnotationComposer
       get consciousExcessElectUser {
@@ -268,6 +281,7 @@ class $$ScienceAcquitMagicPostTableTableManager extends i0.RootTableManager<
             i0.Value<String> powerQuarterEnlargeCover = const i0.Value.absent(),
             i0.Value<String> enlargeProductKeyFirst = const i0.Value.absent(),
             i0.Value<String> rangeBrassKeySecond = const i0.Value.absent(),
+            i0.Value<String> appetiteBirdsBishopType = const i0.Value.absent(),
           }) =>
               i1.ScienceAcquitMagicPostCompanion(
             crownImagineDecadeId: crownImagineDecadeId,
@@ -276,6 +290,7 @@ class $$ScienceAcquitMagicPostTableTableManager extends i0.RootTableManager<
             powerQuarterEnlargeCover: powerQuarterEnlargeCover,
             enlargeProductKeyFirst: enlargeProductKeyFirst,
             rangeBrassKeySecond: rangeBrassKeySecond,
+            appetiteBirdsBishopType: appetiteBirdsBishopType,
           ),
           createCompanionCallback: ({
             i0.Value<int> crownImagineDecadeId = const i0.Value.absent(),
@@ -284,6 +299,7 @@ class $$ScienceAcquitMagicPostTableTableManager extends i0.RootTableManager<
             required String powerQuarterEnlargeCover,
             required String enlargeProductKeyFirst,
             required String rangeBrassKeySecond,
+            required String appetiteBirdsBishopType,
           }) =>
               i1.ScienceAcquitMagicPostCompanion.insert(
             crownImagineDecadeId: crownImagineDecadeId,
@@ -292,6 +308,7 @@ class $$ScienceAcquitMagicPostTableTableManager extends i0.RootTableManager<
             powerQuarterEnlargeCover: powerQuarterEnlargeCover,
             enlargeProductKeyFirst: enlargeProductKeyFirst,
             rangeBrassKeySecond: rangeBrassKeySecond,
+            appetiteBirdsBishopType: appetiteBirdsBishopType,
           ),
           withReferenceMapper: (p0) => p0
               .map((e) => (
@@ -410,6 +427,13 @@ class $ScienceAcquitMagicPostTable extends i2.ScienceAcquitMagicPost
   late final i0.GeneratedColumn<String> rangeBrassKeySecond =
       i0.GeneratedColumn<String>('range_brass_key_second', aliasedName, false,
           type: i0.DriftSqlType.string, requiredDuringInsert: true);
+  static const i0.VerificationMeta _appetiteBirdsBishopTypeMeta =
+      const i0.VerificationMeta('appetiteBirdsBishopType');
+  @override
+  late final i0.GeneratedColumn<String> appetiteBirdsBishopType =
+      i0.GeneratedColumn<String>(
+          'appetite_birds_bishop_type', aliasedName, false,
+          type: i0.DriftSqlType.string, requiredDuringInsert: true);
   @override
   List<i0.GeneratedColumn> get $columns => [
         crownImagineDecadeId,
@@ -417,7 +441,8 @@ class $ScienceAcquitMagicPostTable extends i2.ScienceAcquitMagicPost
         potteryEndureTempleVideo,
         powerQuarterEnlargeCover,
         enlargeProductKeyFirst,
-        rangeBrassKeySecond
+        rangeBrassKeySecond,
+        appetiteBirdsBishopType
       ];
   @override
   String get aliasedName => _alias ?? actualTableName;
@@ -479,6 +504,15 @@ class $ScienceAcquitMagicPostTable extends i2.ScienceAcquitMagicPost
     } else if (isInserting) {
       context.missing(_rangeBrassKeySecondMeta);
     }
+    if (data.containsKey('appetite_birds_bishop_type')) {
+      context.handle(
+          _appetiteBirdsBishopTypeMeta,
+          appetiteBirdsBishopType.isAcceptableOrUnknown(
+              data['appetite_birds_bishop_type']!,
+              _appetiteBirdsBishopTypeMeta));
+    } else if (isInserting) {
+      context.missing(_appetiteBirdsBishopTypeMeta);
+    }
     return context;
   }
 
@@ -507,6 +541,9 @@ class $ScienceAcquitMagicPostTable extends i2.ScienceAcquitMagicPost
       rangeBrassKeySecond: attachedDatabase.typeMapping.read(
           i0.DriftSqlType.string,
           data['${effectivePrefix}range_brass_key_second'])!,
+      appetiteBirdsBishopType: attachedDatabase.typeMapping.read(
+          i0.DriftSqlType.string,
+          data['${effectivePrefix}appetite_birds_bishop_type'])!,
     );
   }
 
@@ -524,13 +561,15 @@ class ScienceAcquitMagicPostEntity extends i0.DataClass
   final String powerQuarterEnlargeCover;
   final String enlargeProductKeyFirst;
   final String rangeBrassKeySecond;
+  final String appetiteBirdsBishopType;
   const ScienceAcquitMagicPostEntity(
       {required this.crownImagineDecadeId,
       required this.consciousExcessElectUser,
       required this.potteryEndureTempleVideo,
       required this.powerQuarterEnlargeCover,
       required this.enlargeProductKeyFirst,
-      required this.rangeBrassKeySecond});
+      required this.rangeBrassKeySecond,
+      required this.appetiteBirdsBishopType});
   @override
   Map<String, i0.Expression> toColumns(bool nullToAbsent) {
     final map = <String, i0.Expression>{};
@@ -544,6 +583,8 @@ class ScienceAcquitMagicPostEntity extends i0.DataClass
     map['enlarge_product_key_first'] =
         i0.Variable<String>(enlargeProductKeyFirst);
     map['range_brass_key_second'] = i0.Variable<String>(rangeBrassKeySecond);
+    map['appetite_birds_bishop_type'] =
+        i0.Variable<String>(appetiteBirdsBishopType);
     return map;
   }
 
@@ -555,6 +596,7 @@ class ScienceAcquitMagicPostEntity extends i0.DataClass
       powerQuarterEnlargeCover: i0.Value(powerQuarterEnlargeCover),
       enlargeProductKeyFirst: i0.Value(enlargeProductKeyFirst),
       rangeBrassKeySecond: i0.Value(rangeBrassKeySecond),
+      appetiteBirdsBishopType: i0.Value(appetiteBirdsBishopType),
     );
   }
 
@@ -574,6 +616,8 @@ class ScienceAcquitMagicPostEntity extends i0.DataClass
           serializer.fromJson<String>(json['enlargeProductKeyFirst']),
       rangeBrassKeySecond:
           serializer.fromJson<String>(json['rangeBrassKeySecond']),
+      appetiteBirdsBishopType:
+          serializer.fromJson<String>(json['appetiteBirdsBishopType']),
     );
   }
   @override
@@ -590,6 +634,8 @@ class ScienceAcquitMagicPostEntity extends i0.DataClass
       'enlargeProductKeyFirst':
           serializer.toJson<String>(enlargeProductKeyFirst),
       'rangeBrassKeySecond': serializer.toJson<String>(rangeBrassKeySecond),
+      'appetiteBirdsBishopType':
+          serializer.toJson<String>(appetiteBirdsBishopType),
     };
   }
 
@@ -599,7 +645,8 @@ class ScienceAcquitMagicPostEntity extends i0.DataClass
           String? potteryEndureTempleVideo,
           String? powerQuarterEnlargeCover,
           String? enlargeProductKeyFirst,
-          String? rangeBrassKeySecond}) =>
+          String? rangeBrassKeySecond,
+          String? appetiteBirdsBishopType}) =>
       i1.ScienceAcquitMagicPostEntity(
         crownImagineDecadeId: crownImagineDecadeId ?? this.crownImagineDecadeId,
         consciousExcessElectUser:
@@ -611,6 +658,8 @@ class ScienceAcquitMagicPostEntity extends i0.DataClass
         enlargeProductKeyFirst:
             enlargeProductKeyFirst ?? this.enlargeProductKeyFirst,
         rangeBrassKeySecond: rangeBrassKeySecond ?? this.rangeBrassKeySecond,
+        appetiteBirdsBishopType:
+            appetiteBirdsBishopType ?? this.appetiteBirdsBishopType,
       );
   ScienceAcquitMagicPostEntity copyWithCompanion(
       i1.ScienceAcquitMagicPostCompanion data) {
@@ -633,6 +682,9 @@ class ScienceAcquitMagicPostEntity extends i0.DataClass
       rangeBrassKeySecond: data.rangeBrassKeySecond.present
           ? data.rangeBrassKeySecond.value
           : this.rangeBrassKeySecond,
+      appetiteBirdsBishopType: data.appetiteBirdsBishopType.present
+          ? data.appetiteBirdsBishopType.value
+          : this.appetiteBirdsBishopType,
     );
   }
 
@@ -644,7 +696,8 @@ class ScienceAcquitMagicPostEntity extends i0.DataClass
           ..write('potteryEndureTempleVideo: $potteryEndureTempleVideo, ')
           ..write('powerQuarterEnlargeCover: $powerQuarterEnlargeCover, ')
           ..write('enlargeProductKeyFirst: $enlargeProductKeyFirst, ')
-          ..write('rangeBrassKeySecond: $rangeBrassKeySecond')
+          ..write('rangeBrassKeySecond: $rangeBrassKeySecond, ')
+          ..write('appetiteBirdsBishopType: $appetiteBirdsBishopType')
           ..write(')'))
         .toString();
   }
@@ -656,7 +709,8 @@ class ScienceAcquitMagicPostEntity extends i0.DataClass
       potteryEndureTempleVideo,
       powerQuarterEnlargeCover,
       enlargeProductKeyFirst,
-      rangeBrassKeySecond);
+      rangeBrassKeySecond,
+      appetiteBirdsBishopType);
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -666,7 +720,8 @@ class ScienceAcquitMagicPostEntity extends i0.DataClass
           other.potteryEndureTempleVideo == this.potteryEndureTempleVideo &&
           other.powerQuarterEnlargeCover == this.powerQuarterEnlargeCover &&
           other.enlargeProductKeyFirst == this.enlargeProductKeyFirst &&
-          other.rangeBrassKeySecond == this.rangeBrassKeySecond);
+          other.rangeBrassKeySecond == this.rangeBrassKeySecond &&
+          other.appetiteBirdsBishopType == this.appetiteBirdsBishopType);
 }
 
 class ScienceAcquitMagicPostCompanion
@@ -677,6 +732,7 @@ class ScienceAcquitMagicPostCompanion
   final i0.Value<String> powerQuarterEnlargeCover;
   final i0.Value<String> enlargeProductKeyFirst;
   final i0.Value<String> rangeBrassKeySecond;
+  final i0.Value<String> appetiteBirdsBishopType;
   const ScienceAcquitMagicPostCompanion({
     this.crownImagineDecadeId = const i0.Value.absent(),
     this.consciousExcessElectUser = const i0.Value.absent(),
@@ -684,6 +740,7 @@ class ScienceAcquitMagicPostCompanion
     this.powerQuarterEnlargeCover = const i0.Value.absent(),
     this.enlargeProductKeyFirst = const i0.Value.absent(),
     this.rangeBrassKeySecond = const i0.Value.absent(),
+    this.appetiteBirdsBishopType = const i0.Value.absent(),
   });
   ScienceAcquitMagicPostCompanion.insert({
     this.crownImagineDecadeId = const i0.Value.absent(),
@@ -692,11 +749,13 @@ class ScienceAcquitMagicPostCompanion
     required String powerQuarterEnlargeCover,
     required String enlargeProductKeyFirst,
     required String rangeBrassKeySecond,
+    required String appetiteBirdsBishopType,
   })  : consciousExcessElectUser = i0.Value(consciousExcessElectUser),
         potteryEndureTempleVideo = i0.Value(potteryEndureTempleVideo),
         powerQuarterEnlargeCover = i0.Value(powerQuarterEnlargeCover),
         enlargeProductKeyFirst = i0.Value(enlargeProductKeyFirst),
-        rangeBrassKeySecond = i0.Value(rangeBrassKeySecond);
+        rangeBrassKeySecond = i0.Value(rangeBrassKeySecond),
+        appetiteBirdsBishopType = i0.Value(appetiteBirdsBishopType);
   static i0.Insertable<i1.ScienceAcquitMagicPostEntity> custom({
     i0.Expression<int>? crownImagineDecadeId,
     i0.Expression<int>? consciousExcessElectUser,
@@ -704,6 +763,7 @@ class ScienceAcquitMagicPostCompanion
     i0.Expression<String>? powerQuarterEnlargeCover,
     i0.Expression<String>? enlargeProductKeyFirst,
     i0.Expression<String>? rangeBrassKeySecond,
+    i0.Expression<String>? appetiteBirdsBishopType,
   }) {
     return i0.RawValuesInsertable({
       if (crownImagineDecadeId != null)
@@ -718,6 +778,8 @@ class ScienceAcquitMagicPostCompanion
         'enlarge_product_key_first': enlargeProductKeyFirst,
       if (rangeBrassKeySecond != null)
         'range_brass_key_second': rangeBrassKeySecond,
+      if (appetiteBirdsBishopType != null)
+        'appetite_birds_bishop_type': appetiteBirdsBishopType,
     });
   }
 
@@ -727,7 +789,8 @@ class ScienceAcquitMagicPostCompanion
       i0.Value<String>? potteryEndureTempleVideo,
       i0.Value<String>? powerQuarterEnlargeCover,
       i0.Value<String>? enlargeProductKeyFirst,
-      i0.Value<String>? rangeBrassKeySecond}) {
+      i0.Value<String>? rangeBrassKeySecond,
+      i0.Value<String>? appetiteBirdsBishopType}) {
     return i1.ScienceAcquitMagicPostCompanion(
       crownImagineDecadeId: crownImagineDecadeId ?? this.crownImagineDecadeId,
       consciousExcessElectUser:
@@ -739,6 +802,8 @@ class ScienceAcquitMagicPostCompanion
       enlargeProductKeyFirst:
           enlargeProductKeyFirst ?? this.enlargeProductKeyFirst,
       rangeBrassKeySecond: rangeBrassKeySecond ?? this.rangeBrassKeySecond,
+      appetiteBirdsBishopType:
+          appetiteBirdsBishopType ?? this.appetiteBirdsBishopType,
     );
   }
 
@@ -769,6 +834,10 @@ class ScienceAcquitMagicPostCompanion
       map['range_brass_key_second'] =
           i0.Variable<String>(rangeBrassKeySecond.value);
     }
+    if (appetiteBirdsBishopType.present) {
+      map['appetite_birds_bishop_type'] =
+          i0.Variable<String>(appetiteBirdsBishopType.value);
+    }
     return map;
   }
 
@@ -780,7 +849,8 @@ class ScienceAcquitMagicPostCompanion
           ..write('potteryEndureTempleVideo: $potteryEndureTempleVideo, ')
           ..write('powerQuarterEnlargeCover: $powerQuarterEnlargeCover, ')
           ..write('enlargeProductKeyFirst: $enlargeProductKeyFirst, ')
-          ..write('rangeBrassKeySecond: $rangeBrassKeySecond')
+          ..write('rangeBrassKeySecond: $rangeBrassKeySecond, ')
+          ..write('appetiteBirdsBishopType: $appetiteBirdsBishopType')
           ..write(')'))
         .toString();
   }

@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flird/db/database/daos/invite_sensitive_broccoli_user_dao/invite_sensitive_broccoli_user_dao.dart';
 import 'package:flird/db/database/database.drift.dart';
+import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery_post_like.dart';
 import 'package:flird/db/database/tables/endorse_provincial_sight_follow/endorse_provincial_sight_follow.dart';
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.dart';
 import 'package:flird/db/database/tables/scandal_protest_behind_block/scandal_protest_behind_block.dart';
@@ -9,6 +10,7 @@ import 'package:flird/db/database/tables/science_acquit_magic_post/science_acqui
 import 'package:flird/db/database/tables/shrink_regret_completely_wallet/shrink_regret_completely_wallet.dart';
 import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
+import 'package:flird/db/database/tables/slope_cabinet_branch_keyword/slope_cabinet_branch_keyword.dart';
 
 import 'package:flird/providers/app_state/app_state.dart';
 
@@ -24,6 +26,8 @@ import 'package:path/path.dart' as path;
   ScandalProtestBehindBlock,
   ShrinkRegretCompletelyWallet,
   ScienceAcquitMagicPost,
+  SlopeCabinetBranchKeyword,
+  CrutchBatteryPostLike,
 ], daos: [
   InviteSensitiveBroccoliUserDao,
 ])

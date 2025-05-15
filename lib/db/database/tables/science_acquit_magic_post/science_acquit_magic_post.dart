@@ -10,4 +10,5 @@ class ScienceAcquitMagicPost extends Table {
   TextColumn get powerQuarterEnlargeCover => text()();
   TextColumn get enlargeProductKeyFirst => text()();
   TextColumn get rangeBrassKeySecond => text()();
+  TextColumn get appetiteBirdsBishopType => text()();
 }

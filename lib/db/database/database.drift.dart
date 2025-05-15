@@ -11,9 +11,13 @@ import 'package:flird/db/database/tables/shrink_regret_completely_wallet/shrink_
     as i4;
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart'
     as i5;
-import 'package:flird/db/database/daos/invite_sensitive_broccoli_user_dao/invite_sensitive_broccoli_user_dao.dart'
+import 'package:flird/db/database/tables/slope_cabinet_branch_keyword/slope_cabinet_branch_keyword.drift.dart'
     as i6;
-import 'package:flird/db/database/database.dart' as i7;
+import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery_post_like.drift.dart'
+    as i7;
+import 'package:flird/db/database/daos/invite_sensitive_broccoli_user_dao/invite_sensitive_broccoli_user_dao.dart'
+    as i8;
+import 'package:flird/db/database/database.dart' as i9;
 
 abstract class $FlirdDriftDataBase extends i0.GeneratedDatabase {
   $FlirdDriftDataBase(i0.QueryExecutor e) : super(e);
@@ -30,8 +34,12 @@ abstract class $FlirdDriftDataBase extends i0.GeneratedDatabase {
       i4.$ShrinkRegretCompletelyWalletTable(this);
   late final i5.$ScienceAcquitMagicPostTable scienceAcquitMagicPost =
       i5.$ScienceAcquitMagicPostTable(this);
-  late final i6.InviteSensitiveBroccoliUserDao inviteSensitiveBroccoliUserDao =
-      i6.InviteSensitiveBroccoliUserDao(this as i7.FlirdDriftDataBase);
+  late final i6.$SlopeCabinetBranchKeywordTable slopeCabinetBranchKeyword =
+      i6.$SlopeCabinetBranchKeywordTable(this);
+  late final i7.$CrutchBatteryPostLikeTable crutchBatteryPostLike =
+      i7.$CrutchBatteryPostLikeTable(this);
+  late final i8.InviteSensitiveBroccoliUserDao inviteSensitiveBroccoliUserDao =
+      i8.InviteSensitiveBroccoliUserDao(this as i9.FlirdDriftDataBase);
   @override
   Iterable<i0.TableInfo<i0.Table, Object?>> get allTables =>
       allSchemaEntities.whereType<i0.TableInfo<i0.Table, Object?>>();
@@ -41,7 +49,9 @@ abstract class $FlirdDriftDataBase extends i0.GeneratedDatabase {
         endorseProvincialSightFollow,
         scandalProtestBehindBlock,
         shrinkRegretCompletelyWallet,
-        scienceAcquitMagicPost
+        scienceAcquitMagicPost,
+        slopeCabinetBranchKeyword,
+        crutchBatteryPostLike
       ];
   @override
   i0.DriftDatabaseOptions get options =>
@@ -70,4 +80,10 @@ class $FlirdDriftDataBaseManager {
   i5.$$ScienceAcquitMagicPostTableTableManager get scienceAcquitMagicPost =>
       i5.$$ScienceAcquitMagicPostTableTableManager(
           _db, _db.scienceAcquitMagicPost);
+  i6.$$SlopeCabinetBranchKeywordTableTableManager
+      get slopeCabinetBranchKeyword =>
+          i6.$$SlopeCabinetBranchKeywordTableTableManager(
+              _db, _db.slopeCabinetBranchKeyword);
+  i7.$$CrutchBatteryPostLikeTableTableManager get crutchBatteryPostLike => i7
+      .$$CrutchBatteryPostLikeTableTableManager(_db, _db.crutchBatteryPostLike);
 }

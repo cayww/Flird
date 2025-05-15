@@ -1,12 +1,16 @@
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:flird/common/components/common.dart';
 import 'package:flird/common/utils/common.dart';
+import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
 import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:provider/provider.dart';
 
 class SlightlyHeadlineClerkMain extends StatefulWidget {
@@ -108,88 +112,102 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Container(
-                              width: 160.w,
-                              height: 78.h,
-                              padding: EdgeInsets.symmetric(horizontal: 12.w),
-                              decoration: const BoxDecoration(
-                                  image: DecorationImage(
-                                      fit: BoxFit.fill,
-                                      image: AssetImage(
-                                          'assets/images/flird_mian_ps_bg.png'))),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Gap(16.h),
-                                  Text(
-                                    'Pop Songs',
-                                    style: GoogleFonts.roboto(
-                                        fontSize: 20.sp,
-                                        height: 1.h,
-                                        fontStyle: FontStyle.italic,
-                                        color: Colors.white),
-                                  ),
-                                  Gap(14.h),
-                                  Container(
-                                    padding: EdgeInsets.symmetric(
-                                        horizontal: 10.w, vertical: 4.h),
-                                    decoration: BoxDecoration(
-                                        color: Colors.black,
-                                        borderRadius:
-                                            BorderRadius.circular(100.r)),
-                                    child: Text(
-                                      'Let\'s Go',
+                            GestureDetector(
+                              onTap: () {
+                                Get.toNamed(Routes.post, arguments: {
+                                  'relatedBowelType': 'Pop songs',
+                                });
+                              },
+                              child: Container(
+                                width: 160.w,
+                                height: 78.h,
+                                padding: EdgeInsets.symmetric(horizontal: 12.w),
+                                decoration: const BoxDecoration(
+                                    image: DecorationImage(
+                                        fit: BoxFit.fill,
+                                        image: AssetImage(
+                                            'assets/images/flird_mian_ps_bg.png'))),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Gap(16.h),
+                                    Text(
+                                      'Pop Songs',
                                       style: GoogleFonts.roboto(
-                                          fontSize: 8.sp,
-                                          fontStyle: FontStyle.italic,
+                                          fontSize: 20.sp,
                                           height: 1.h,
-                                          color: const Color.fromRGBO(
-                                              255, 138, 230, 1)),
+                                          fontStyle: FontStyle.italic,
+                                          color: Colors.white),
                                     ),
-                                  )
-                                ],
+                                    Gap(14.h),
+                                    Container(
+                                      padding: EdgeInsets.symmetric(
+                                          horizontal: 10.w, vertical: 4.h),
+                                      decoration: BoxDecoration(
+                                          color: Colors.black,
+                                          borderRadius:
+                                              BorderRadius.circular(100.r)),
+                                      child: Text(
+                                        'Let\'s Go',
+                                        style: GoogleFonts.roboto(
+                                            fontSize: 8.sp,
+                                            height: 1.h,
+                                            fontStyle: FontStyle.italic,
+                                            color: const Color.fromRGBO(
+                                                255, 138, 230, 1)),
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
-                            Container(
-                              width: 160.w,
-                              height: 78.h,
-                              padding: EdgeInsets.symmetric(horizontal: 22.w),
-                              decoration: const BoxDecoration(
-                                  image: DecorationImage(
-                                      fit: BoxFit.fill,
-                                      image: AssetImage(
-                                          'assets/images/flird_mian_rap_bg.png'))),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Gap(16.h),
-                                  Text(
-                                    'Raps',
-                                    style: GoogleFonts.roboto(
-                                        fontSize: 20.sp,
-                                        height: 1.h,
-                                        fontStyle: FontStyle.italic,
-                                        color: Colors.white),
-                                  ),
-                                  Gap(14.h),
-                                  Container(
-                                    padding: EdgeInsets.symmetric(
-                                        horizontal: 10.w, vertical: 4.h),
-                                    decoration: BoxDecoration(
-                                        color: Colors.black,
-                                        borderRadius:
-                                            BorderRadius.circular(100.r)),
-                                    child: Text(
-                                      'Let\'s Go',
+                            GestureDetector(
+                              onTap: () {
+                                Get.toNamed(Routes.post, arguments: {
+                                  'relatedBowelType': 'Rap',
+                                });
+                              },
+                              child: Container(
+                                width: 160.w,
+                                height: 78.h,
+                                padding: EdgeInsets.symmetric(horizontal: 22.w),
+                                decoration: const BoxDecoration(
+                                    image: DecorationImage(
+                                        fit: BoxFit.fill,
+                                        image: AssetImage(
+                                            'assets/images/flird_mian_rap_bg.png'))),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Gap(16.h),
+                                    Text(
+                                      'Raps',
                                       style: GoogleFonts.roboto(
-                                          fontSize: 8.sp,
-                                          fontStyle: FontStyle.italic,
+                                          fontSize: 20.sp,
                                           height: 1.h,
-                                          color: const Color.fromRGBO(
-                                              255, 206, 86, 1)),
+                                          fontStyle: FontStyle.italic,
+                                          color: Colors.white),
                                     ),
-                                  )
-                                ],
+                                    Gap(14.h),
+                                    Container(
+                                      padding: EdgeInsets.symmetric(
+                                          horizontal: 10.w, vertical: 4.h),
+                                      decoration: BoxDecoration(
+                                          color: Colors.black,
+                                          borderRadius:
+                                              BorderRadius.circular(100.r)),
+                                      child: Text(
+                                        'Let\'s Go',
+                                        style: GoogleFonts.roboto(
+                                            fontSize: 8.sp,
+                                            height: 1.h,
+                                            fontStyle: FontStyle.italic,
+                                            color: const Color.fromRGBO(
+                                                255, 206, 86, 1)),
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                           ],
@@ -236,9 +254,350 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
               Gap(14.h),
               SizedBox(
                 height: 240.h,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
+                child: StreamBuilder<
+                        List<
+                            (
+                              ScienceAcquitMagicPostEntity,
+                              $$ScienceAcquitMagicPostTableReferences
+                            )>>(
+                    stream: AppState()
+                        .driftDB
+                        .managers
+                        .scienceAcquitMagicPost
+                        .withReferences(
+                            (p) => p(consciousExcessElectUser: true))
+                        .filter((f) => f.consciousExcessElectUser
+                            .loungeRealizeEmphasisUid.column
+                            .isNotInQuery(AppState().filterBlocklist()))
+                        .watch(),
+                    builder: (context, snapshot) {
+                      if (!snapshot.hasData) {
+                        return Center(
+                            child: LoadingAnimationWidget.twoRotatingArc(
+                                color: Colors.white, size: 30.h));
+                      }
+                      final postList = snapshot.data!;
+                      return ListView.separated(
+                        padding: EdgeInsets.only(left: 20.w),
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (BuildContext context, int index) {
+                          final (postEntity, refers) = postList[index];
+                          final userEntity = refers
+                              .consciousExcessElectUser.prefetchedData!.first;
+                          return Stack(
+                            children: [
+                              Container(
+                                width: 180.w,
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(16.r),
+                                  color: Colors.white,
+                                ),
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      width: double.infinity,
+                                      height: 180.h,
+                                      decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(16.r),
+                                          image: DecorationImage(
+                                              fit: BoxFit.cover,
+                                              image: imageFromPath(
+                                                postEntity
+                                                    .powerQuarterEnlargeCover,
+                                              ).image)),
+                                      child: Column(
+                                        children: [
+                                          Gap(12.h),
+                                          Padding(
+                                            padding: EdgeInsets.symmetric(
+                                                horizontal: 12.w),
+                                            child: Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
+                                              children: [
+                                                Container(
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 8.w,
+                                                      vertical: 4.h),
+                                                  decoration: BoxDecoration(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              100.r),
+                                                      gradient: LinearGradient(
+                                                          colors: postEntity
+                                                                      .appetiteBirdsBishopType
+                                                                      .length >
+                                                                  3
+                                                              ? [
+                                                                  const Color
+                                                                      .fromRGBO(
+                                                                      255,
+                                                                      94,
+                                                                      162,
+                                                                      1),
+                                                                  const Color
+                                                                      .fromRGBO(
+                                                                      255,
+                                                                      138,
+                                                                      229,
+                                                                      1)
+                                                                ]
+                                                              : [
+                                                                  const Color
+                                                                      .fromRGBO(
+                                                                      255,
+                                                                      206,
+                                                                      86,
+                                                                      1),
+                                                                  const Color
+                                                                      .fromRGBO(
+                                                                      255,
+                                                                      170,
+                                                                      62,
+                                                                      1)
+                                                                ])),
+                                                  child: Row(
+                                                    children: [
+                                                      SvgPicture.asset(
+                                                        'assets/images/flird_music_icon.svg',
+                                                        width: 8.h,
+                                                        height: 8.h,
+                                                        fit: BoxFit.contain,
+                                                      ),
+                                                      Gap(4.w),
+                                                      Text(
+                                                        postEntity
+                                                            .appetiteBirdsBishopType,
+                                                        style:
+                                                            GoogleFonts.roboto(
+                                                                fontSize: 8.sp,
+                                                                color: Colors
+                                                                    .white),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                SvgPicture.asset(
+                                                  'assets/images/flird_post_more.svg',
+                                                  width: 34.w,
+                                                  height: 16.h,
+                                                  fit: BoxFit.contain,
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                          Gap(32.h),
+                                          SvgPicture.asset(
+                                            'assets/images/flird_play_icon.svg',
+                                            width: 60.h,
+                                            height: 60.h,
+                                            fit: BoxFit.contain,
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    Gap(12.h),
+                                    Padding(
+                                      padding: EdgeInsets.symmetric(
+                                          horizontal: 12.w),
+                                      child: Row(
+                                        children: [
+                                          Container(
+                                            width: 34.h,
+                                            height: 34.h,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(
+                                                width: 1.w,
+                                                strokeAlign: 0.0,
+                                                color: const Color.fromRGBO(
+                                                    255, 138, 229, 1),
+                                              ),
+                                              shape: BoxShape.circle,
+                                              image: DecorationImage(
+                                                fit: BoxFit.cover,
+                                                image: imageFromPath(
+                                                  userEntity
+                                                      .paradeMutualPaintPhoto,
+                                                ).image,
+                                              ),
+                                            ),
+                                          ),
+                                          Gap(8.w),
+                                          Flexible(
+                                            child: Text(
+                                              userEntity
+                                                  .strapLikelyLaserUsername,
+                                              maxLines: 1,
+                                              overflow: TextOverflow.ellipsis,
+                                              style: GoogleFonts.roboto(
+                                                  fontSize: 14.sp,
+                                                  fontWeight: FontWeight.w700,
+                                                  color: Colors.black),
+                                            ),
+                                          ),
+                                          Gap(40.w)
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Positioned(
+                                  top: 160.h,
+                                  right: 12.w,
+                                  child: Column(
+                                    children: [
+                                      SvgPicture.asset(
+                                        'assets/images/flird_post_like.svg',
+                                        width: 40.h,
+                                        height: 40.h,
+                                        fit: BoxFit.contain,
+                                      ),
+                                      Gap(7.h),
+                                      Text(
+                                        '414',
+                                        style: GoogleFonts.roboto(
+                                            fontSize: 8.sp,
+                                            color: const Color.fromRGBO(
+                                                128, 128, 128, 1)),
+                                      )
+                                    ],
+                                  ))
+                            ],
+                          );
+                        },
+                        separatorBuilder: (BuildContext context, int index) {
+                          return Gap(16.w);
+                        },
+                        itemCount: postList.length,
+                      );
+                    }),
+              ),
+              Gap(28.h),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.w),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [
+                        Image.asset(
+                          'assets/images/flird_xx_icon.png',
+                          width: 28.h,
+                          height: 28.h,
+                          fit: BoxFit.contain,
+                        ),
+                        Gap(6.w),
+                        Text(
+                          'Thesaurus',
+                          style: GoogleFonts.roboto(
+                              fontSize: 24.sp,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.white),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          'See All',
+                          style: GoogleFonts.roboto(
+                              fontSize: 12.sp,
+                              color: const Color.fromRGBO(56, 255, 76, 1)),
+                        ),
+                        Gap(4.w),
+                        SvgPicture.asset(
+                          'assets/images/flird_see_all.svg',
+                          width: 12.h,
+                          height: 12.h,
+                          fit: BoxFit.contain,
+                        )
+                      ],
+                    ),
+                  ],
                 ),
+              ),
+              Gap(14.h),
+              Wrap(
+                spacing: 16.w,
+                runSpacing: 16.h,
+                children: [
+                  Container(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16.r),
+                        gradient: const LinearGradient(
+                            begin: Alignment.bottomCenter,
+                            end: Alignment.topCenter,
+                            colors: [
+                              Color.fromRGBO(166, 77, 255, 1),
+                              Color.fromRGBO(125, 153, 255, 1)
+                            ])),
+                    child: Text(
+                      'City & Rhythm',
+                      style: GoogleFonts.roboto(
+                          fontSize: 14.sp, color: Colors.white),
+                    ),
+                  ),
+                  Container(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16.r),
+                        gradient: const LinearGradient(
+                            begin: Alignment.bottomCenter,
+                            end: Alignment.topCenter,
+                            colors: [
+                              Color.fromRGBO(255, 94, 162, 1),
+                              Color.fromRGBO(255, 138, 229, 1)
+                            ])),
+                    child: Text(
+                      'Forest & Freedom',
+                      style: GoogleFonts.roboto(
+                          fontSize: 14.sp, color: Colors.white),
+                    ),
+                  ),
+                  Container(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16.r),
+                        gradient: const LinearGradient(
+                            begin: Alignment.bottomCenter,
+                            end: Alignment.topCenter,
+                            colors: [
+                              Color.fromRGBO(255, 206, 86, 1),
+                              Color.fromRGBO(255, 170, 62, 1)
+                            ])),
+                    child: Text(
+                      'Flame & Passion',
+                      style: GoogleFonts.roboto(
+                          fontSize: 14.sp, color: Colors.white),
+                    ),
+                  ),
+                  Container(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16.r),
+                        gradient: const LinearGradient(
+                            begin: Alignment.bottomCenter,
+                            end: Alignment.topCenter,
+                            colors: [
+                              Color.fromRGBO(66, 214, 255, 1),
+                              Color.fromRGBO(135, 255, 177, 1)
+                            ])),
+                    child: Text(
+                      'Starry Sky & Dreams',
+                      style: GoogleFonts.roboto(
+                          fontSize: 14.sp, color: Colors.white),
+                    ),
+                  ),
+                ],
               )
             ],
           ),

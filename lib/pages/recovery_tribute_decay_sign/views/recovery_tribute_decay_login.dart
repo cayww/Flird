@@ -193,67 +193,72 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                       ]),
                 ),
                 Flexible(child: Gap(120.h)),
-                Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(100.r),
-                      gradient: const LinearGradient(
-                          begin: Alignment.bottomCenter,
-                          end: Alignment.topCenter,
-                          colors: [
-                            Color.fromRGBO(166, 77, 255, 1),
-                            Color.fromRGBO(125, 153, 255, 1)
-                          ])),
-                  child: TextButton(
-                      onPressed: () async {
-                        FocusScope.of(context).unfocus();
-                        FocusManager.instance.primaryFocus?.unfocus();
-                        if (controller.loginFormKey.currentState?.validate() ??
-                            false) {
-                          if (controller.isLoading.value) {
-                            return;
-                          }
-                          controller.isLoading.value = true;
-                          final email = controller.emailController.value.text;
-                          final password =
-                              controller.passwordController.value.text;
-                          await Future.delayed(613.milliseconds);
-                          final r = await AppState()
-                              .driftDB
-                              .inviteSensitiveBroccoliUserDao
-                              .getUserByEmail(email);
-                          if (r == null) {
-                            SmartDialog.showNotify(
-                                msg:
-                                    'The current email address has not registered any users.',
-                                notifyType: NotifyType.warning,
-                                alignment: Alignment.center);
-                          } else {
-                            if (r.distortSiegeTensePassword.equals(password)) {
-                              AppState().loginIn(r);
-                              Get.offAllNamed(Routes.main);
-                            } else {
+                Obx(
+                  () => Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(100.r),
+                        gradient: const LinearGradient(
+                            begin: Alignment.bottomCenter,
+                            end: Alignment.topCenter,
+                            colors: [
+                              Color.fromRGBO(166, 77, 255, 1),
+                              Color.fromRGBO(125, 153, 255, 1)
+                            ])),
+                    child: TextButton(
+                        onPressed: () async {
+                          FocusScope.of(context).unfocus();
+                          FocusManager.instance.primaryFocus?.unfocus();
+                          if (controller.loginFormKey.currentState
+                                  ?.validate() ??
+                              false) {
+                            if (controller.isLoading.value) {
+                              return;
+                            }
+                            controller.isLoading.value = true;
+                            final email = controller.emailController.value.text;
+                            final password =
+                                controller.passwordController.value.text;
+                            await Future.delayed(613.milliseconds);
+                            final r = await AppState()
+                                .driftDB
+                                .inviteSensitiveBroccoliUserDao
+                                .getUserByEmail(email);
+                            if (r == null) {
                               SmartDialog.showNotify(
                                   msg:
-                                      'The email address or password is incorrect.',
-                                  notifyType: NotifyType.error,
+                                      'The current email address has not registered any users.',
+                                  notifyType: NotifyType.warning,
                                   alignment: Alignment.center);
+                            } else {
+                              if (r.distortSiegeTensePassword
+                                  .equals(password)) {
+                                AppState().loginIn(r);
+                                Get.offAllNamed(Routes.main);
+                              } else {
+                                SmartDialog.showNotify(
+                                    msg:
+                                        'The email address or password is incorrect.',
+                                    notifyType: NotifyType.error,
+                                    alignment: Alignment.center);
+                              }
                             }
+                            controller.isLoading.value = false;
                           }
-                          controller.isLoading.value = false;
-                        }
-                      },
-                      style: TextButton.styleFrom(fixedSize: Size(315.w, 48.h)),
-                      child: controller.isLoading.value
-                          ? LoadingAnimationWidget.twoRotatingArc(
-                              color: Colors.white, size: 20.h)
-                          : Text(
-                              'Log In',
-                              style: GoogleFonts.roboto(
-                                fontSize: 16.sp,
-                                fontWeight: FontWeight.w700,
-                                color: Colors.white,
-                              ),
-                            )),
+                        },
+                        style:
+                            TextButton.styleFrom(fixedSize: Size(315.w, 48.h)),
+                        child: controller.isLoading.value
+                            ? LoadingAnimationWidget.twoRotatingArc(
+                                color: Colors.white, size: 20.h)
+                            : Text(
+                                'Log In',
+                                style: GoogleFonts.roboto(
+                                  fontSize: 16.sp,
+                                  fontWeight: FontWeight.w700,
+                                  color: Colors.white,
+                                ),
+                              )),
+                  ),
                 ),
                 Flexible(child: Gap(40.h)),
                 Center(

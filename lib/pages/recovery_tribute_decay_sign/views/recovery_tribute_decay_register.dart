@@ -249,73 +249,78 @@ class _RecoveryTributeDecayRegisterState
                       ]),
                 ),
                 Flexible(child: Gap(120.h)),
-                Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(100.r),
-                      gradient: const LinearGradient(
-                          begin: Alignment.bottomCenter,
-                          end: Alignment.topCenter,
-                          colors: [
-                            Color.fromRGBO(166, 77, 255, 1),
-                            Color.fromRGBO(125, 153, 255, 1)
-                          ])),
-                  child: TextButton(
-                      onPressed: () async {
-                        FocusScope.of(context).unfocus();
-                        FocusManager.instance.primaryFocus?.unfocus();
-                        if (controller.signFormKey.currentState?.validate() ??
-                            false) {
-                          if (controller.isLoading.value) {
-                            return;
-                          }
-                          final email = controller.emailController.value.text;
-                          final password =
-                              controller.passwordController.value.text;
-                          controller.isLoading.value = true;
-                          await Future.delayed(670.milliseconds);
-                          final r = await AppState()
-                              .driftDB
-                              .inviteSensitiveBroccoliUserDao
-                              .getUserByEmail(email);
-                          if (r == null) {
-                            final newUser = await AppState()
+                Obx(
+                  () => Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(100.r),
+                        gradient: const LinearGradient(
+                            begin: Alignment.bottomCenter,
+                            end: Alignment.topCenter,
+                            colors: [
+                              Color.fromRGBO(166, 77, 255, 1),
+                              Color.fromRGBO(125, 153, 255, 1)
+                            ])),
+                    child: TextButton(
+                        onPressed: () async {
+                          FocusScope.of(context).unfocus();
+                          FocusManager.instance.primaryFocus?.unfocus();
+                          if (controller.signFormKey.currentState?.validate() ??
+                              false) {
+                            if (controller.isLoading.value) {
+                              return;
+                            }
+                            final email = controller.emailController.value.text;
+                            final password =
+                                controller.passwordController.value.text;
+                            controller.isLoading.value = true;
+                            await Future.delayed(670.milliseconds);
+                            final r = await AppState()
                                 .driftDB
                                 .inviteSensitiveBroccoliUserDao
-                                .insertUser(
-                                    InviteSensitiveBroccoliUserCompanion.insert(
-                                  fractionVisualStitchEmail: email,
-                                  distortSiegeTensePassword: d.Value(password),
-                                  strapLikelyLaserUsername:
-                                      'User${Random().nextInt(8005) + 1017}',
-                                  paradeMutualPaintPhoto:
-                                      'assets/appImages/flird_default_photo.png',
-                                ));
-                            if (newUser != null) {
-                              AppState().loginIn(newUser);
-                              Get.offAllNamed(Routes.main);
+                                .getUserByEmail(email);
+                            if (r == null) {
+                              final newUser = await AppState()
+                                  .driftDB
+                                  .inviteSensitiveBroccoliUserDao
+                                  .insertUser(
+                                      InviteSensitiveBroccoliUserCompanion
+                                          .insert(
+                                    fractionVisualStitchEmail: email,
+                                    distortSiegeTensePassword:
+                                        d.Value(password),
+                                    strapLikelyLaserUsername:
+                                        'User${Random().nextInt(8005) + 1017}',
+                                    paradeMutualPaintPhoto:
+                                        'assets/appImages/flird_default_photo.png',
+                                  ));
+                              if (newUser != null) {
+                                AppState().loginIn(newUser);
+                                Get.offAllNamed(Routes.main);
+                              }
+                            } else {
+                              SmartDialog.showNotify(
+                                msg: 'The email address has been registered',
+                                notifyType: NotifyType.alert,
+                                alignment: Alignment.center,
+                              );
                             }
-                          } else {
-                            SmartDialog.showNotify(
-                              msg: 'The email address has been registered',
-                              notifyType: NotifyType.alert,
-                              alignment: Alignment.center,
-                            );
+                            controller.isLoading.value = false;
                           }
-                          controller.isLoading.value = false;
-                        }
-                      },
-                      style: TextButton.styleFrom(fixedSize: Size(315.w, 48.h)),
-                      child: controller.isLoading.value
-                          ? LoadingAnimationWidget.twoRotatingArc(
-                              color: Colors.white, size: 20.h)
-                          : Text(
-                              'Sign Up',
-                              style: GoogleFonts.roboto(
-                                fontSize: 16.sp,
-                                fontWeight: FontWeight.w700,
-                                color: Colors.white,
-                              ),
-                            )),
+                        },
+                        style:
+                            TextButton.styleFrom(fixedSize: Size(315.w, 48.h)),
+                        child: controller.isLoading.value
+                            ? LoadingAnimationWidget.twoRotatingArc(
+                                color: Colors.white, size: 20.h)
+                            : Text(
+                                'Sign Up',
+                                style: GoogleFonts.roboto(
+                                  fontSize: 16.sp,
+                                  fontWeight: FontWeight.w700,
+                                  color: Colors.white,
+                                ),
+                              )),
+                  ),
                 ),
               ],
             ),
