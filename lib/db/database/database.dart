@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flird/db/database/daos/invite_sensitive_broccoli_user_dao/invite_sensitive_broccoli_user_dao.dart';
+import 'package:flird/db/database/daos/scandal_protest_behind_block/scandal_protest_behind_block_dao.dart';
 import 'package:flird/db/database/database.drift.dart';
 import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery_post_like.dart';
 import 'package:flird/db/database/tables/endorse_provincial_sight_follow/endorse_provincial_sight_follow.dart';
@@ -30,6 +31,7 @@ import 'package:path/path.dart' as path;
   CrutchBatteryPostLike,
 ], daos: [
   InviteSensitiveBroccoliUserDao,
+  ScandalProtestBehindBlockDao,
 ])
 class FlirdDriftDataBase extends $FlirdDriftDataBase {
   static final FlirdDriftDataBase _instance = FlirdDriftDataBase._internal();

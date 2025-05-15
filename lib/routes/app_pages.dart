@@ -10,6 +10,7 @@ import 'package:flird/pages/recovery_tribute_decay_sign/views/recovery_tribute_d
 import 'package:flird/pages/recovery_tribute_decay_sign/views/recovery_tribute_decay_register.dart';
 import 'package:flird/pages/slightly_headline_clerk_main/views/slightly_headline_clerk_main.dart';
 import 'package:flird/pages/structure_jockey_table_guide/views/structure_jockey_table_guide.dart';
+import 'package:flird/pages/toward_chorus_weapon_report/views/toward_chorus_weapon_report.dart';
 import 'package:get/get.dart';
 
 part 'app_routes.dart';
@@ -61,6 +62,11 @@ class AppPages {
         name: Routes.wallet,
         binding: MotionTolerateWalletBinding(),
         page: () => const MotionTolerateChanceWallet(),
+        transition: Transition.rightToLeft,
+        transitionDuration: transitionDuraiton),
+    GetPage(
+        name: Routes.report,
+        page: () => const TowardChorusWeaponReport(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
   ];

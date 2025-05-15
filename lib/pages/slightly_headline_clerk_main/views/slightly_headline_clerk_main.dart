@@ -1,6 +1,9 @@
 import 'package:aligned_dialog/aligned_dialog.dart';
+import 'package:drift/drift.dart' as d;
 import 'package:flird/common/components/common.dart';
+import 'package:flird/common/components/reptile_chord_more_dialog.dart';
 import 'package:flird/common/utils/common.dart';
+import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery_post_like.drift.dart';
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
 import 'package:flird/providers/app_state/app_state.dart';
 import 'package:flird/routes/app_pages.dart';
@@ -380,12 +383,47 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                                     ],
                                                   ),
                                                 ),
-                                                SvgPicture.asset(
-                                                  'assets/images/flird_post_more.svg',
-                                                  width: 34.w,
-                                                  height: 16.h,
-                                                  fit: BoxFit.contain,
-                                                )
+                                                if (userEntity
+                                                        .loungeRealizeEmphasisUid !=
+                                                    AppState()
+                                                        .currentUserEntity
+                                                        .loungeRealizeEmphasisUid)
+                                                  GestureDetector(
+                                                    onTap: () async {
+                                                      await showDialog(
+                                                        context: context,
+                                                        barrierDismissible:
+                                                            false,
+                                                        builder: (context) {
+                                                          return Dialog(
+                                                            elevation: 0.0,
+                                                            insetPadding:
+                                                                EdgeInsets.zero,
+                                                            backgroundColor:
+                                                                Colors
+                                                                    .transparent,
+                                                            alignment: const AlignmentDirectional(
+                                                                    0.0, 0.0)
+                                                                .resolve(
+                                                                    Directionality.of(
+                                                                        context)),
+                                                            child:
+                                                                ReptileChordMoreDialog(
+                                                              cucumberFrameUserID:
+                                                                  userEntity
+                                                                      .loungeRealizeEmphasisUid,
+                                                            ),
+                                                          );
+                                                        },
+                                                      );
+                                                    },
+                                                    child: SvgPicture.asset(
+                                                      'assets/images/flird_post_more.svg',
+                                                      width: 34.w,
+                                                      height: 16.h,
+                                                      fit: BoxFit.contain,
+                                                    ),
+                                                  )
                                               ],
                                             ),
                                           ),
@@ -448,24 +486,83 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                               Positioned(
                                   top: 160.h,
                                   right: 12.w,
-                                  child: Column(
-                                    children: [
-                                      SvgPicture.asset(
-                                        'assets/images/flird_post_like.svg',
-                                        width: 40.h,
-                                        height: 40.h,
-                                        fit: BoxFit.contain,
-                                      ),
-                                      Gap(7.h),
-                                      Text(
-                                        '414',
-                                        style: GoogleFonts.roboto(
-                                            fontSize: 8.sp,
-                                            color: const Color.fromRGBO(
-                                                128, 128, 128, 1)),
-                                      )
-                                    ],
-                                  ))
+                                  child: StreamBuilder<
+                                          List<CrutchBatteryPostLikeEntity>>(
+                                      stream: (AppState()
+                                              .driftDB
+                                              .crutchBatteryPostLike
+                                              .select()
+                                            ..where((f) => f
+                                                .morselCrossSpentPost
+                                                .equals(postEntity
+                                                    .crownImagineDecadeId)))
+                                          .watch(),
+                                      builder: (context, snapshot) {
+                                        bool liked = false;
+                                        int likeCount = 0;
+                                        if (snapshot.hasData) {
+                                          likeCount = snapshot.data!.length;
+                                          for (var element in snapshot.data!) {
+                                            if (element
+                                                    .promoteEmpireBirthUser ==
+                                                AppState()
+                                                    .currentUserEntity
+                                                    .loungeRealizeEmphasisUid) {
+                                              liked = true;
+                                              break;
+                                            }
+                                          }
+                                        }
+                                        return Column(
+                                          children: [
+                                            GestureDetector(
+                                              onTap: () async {
+                                                if (!liked) {
+                                                  await AppState()
+                                                      .driftDB
+                                                      .crutchBatteryPostLike
+                                                      .insertOne(CrutchBatteryPostLikeCompanion.insert(
+                                                          morselCrossSpentPost:
+                                                              postEntity
+                                                                  .crownImagineDecadeId,
+                                                          promoteEmpireBirthUser:
+                                                              AppState()
+                                                                  .currentUserEntity
+                                                                  .loungeRealizeEmphasisUid));
+                                                } else {
+                                                  await AppState()
+                                                      .driftDB
+                                                      .crutchBatteryPostLike
+                                                      .deleteWhere((f) =>
+                                                          f.morselCrossSpentPost
+                                                              .equals(postEntity
+                                                                  .crownImagineDecadeId) &
+                                                          f.promoteEmpireBirthUser
+                                                              .equals(AppState()
+                                                                  .currentUserEntity
+                                                                  .loungeRealizeEmphasisUid));
+                                                }
+                                              },
+                                              child: SvgPicture.asset(
+                                                liked
+                                                    ? 'assets/images/flird_post_like.svg'
+                                                    : 'assets/images/flird_post_unlike.svg',
+                                                width: 40.h,
+                                                height: 40.h,
+                                                fit: BoxFit.contain,
+                                              ),
+                                            ),
+                                            Gap(7.h),
+                                            Text(
+                                              '$likeCount',
+                                              style: GoogleFonts.roboto(
+                                                  fontSize: 8.sp,
+                                                  color: const Color.fromRGBO(
+                                                      128, 128, 128, 1)),
+                                            )
+                                          ],
+                                        );
+                                      }))
                             ],
                           );
                         },

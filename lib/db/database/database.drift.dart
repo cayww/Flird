@@ -18,6 +18,8 @@ import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery
 import 'package:flird/db/database/daos/invite_sensitive_broccoli_user_dao/invite_sensitive_broccoli_user_dao.dart'
     as i8;
 import 'package:flird/db/database/database.dart' as i9;
+import 'package:flird/db/database/daos/scandal_protest_behind_block/scandal_protest_behind_block_dao.dart'
+    as i10;
 
 abstract class $FlirdDriftDataBase extends i0.GeneratedDatabase {
   $FlirdDriftDataBase(i0.QueryExecutor e) : super(e);
@@ -40,6 +42,8 @@ abstract class $FlirdDriftDataBase extends i0.GeneratedDatabase {
       i7.$CrutchBatteryPostLikeTable(this);
   late final i8.InviteSensitiveBroccoliUserDao inviteSensitiveBroccoliUserDao =
       i8.InviteSensitiveBroccoliUserDao(this as i9.FlirdDriftDataBase);
+  late final i10.ScandalProtestBehindBlockDao scandalProtestBehindBlockDao =
+      i10.ScandalProtestBehindBlockDao(this as i9.FlirdDriftDataBase);
   @override
   Iterable<i0.TableInfo<i0.Table, Object?>> get allTables =>
       allSchemaEntities.whereType<i0.TableInfo<i0.Table, Object?>>();

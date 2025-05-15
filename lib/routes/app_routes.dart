@@ -9,4 +9,5 @@ abstract class Routes {
   static const login = '/login';
   static const post = '/post';
   static const wallet = '/wallet';
+  static const report = '/report';
 }
