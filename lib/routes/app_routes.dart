@@ -13,4 +13,5 @@ abstract class Routes {
   static const postDetail = '/postDetail';
   static const chat = '/chat';
   static const message = '/message';
+  static const profile = '/profile';
 }

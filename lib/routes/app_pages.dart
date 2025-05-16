@@ -14,6 +14,7 @@ import 'package:flird/pages/recovery_tribute_decay_sign/views/recovery_tribute_d
 import 'package:flird/pages/slightly_headline_clerk_main/views/slightly_headline_clerk_main.dart';
 import 'package:flird/pages/splurge_object_theme_chat/bindings/splurge_object_chat_binding.dart';
 import 'package:flird/pages/splurge_object_theme_chat/views/splurge_object_theme_chat.dart';
+import 'package:flird/pages/strap_abundant_entire_profile/views/strap_abundant_entire_profile.dart';
 import 'package:flird/pages/structure_jockey_table_guide/views/structure_jockey_table_guide.dart';
 import 'package:flird/pages/toward_chorus_weapon_report/views/toward_chorus_weapon_report.dart';
 import 'package:get/get.dart';
@@ -89,6 +90,11 @@ class AppPages {
     GetPage(
         name: Routes.message,
         page: () => const LiberalGaffeClothMessage(),
+        transition: Transition.rightToLeft,
+        transitionDuration: transitionDuraiton),
+    GetPage(
+        name: Routes.profile,
+        page: () => const StrapAbundantEntireProfile(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
   ];

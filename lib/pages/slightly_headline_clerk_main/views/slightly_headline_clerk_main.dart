@@ -74,22 +74,27 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                 ),
                               );
                             }),
-                            Container(
-                              width: 48.h,
-                              height: 48.h,
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                      width: 2.0,
-                                      color: const Color.fromRGBO(
-                                          255, 138, 229, 1),
-                                      strokeAlign: 0.0),
-                                  image: DecorationImage(
-                                      fit: BoxFit.cover,
-                                      image: imageFromPath(AppState()
-                                              .currentUserEntity
-                                              .paradeMutualPaintPhoto)
-                                          .image)),
+                            GestureDetector(
+                              onTap: () {
+                                Get.toNamed(Routes.profile);
+                              },
+                              child: Container(
+                                width: 48.h,
+                                height: 48.h,
+                                decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                        width: 2.0,
+                                        color: const Color.fromRGBO(
+                                            255, 138, 229, 1),
+                                        strokeAlign: 0.0),
+                                    image: DecorationImage(
+                                        fit: BoxFit.cover,
+                                        image: imageFromPath(AppState()
+                                                .currentUserEntity
+                                                .paradeMutualPaintPhoto)
+                                            .image)),
+                              ),
                             )
                           ],
                         ),
