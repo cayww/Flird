@@ -15,11 +15,15 @@ import 'package:flird/db/database/tables/slope_cabinet_branch_keyword/slope_cabi
     as i6;
 import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery_post_like.drift.dart'
     as i7;
-import 'package:flird/db/database/daos/invite_sensitive_broccoli_user_dao/invite_sensitive_broccoli_user_dao.dart'
+import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart'
     as i8;
-import 'package:flird/db/database/database.dart' as i9;
-import 'package:flird/db/database/daos/scandal_protest_behind_block/scandal_protest_behind_block_dao.dart'
+import 'package:flird/db/database/tables/coincide_regular_voter_message/coincide_regular_voter_message.drift.dart'
+    as i9;
+import 'package:flird/db/database/daos/invite_sensitive_broccoli_user_dao/invite_sensitive_broccoli_user_dao.dart'
     as i10;
+import 'package:flird/db/database/database.dart' as i11;
+import 'package:flird/db/database/daos/scandal_protest_behind_block/scandal_protest_behind_block_dao.dart'
+    as i12;
 
 abstract class $FlirdDriftDataBase extends i0.GeneratedDatabase {
   $FlirdDriftDataBase(i0.QueryExecutor e) : super(e);
@@ -40,10 +44,14 @@ abstract class $FlirdDriftDataBase extends i0.GeneratedDatabase {
       i6.$SlopeCabinetBranchKeywordTable(this);
   late final i7.$CrutchBatteryPostLikeTable crutchBatteryPostLike =
       i7.$CrutchBatteryPostLikeTable(this);
-  late final i8.InviteSensitiveBroccoliUserDao inviteSensitiveBroccoliUserDao =
-      i8.InviteSensitiveBroccoliUserDao(this as i9.FlirdDriftDataBase);
-  late final i10.ScandalProtestBehindBlockDao scandalProtestBehindBlockDao =
-      i10.ScandalProtestBehindBlockDao(this as i9.FlirdDriftDataBase);
+  late final i8.$RedeemDriedBucketChatTable redeemDriedBucketChat =
+      i8.$RedeemDriedBucketChatTable(this);
+  late final i9.$CoincideRegularVoterMessageTable coincideRegularVoterMessage =
+      i9.$CoincideRegularVoterMessageTable(this);
+  late final i10.InviteSensitiveBroccoliUserDao inviteSensitiveBroccoliUserDao =
+      i10.InviteSensitiveBroccoliUserDao(this as i11.FlirdDriftDataBase);
+  late final i12.ScandalProtestBehindBlockDao scandalProtestBehindBlockDao =
+      i12.ScandalProtestBehindBlockDao(this as i11.FlirdDriftDataBase);
   @override
   Iterable<i0.TableInfo<i0.Table, Object?>> get allTables =>
       allSchemaEntities.whereType<i0.TableInfo<i0.Table, Object?>>();
@@ -55,7 +63,9 @@ abstract class $FlirdDriftDataBase extends i0.GeneratedDatabase {
         shrinkRegretCompletelyWallet,
         scienceAcquitMagicPost,
         slopeCabinetBranchKeyword,
-        crutchBatteryPostLike
+        crutchBatteryPostLike,
+        redeemDriedBucketChat,
+        coincideRegularVoterMessage
       ];
   @override
   i0.DriftDatabaseOptions get options =>
@@ -90,4 +100,10 @@ class $FlirdDriftDataBaseManager {
               _db, _db.slopeCabinetBranchKeyword);
   i7.$$CrutchBatteryPostLikeTableTableManager get crutchBatteryPostLike => i7
       .$$CrutchBatteryPostLikeTableTableManager(_db, _db.crutchBatteryPostLike);
+  i8.$$RedeemDriedBucketChatTableTableManager get redeemDriedBucketChat => i8
+      .$$RedeemDriedBucketChatTableTableManager(_db, _db.redeemDriedBucketChat);
+  i9.$$CoincideRegularVoterMessageTableTableManager
+      get coincideRegularVoterMessage =>
+          i9.$$CoincideRegularVoterMessageTableTableManager(
+              _db, _db.coincideRegularVoterMessage);
 }

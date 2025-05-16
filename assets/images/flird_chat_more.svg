@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44" fill="none">
+<circle cx="22" cy="22" r="22"   fill="url(#linear_fill_13_1862)" >
+</circle>
+<path    stroke="rgba(255, 255, 255, 1)" stroke-width="3"  stroke-linecap="round"  d="M22 12L22 32">
+</path>
+<path    stroke="rgba(255, 255, 255, 0.5)" stroke-width="3"  stroke-linecap="round"  d="M32 22L27 22">
+</path>
+<path    stroke="rgba(255, 255, 255, 1)" stroke-width="3"  stroke-linecap="round"  d="M22 22L12 22">
+</path>
+<defs>
+<linearGradient id="linear_fill_13_1862" x1="22" y1="44" x2="22" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#A64DFF"  />
+<stop offset="1" stop-color="#7D99FF"  />
+</linearGradient>
+</defs>
+</svg>

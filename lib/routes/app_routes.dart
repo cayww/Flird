@@ -10,4 +10,6 @@ abstract class Routes {
   static const post = '/post';
   static const wallet = '/wallet';
   static const report = '/report';
+  static const postDetail = '/postDetail';
+  static const chat = '/chat';
 }

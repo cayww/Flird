@@ -3,9 +3,11 @@ import 'dart:io';
 import 'package:flird/db/database/daos/invite_sensitive_broccoli_user_dao/invite_sensitive_broccoli_user_dao.dart';
 import 'package:flird/db/database/daos/scandal_protest_behind_block/scandal_protest_behind_block_dao.dart';
 import 'package:flird/db/database/database.drift.dart';
+import 'package:flird/db/database/tables/coincide_regular_voter_message/coincide_regular_voter_message.dart';
 import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery_post_like.dart';
 import 'package:flird/db/database/tables/endorse_provincial_sight_follow/endorse_provincial_sight_follow.dart';
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.dart';
+import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.dart';
 import 'package:flird/db/database/tables/scandal_protest_behind_block/scandal_protest_behind_block.dart';
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.dart';
 import 'package:flird/db/database/tables/shrink_regret_completely_wallet/shrink_regret_completely_wallet.dart';
@@ -29,6 +31,8 @@ import 'package:path/path.dart' as path;
   ScienceAcquitMagicPost,
   SlopeCabinetBranchKeyword,
   CrutchBatteryPostLike,
+  RedeemDriedBucketChat,
+  CoincideRegularVoterMessage,
 ], daos: [
   InviteSensitiveBroccoliUserDao,
   ScandalProtestBehindBlockDao,

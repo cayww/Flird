@@ -288,283 +288,296 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                           final (postEntity, refers) = postList[index];
                           final userEntity = refers
                               .consciousExcessElectUser.prefetchedData!.first;
-                          return Stack(
-                            children: [
-                              Container(
-                                width: 180.w,
-                                clipBehavior: Clip.antiAlias,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(16.r),
-                                  color: Colors.white,
-                                ),
-                                child: Column(
-                                  children: [
-                                    Container(
-                                      width: double.infinity,
-                                      height: 180.h,
-                                      decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(16.r),
-                                          image: DecorationImage(
-                                              fit: BoxFit.cover,
-                                              image: imageFromPath(
-                                                postEntity
-                                                    .powerQuarterEnlargeCover,
-                                              ).image)),
-                                      child: Column(
-                                        children: [
-                                          Gap(12.h),
-                                          Padding(
-                                            padding: EdgeInsets.symmetric(
-                                                horizontal: 12.w),
-                                            child: Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
-                                              children: [
-                                                Container(
-                                                  padding: EdgeInsets.symmetric(
-                                                      horizontal: 8.w,
-                                                      vertical: 4.h),
-                                                  decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              100.r),
-                                                      gradient: LinearGradient(
-                                                          colors: postEntity
-                                                                      .appetiteBirdsBishopType
-                                                                      .length >
-                                                                  3
-                                                              ? [
-                                                                  const Color
-                                                                      .fromRGBO(
-                                                                      255,
-                                                                      94,
-                                                                      162,
-                                                                      1),
-                                                                  const Color
-                                                                      .fromRGBO(
-                                                                      255,
-                                                                      138,
-                                                                      229,
-                                                                      1)
-                                                                ]
-                                                              : [
-                                                                  const Color
-                                                                      .fromRGBO(
-                                                                      255,
-                                                                      206,
-                                                                      86,
-                                                                      1),
-                                                                  const Color
-                                                                      .fromRGBO(
-                                                                      255,
-                                                                      170,
-                                                                      62,
-                                                                      1)
-                                                                ])),
-                                                  child: Row(
-                                                    children: [
-                                                      SvgPicture.asset(
-                                                        'assets/images/flird_music_icon.svg',
-                                                        width: 8.h,
-                                                        height: 8.h,
-                                                        fit: BoxFit.contain,
-                                                      ),
-                                                      Gap(4.w),
-                                                      Text(
-                                                        postEntity
-                                                            .appetiteBirdsBishopType,
-                                                        style:
-                                                            GoogleFonts.roboto(
-                                                                fontSize: 8.sp,
-                                                                color: Colors
-                                                                    .white),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                                if (userEntity
-                                                        .loungeRealizeEmphasisUid !=
-                                                    AppState()
-                                                        .currentUserEntity
-                                                        .loungeRealizeEmphasisUid)
-                                                  GestureDetector(
-                                                    onTap: () async {
-                                                      await showDialog(
-                                                        context: context,
-                                                        barrierDismissible:
-                                                            false,
-                                                        builder: (context) {
-                                                          return Dialog(
-                                                            elevation: 0.0,
-                                                            insetPadding:
-                                                                EdgeInsets.zero,
-                                                            backgroundColor:
-                                                                Colors
-                                                                    .transparent,
-                                                            alignment: const AlignmentDirectional(
-                                                                    0.0, 0.0)
-                                                                .resolve(
-                                                                    Directionality.of(
-                                                                        context)),
-                                                            child:
-                                                                ReptileChordMoreDialog(
-                                                              cucumberFrameUserID:
-                                                                  userEntity
-                                                                      .loungeRealizeEmphasisUid,
-                                                            ),
-                                                          );
-                                                        },
-                                                      );
-                                                    },
-                                                    child: SvgPicture.asset(
-                                                      'assets/images/flird_post_more.svg',
-                                                      width: 34.w,
-                                                      height: 16.h,
-                                                      fit: BoxFit.contain,
-                                                    ),
-                                                  )
-                                              ],
-                                            ),
-                                          ),
-                                          Gap(32.h),
-                                          SvgPicture.asset(
-                                            'assets/images/flird_play_icon.svg',
-                                            width: 60.h,
-                                            height: 60.h,
-                                            fit: BoxFit.contain,
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                    Gap(12.h),
-                                    Padding(
-                                      padding: EdgeInsets.symmetric(
-                                          horizontal: 12.w),
-                                      child: Row(
-                                        children: [
-                                          Container(
-                                            width: 34.h,
-                                            height: 34.h,
-                                            decoration: BoxDecoration(
-                                              border: Border.all(
-                                                width: 1.w,
-                                                strokeAlign: 0.0,
-                                                color: const Color.fromRGBO(
-                                                    255, 138, 229, 1),
-                                              ),
-                                              shape: BoxShape.circle,
-                                              image: DecorationImage(
+                          return GestureDetector(
+                            onTap: () {
+                              Get.toNamed(Routes.postDetail, arguments: {
+                                'postEntity': postEntity.toJsonString(),
+                                'userEntity': userEntity.toJsonString(),
+                              });
+                            },
+                            child: Stack(
+                              children: [
+                                Container(
+                                  width: 180.w,
+                                  clipBehavior: Clip.antiAlias,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16.r),
+                                    color: Colors.white,
+                                  ),
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        width: double.infinity,
+                                        height: 180.h,
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(16.r),
+                                            image: DecorationImage(
                                                 fit: BoxFit.cover,
                                                 image: imageFromPath(
-                                                  userEntity
-                                                      .paradeMutualPaintPhoto,
-                                                ).image,
-                                              ),
-                                            ),
-                                          ),
-                                          Gap(8.w),
-                                          Flexible(
-                                            child: Text(
-                                              userEntity
-                                                  .strapLikelyLaserUsername,
-                                              maxLines: 1,
-                                              overflow: TextOverflow.ellipsis,
-                                              style: GoogleFonts.roboto(
-                                                  fontSize: 14.sp,
-                                                  fontWeight: FontWeight.w700,
-                                                  color: Colors.black),
-                                            ),
-                                          ),
-                                          Gap(40.w)
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ),
-                              Positioned(
-                                  top: 160.h,
-                                  right: 12.w,
-                                  child: StreamBuilder<
-                                          List<CrutchBatteryPostLikeEntity>>(
-                                      stream: (AppState()
-                                              .driftDB
-                                              .crutchBatteryPostLike
-                                              .select()
-                                            ..where((f) => f
-                                                .morselCrossSpentPost
-                                                .equals(postEntity
-                                                    .crownImagineDecadeId)))
-                                          .watch(),
-                                      builder: (context, snapshot) {
-                                        bool liked = false;
-                                        int likeCount = 0;
-                                        if (snapshot.hasData) {
-                                          likeCount = snapshot.data!.length;
-                                          for (var element in snapshot.data!) {
-                                            if (element
-                                                    .promoteEmpireBirthUser ==
-                                                AppState()
-                                                    .currentUserEntity
-                                                    .loungeRealizeEmphasisUid) {
-                                              liked = true;
-                                              break;
-                                            }
-                                          }
-                                        }
-                                        return Column(
+                                                  postEntity
+                                                      .powerQuarterEnlargeCover,
+                                                ).image)),
+                                        child: Column(
                                           children: [
-                                            GestureDetector(
-                                              onTap: () async {
-                                                if (!liked) {
-                                                  await AppState()
-                                                      .driftDB
-                                                      .crutchBatteryPostLike
-                                                      .insertOne(CrutchBatteryPostLikeCompanion.insert(
-                                                          morselCrossSpentPost:
-                                                              postEntity
-                                                                  .crownImagineDecadeId,
-                                                          promoteEmpireBirthUser:
-                                                              AppState()
-                                                                  .currentUserEntity
-                                                                  .loungeRealizeEmphasisUid));
-                                                } else {
-                                                  await AppState()
-                                                      .driftDB
-                                                      .crutchBatteryPostLike
-                                                      .deleteWhere((f) =>
-                                                          f.morselCrossSpentPost
-                                                              .equals(postEntity
-                                                                  .crownImagineDecadeId) &
-                                                          f.promoteEmpireBirthUser
-                                                              .equals(AppState()
-                                                                  .currentUserEntity
-                                                                  .loungeRealizeEmphasisUid));
-                                                }
-                                              },
-                                              child: SvgPicture.asset(
-                                                liked
-                                                    ? 'assets/images/flird_post_like.svg'
-                                                    : 'assets/images/flird_post_unlike.svg',
-                                                width: 40.h,
-                                                height: 40.h,
-                                                fit: BoxFit.contain,
+                                            Gap(12.h),
+                                            Padding(
+                                              padding: EdgeInsets.symmetric(
+                                                  horizontal: 12.w),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment
+                                                        .spaceBetween,
+                                                children: [
+                                                  Container(
+                                                    padding:
+                                                        EdgeInsets.symmetric(
+                                                            horizontal: 8.w,
+                                                            vertical: 4.h),
+                                                    decoration: BoxDecoration(
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(
+                                                                    100.r),
+                                                        gradient: LinearGradient(
+                                                            colors: postEntity
+                                                                        .appetiteBirdsBishopType
+                                                                        .length >
+                                                                    3
+                                                                ? [
+                                                                    const Color
+                                                                        .fromRGBO(
+                                                                        255,
+                                                                        94,
+                                                                        162,
+                                                                        1),
+                                                                    const Color
+                                                                        .fromRGBO(
+                                                                        255,
+                                                                        138,
+                                                                        229,
+                                                                        1)
+                                                                  ]
+                                                                : [
+                                                                    const Color
+                                                                        .fromRGBO(
+                                                                        255,
+                                                                        206,
+                                                                        86,
+                                                                        1),
+                                                                    const Color
+                                                                        .fromRGBO(
+                                                                        255,
+                                                                        170,
+                                                                        62,
+                                                                        1)
+                                                                  ])),
+                                                    child: Row(
+                                                      children: [
+                                                        SvgPicture.asset(
+                                                          'assets/images/flird_music_icon.svg',
+                                                          width: 8.h,
+                                                          height: 8.h,
+                                                          fit: BoxFit.contain,
+                                                        ),
+                                                        Gap(4.w),
+                                                        Text(
+                                                          postEntity
+                                                              .appetiteBirdsBishopType,
+                                                          style: GoogleFonts
+                                                              .roboto(
+                                                                  fontSize:
+                                                                      8.sp,
+                                                                  color: Colors
+                                                                      .white),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                  if (userEntity
+                                                          .loungeRealizeEmphasisUid !=
+                                                      AppState()
+                                                          .currentUserEntity
+                                                          .loungeRealizeEmphasisUid)
+                                                    GestureDetector(
+                                                      onTap: () async {
+                                                        await showDialog(
+                                                          context: context,
+                                                          barrierDismissible:
+                                                              false,
+                                                          builder: (context) {
+                                                            return Dialog(
+                                                              elevation: 0.0,
+                                                              insetPadding:
+                                                                  EdgeInsets
+                                                                      .zero,
+                                                              backgroundColor:
+                                                                  Colors
+                                                                      .transparent,
+                                                              alignment: const AlignmentDirectional(
+                                                                      0.0, 0.0)
+                                                                  .resolve(
+                                                                      Directionality.of(
+                                                                          context)),
+                                                              child:
+                                                                  ReptileChordMoreDialog(
+                                                                cucumberFrameUserID:
+                                                                    userEntity
+                                                                        .loungeRealizeEmphasisUid,
+                                                              ),
+                                                            );
+                                                          },
+                                                        );
+                                                      },
+                                                      child: SvgPicture.asset(
+                                                        'assets/images/flird_post_more.svg',
+                                                        width: 34.w,
+                                                        height: 16.h,
+                                                        fit: BoxFit.contain,
+                                                      ),
+                                                    )
+                                                ],
                                               ),
                                             ),
-                                            Gap(7.h),
-                                            Text(
-                                              '$likeCount',
-                                              style: GoogleFonts.roboto(
-                                                  fontSize: 8.sp,
-                                                  color: const Color.fromRGBO(
-                                                      128, 128, 128, 1)),
+                                            Gap(32.h),
+                                            SvgPicture.asset(
+                                              'assets/images/flird_play_icon.svg',
+                                              width: 60.h,
+                                              height: 60.h,
+                                              fit: BoxFit.contain,
                                             )
                                           ],
-                                        );
-                                      }))
-                            ],
+                                        ),
+                                      ),
+                                      Gap(12.h),
+                                      Padding(
+                                        padding: EdgeInsets.symmetric(
+                                            horizontal: 12.w),
+                                        child: Row(
+                                          children: [
+                                            Container(
+                                              width: 34.h,
+                                              height: 34.h,
+                                              decoration: BoxDecoration(
+                                                border: Border.all(
+                                                  width: 1.w,
+                                                  strokeAlign: 0.0,
+                                                  color: const Color.fromRGBO(
+                                                      255, 138, 229, 1),
+                                                ),
+                                                shape: BoxShape.circle,
+                                                image: DecorationImage(
+                                                  fit: BoxFit.cover,
+                                                  image: imageFromPath(
+                                                    userEntity
+                                                        .paradeMutualPaintPhoto,
+                                                  ).image,
+                                                ),
+                                              ),
+                                            ),
+                                            Gap(8.w),
+                                            Flexible(
+                                              child: Text(
+                                                userEntity
+                                                    .strapLikelyLaserUsername,
+                                                maxLines: 1,
+                                                overflow: TextOverflow.ellipsis,
+                                                style: GoogleFonts.roboto(
+                                                    fontSize: 14.sp,
+                                                    fontWeight: FontWeight.w700,
+                                                    color: Colors.black),
+                                              ),
+                                            ),
+                                            Gap(40.w)
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Positioned(
+                                    top: 160.h,
+                                    right: 12.w,
+                                    child: StreamBuilder<
+                                            List<CrutchBatteryPostLikeEntity>>(
+                                        stream: (AppState()
+                                                .driftDB
+                                                .crutchBatteryPostLike
+                                                .select()
+                                              ..where((f) => f
+                                                  .morselCrossSpentPost
+                                                  .equals(postEntity
+                                                      .crownImagineDecadeId)))
+                                            .watch(),
+                                        builder: (context, snapshot) {
+                                          bool liked = false;
+                                          int likeCount = 0;
+                                          if (snapshot.hasData) {
+                                            likeCount = snapshot.data!.length;
+                                            for (var element
+                                                in snapshot.data!) {
+                                              if (element
+                                                      .promoteEmpireBirthUser ==
+                                                  AppState()
+                                                      .currentUserEntity
+                                                      .loungeRealizeEmphasisUid) {
+                                                liked = true;
+                                                break;
+                                              }
+                                            }
+                                          }
+                                          return Column(
+                                            children: [
+                                              GestureDetector(
+                                                onTap: () async {
+                                                  if (!liked) {
+                                                    await AppState()
+                                                        .driftDB
+                                                        .crutchBatteryPostLike
+                                                        .insertOne(CrutchBatteryPostLikeCompanion.insert(
+                                                            morselCrossSpentPost:
+                                                                postEntity
+                                                                    .crownImagineDecadeId,
+                                                            promoteEmpireBirthUser:
+                                                                AppState()
+                                                                    .currentUserEntity
+                                                                    .loungeRealizeEmphasisUid));
+                                                  } else {
+                                                    await AppState()
+                                                        .driftDB
+                                                        .crutchBatteryPostLike
+                                                        .deleteWhere((f) =>
+                                                            f.morselCrossSpentPost
+                                                                .equals(postEntity
+                                                                    .crownImagineDecadeId) &
+                                                            f.promoteEmpireBirthUser
+                                                                .equals(AppState()
+                                                                    .currentUserEntity
+                                                                    .loungeRealizeEmphasisUid));
+                                                  }
+                                                },
+                                                child: SvgPicture.asset(
+                                                  liked
+                                                      ? 'assets/images/flird_post_like.svg'
+                                                      : 'assets/images/flird_post_unlike.svg',
+                                                  width: 40.h,
+                                                  height: 40.h,
+                                                  fit: BoxFit.contain,
+                                                ),
+                                              ),
+                                              Gap(7.h),
+                                              Text(
+                                                '$likeCount',
+                                                style: GoogleFonts.roboto(
+                                                    fontSize: 8.sp,
+                                                    color: const Color.fromRGBO(
+                                                        128, 128, 128, 1)),
+                                              )
+                                            ],
+                                          );
+                                        }))
+                              ],
+                            ),
                           );
                         },
                         separatorBuilder: (BuildContext context, int index) {
@@ -776,7 +789,10 @@ class WheatBreezeMarginMenu extends StatelessWidget {
             endIndent: 10.w,
           ),
           ListTile(
-            onTap: () {},
+            onTap: () {
+              Navigator.pop(context);
+              Get.toNamed(Routes.wallet);
+            },
             dense: true,
             horizontalTitleGap: 8.w,
             contentPadding: EdgeInsets.fromLTRB(14.w, 0.0, 10.w, 0.0),
