@@ -4,6 +4,7 @@ import 'package:flird/pages/gossip_retain_sacrifice_splash/bindings/gossip_retai
 import 'package:flird/pages/gossip_retain_sacrifice_splash/views/gossip_retain_sacrifice_splash.dart';
 import 'package:flird/pages/implicit_letter_tease_post/bindings/implicit_letter_post_binding.dart';
 import 'package:flird/pages/implicit_letter_tease_post/views/implicit_letter_tease_post.dart';
+import 'package:flird/pages/liberal_gaffe_cloth_message/views/liberal_gaffe_cloth_message.dart';
 import 'package:flird/pages/noise_deficit_initial_video/bindings/noise_deficit_video_binding.dart';
 import 'package:flird/pages/noise_deficit_initial_video/views/noise_deficit_initial_video.dart';
 import 'package:flird/pages/recovery_tribute_decay_sign/bindings/recovery_tribute_login_binding.dart';
@@ -83,6 +84,11 @@ class AppPages {
         name: Routes.chat,
         binding: SplurgeObjectChatBinding(),
         page: () => const SplurgeObjectThemeChat(),
+        transition: Transition.rightToLeft,
+        transitionDuration: transitionDuraiton),
+    GetPage(
+        name: Routes.message,
+        page: () => const LiberalGaffeClothMessage(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
   ];

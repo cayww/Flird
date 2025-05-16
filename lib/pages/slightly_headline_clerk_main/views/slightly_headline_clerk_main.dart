@@ -755,7 +755,10 @@ class WheatBreezeMarginMenu extends StatelessWidget {
         children: [
           Gap(18.h),
           ListTile(
-            onTap: () {},
+            onTap: () {
+              Navigator.pop(context);
+              Get.toNamed(Routes.message);
+            },
             dense: true,
             horizontalTitleGap: 8.w,
             contentPadding: EdgeInsets.fromLTRB(14.w, 0.0, 10.w, 0.0),
