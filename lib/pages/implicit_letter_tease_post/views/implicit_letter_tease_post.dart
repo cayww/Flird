@@ -268,7 +268,7 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                                 selectedResult!.first;
                           }
                         },
-                        child: Builder(builder: (context) {
+                        child: Obx(() {
                           if (controller.videoAssetEntity.value != null) {
                             return Container(
                               width: double.infinity,
@@ -338,6 +338,7 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                             return;
                           }
                           controller.isLoading.value = true;
+                          await Future.delayed(854.milliseconds);
                           final postVideo = await saveBytesToFile(
                               (await controller
                                   .videoAssetEntity.value!.originBytes)!,
@@ -364,7 +365,13 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                                       appetiteBirdsBishopType:
                                           controller.relatedBowelType));
                           if (result != null) {
-                            //TODO 跳转
+                            Get.offAndToNamed(Routes.postDetail, arguments: {
+                              'postEntity': result.toJsonString(),
+                              'userEntity':
+                                  AppState().currentUserEntity.toJsonString(),
+                            });
+                          } else {
+                            controller.isLoading.value = false;
                           }
                         },
                         style:
