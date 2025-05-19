@@ -5,6 +5,7 @@ import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
 import 'package:flird/providers/app_state/app_state.dart';
 import 'package:flird/routes/app_pages.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -194,6 +195,13 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                                   )),
                               TextSpan(
                                   text: 'Our Terms',
+                                  recognizer: TapGestureRecognizer()
+                                    ..onTap = () {
+                                      Get.toNamed(Routes.agreement, arguments: {
+                                        'seriousNoticeLatestUrl':
+                                            'https://www.baidu.com/s?wd=users'
+                                      });
+                                    },
                                   style: GoogleFonts.roboto(
                                     decoration: TextDecoration.underline,
                                     color:
@@ -211,6 +219,13 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                                   )),
                               TextSpan(
                                   text: ' Privacy Policy',
+                                  recognizer: TapGestureRecognizer()
+                                    ..onTap = () {
+                                      Get.toNamed(Routes.agreement, arguments: {
+                                        'seriousNoticeLatestUrl':
+                                            'https://www.baidu.com/s?wd=privacy'
+                                      });
+                                    },
                                   style: GoogleFonts.roboto(
                                     fontSize: 10.sp,
                                     decoration: TextDecoration.underline,

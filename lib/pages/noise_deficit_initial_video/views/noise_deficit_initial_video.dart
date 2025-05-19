@@ -345,7 +345,7 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                               int likeCount = 0;
                               if (snapshot.hasData) {
                                 likeCount = snapshot.data!.length;
-                                for (var element in snapshot.data!) {
+                                for (final element in snapshot.data!) {
                                   if (element.promoteEmpireBirthUser ==
                                       AppState()
                                           .currentUserEntity

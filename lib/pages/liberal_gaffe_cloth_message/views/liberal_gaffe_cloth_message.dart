@@ -1,5 +1,6 @@
 import 'package:drift/drift.dart' as d;
 import 'package:flird/common/components/common.dart';
+import 'package:flird/common/components/pattern_beauty_learn_empty.dart';
 import 'package:flird/common/utils/common.dart';
 import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
 import 'package:flird/providers/app_state/app_state.dart';
@@ -87,6 +88,9 @@ class _LiberalGaffeClothMessageState extends State<LiberalGaffeClothMessage> {
                           return const SizedBox.shrink();
                         }
                         final chatList = snapshot.data!;
+                        if (chatList.isEmpty) {
+                          return const PatternBeautyLearnEmpty();
+                        }
                         return ListView.separated(
                             physics: const ClampingScrollPhysics(),
                             padding: EdgeInsets.symmetric(horizontal: 20.w),

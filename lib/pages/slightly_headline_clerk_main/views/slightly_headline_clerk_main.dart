@@ -1,6 +1,7 @@
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:drift/drift.dart' as d;
 import 'package:flird/common/components/common.dart';
+import 'package:flird/common/components/pattern_beauty_learn_empty.dart';
 import 'package:flird/common/components/reptile_chord_more_dialog.dart';
 import 'package:flird/common/utils/common.dart';
 import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery_post_like.drift.dart';
@@ -286,6 +287,9 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                 color: Colors.white, size: 30.h));
                       }
                       final postList = snapshot.data!;
+                      if (postList.isEmpty) {
+                        return const PatternBeautyLearnEmpty();
+                      }
                       return ListView.separated(
                         padding: EdgeInsets.only(left: 20.w),
                         scrollDirection: Axis.horizontal,
@@ -519,7 +523,7 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                           int likeCount = 0;
                                           if (snapshot.hasData) {
                                             likeCount = snapshot.data!.length;
-                                            for (var element
+                                            for (final element
                                                 in snapshot.data!) {
                                               if (element
                                                       .promoteEmpireBirthUser ==

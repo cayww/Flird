@@ -1,3 +1,5 @@
+import 'package:flird/pages/bride_bless_pupil_agreement/bindings/bride_bless_agreement_binding.dart';
+import 'package:flird/pages/bride_bless_pupil_agreement/views/bride_bless_pupil_agreement.dart';
 import 'package:flird/pages/debut_maximum_council_wallet/bindings/motion_tolerate_wallet_binding.dart';
 import 'package:flird/pages/debut_maximum_council_wallet/views/motion_tolerate_chance_wallet.dart';
 import 'package:flird/pages/gossip_retain_sacrifice_splash/bindings/gossip_retain_splash_binding.dart';
@@ -16,6 +18,7 @@ import 'package:flird/pages/splurge_object_theme_chat/bindings/splurge_object_ch
 import 'package:flird/pages/splurge_object_theme_chat/views/splurge_object_theme_chat.dart';
 import 'package:flird/pages/strap_abundant_entire_profile/views/strap_abundant_entire_profile.dart';
 import 'package:flird/pages/structure_jockey_table_guide/views/structure_jockey_table_guide.dart';
+import 'package:flird/pages/tempt_soprano_irony_block/views/tempt_soprano_irony_block.dart';
 import 'package:flird/pages/toward_chorus_weapon_report/views/toward_chorus_weapon_report.dart';
 import 'package:get/get.dart';
 
@@ -95,6 +98,17 @@ class AppPages {
     GetPage(
         name: Routes.profile,
         page: () => const StrapAbundantEntireProfile(),
+        transition: Transition.rightToLeft,
+        transitionDuration: transitionDuraiton),
+    GetPage(
+        name: Routes.blocklist,
+        page: () => const TemptSopranoIronyBlock(),
+        transition: Transition.rightToLeft,
+        transitionDuration: transitionDuraiton),
+    GetPage(
+        name: Routes.agreement,
+        binding: BrideBlessAgreementBinding(),
+        page: () => const BrideBlessPupilAgreement(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
   ];

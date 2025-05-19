@@ -31,6 +31,11 @@ class NoiseDeficitVideoController extends GetxController {
               update();
             });
     }
+    videoPlayerController.addListener(() {
+      if (videoPlayerController.value.isCompleted) {
+        update();
+      }
+    });
   }
 
   @override

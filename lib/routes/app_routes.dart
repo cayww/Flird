@@ -14,4 +14,6 @@ abstract class Routes {
   static const chat = '/chat';
   static const message = '/message';
   static const profile = '/profile';
+  static const blocklist = '/blocklist';
+  static const agreement = '/agreement';
 }

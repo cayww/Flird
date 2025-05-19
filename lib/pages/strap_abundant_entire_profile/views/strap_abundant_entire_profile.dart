@@ -1,5 +1,6 @@
 import 'package:drift/drift.dart' as d;
 import 'package:flird/common/components/common.dart';
+import 'package:flird/common/components/pattern_beauty_learn_empty.dart';
 import 'package:flird/common/utils/common.dart';
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
@@ -8,12 +9,14 @@ import 'package:flird/providers/app_state/app_state.dart';
 import 'package:flird/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:provider/provider.dart';
+import 'package:wechat_assets_picker/wechat_assets_picker.dart';
 
 class StrapAbundantEntireProfile extends StatefulWidget {
   const StrapAbundantEntireProfile({super.key});
@@ -125,23 +128,53 @@ class _StrapAbundantEntireProfileState
           child: Column(
             children: [
               Gap(35.h),
-              Stack(
-                alignment: Alignment.bottomRight,
-                children: [
-                  ClipOval(
-                    child: imageFromPath(
-                        AppState().currentUserEntity.paradeMutualPaintPhoto,
-                        width: 115.h,
-                        height: 115.h,
-                        fit: BoxFit.cover),
-                  ),
-                  SvgPicture.asset(
-                    'assets/images/flird_profile_photo_edit.svg',
-                    width: 32.h,
-                    height: 32.h,
-                    fit: BoxFit.contain,
-                  )
-                ],
+              GestureDetector(
+                onTap: () async {
+                  final selectedResult = await AssetPicker.pickAssets(
+                    context,
+                    pickerConfig: const AssetPickerConfig(
+                      requestType: RequestType.image,
+                      maxAssets: 1,
+                    ),
+                  );
+                  if (selectedResult?.isNotEmpty ?? false) {
+                    await Future.delayed(945.milliseconds);
+                    final result = await saveBytesToFile(
+                        (await selectedResult![0].originBytes)!, 'photo.png');
+                    try {
+                      await (AppState()
+                              .driftDB
+                              .inviteSensitiveBroccoliUser
+                              .update()
+                            ..whereSamePrimaryKey(AppState().currentUserEntity))
+                          .write(InviteSensitiveBroccoliUserCompanion(
+                              paradeMutualPaintPhoto: d.Value(result)));
+                      SmartDialog.showNotify(
+                        msg: 'Success',
+                        notifyType: NotifyType.success,
+                        alignment: Alignment.center,
+                      );
+                    } finally {}
+                  }
+                },
+                child: Stack(
+                  alignment: Alignment.bottomRight,
+                  children: [
+                    ClipOval(
+                      child: imageFromPath(
+                          AppState().currentUserEntity.paradeMutualPaintPhoto,
+                          width: 115.h,
+                          height: 115.h,
+                          fit: BoxFit.cover),
+                    ),
+                    SvgPicture.asset(
+                      'assets/images/flird_profile_photo_edit.svg',
+                      width: 32.h,
+                      height: 32.h,
+                      fit: BoxFit.contain,
+                    )
+                  ],
+                ),
               ),
               Gap(20.h),
               GestureDetector(
@@ -274,6 +307,9 @@ class _StrapAbundantEntireProfileState
                                   color: Colors.white, size: 30.h));
                         }
                         final postList = snapshot.data!;
+                        if (postList.isEmpty) {
+                          return const PatternBeautyLearnEmpty();
+                        }
                         return GridView.builder(
                             itemCount: postList.length,
                             gridDelegate:
@@ -609,7 +645,9 @@ class _LooseCasualtySettingBottomState
               color: const Color.fromRGBO(255, 255, 255, 0.15),
               borderRadius: BorderRadius.circular(16.r),
               child: ListTile(
-                onTap: () {},
+                onTap: () {
+                  Get.toNamed(Routes.blocklist);
+                },
                 dense: true,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16.r)),
@@ -618,7 +656,7 @@ class _LooseCasualtySettingBottomState
                   horizontal: 16.w,
                 ),
                 title: Text(
-                  'BlockList',
+                  'Blocklist',
                   style: GoogleFonts.roboto(
                       fontSize: 16.sp,
                       fontWeight: FontWeight.w700,
@@ -643,7 +681,11 @@ class _LooseCasualtySettingBottomState
               color: const Color.fromRGBO(255, 255, 255, 0.15),
               borderRadius: BorderRadius.circular(16.r),
               child: ListTile(
-                onTap: () {},
+                onTap: () {
+                  Get.toNamed(Routes.agreement, arguments: {
+                    'seriousNoticeLatestUrl': 'https://www.baidu.com/s?wd=users'
+                  });
+                },
                 dense: true,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16.r)),
@@ -677,7 +719,12 @@ class _LooseCasualtySettingBottomState
               color: const Color.fromRGBO(255, 255, 255, 0.15),
               borderRadius: BorderRadius.circular(16.r),
               child: ListTile(
-                onTap: () {},
+                onTap: () {
+                  Get.toNamed(Routes.agreement, arguments: {
+                    'seriousNoticeLatestUrl':
+                        'https://www.baidu.com/s?wd=privacy'
+                  });
+                },
                 dense: true,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16.r)),
