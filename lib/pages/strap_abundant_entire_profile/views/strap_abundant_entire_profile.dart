@@ -787,7 +787,7 @@ class _LooseCasualtySettingBottomState
                     backgroundColor: Colors.transparent,
                     fixedSize: Size(315.w, 48.h)),
                 child: Text(
-                  'Cancel account',
+                  'Delete Account',
                   style: GoogleFonts.roboto(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w700,

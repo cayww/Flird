@@ -237,11 +237,52 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                                 }
                               }
                             },
-                            child: SvgPicture.asset(
-                              'assets/images/flird_refresh_icon.svg',
-                              width: 44.h,
-                              height: 44.h,
-                              fit: BoxFit.contain,
+                            child: Stack(
+                              clipBehavior: Clip.none,
+                              children: [
+                                SvgPicture.asset(
+                                  'assets/images/flird_refresh_icon.svg',
+                                  width: 44.h,
+                                  height: 44.h,
+                                  fit: BoxFit.contain,
+                                ),
+                                Positioned(
+                                  top: -26.h,
+                                  child: Container(
+                                    width: 44.w,
+                                    height: 24.h,
+                                    padding: EdgeInsets.only(top: 3.h),
+                                    decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                            fit: BoxFit.fill,
+                                            image: AssetImage(
+                                                'assets/images/flird_post_ffd.png'))),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Image.asset(
+                                          'assets/images/flird_menu_coin.png',
+                                          width: 12.h,
+                                          height: 12.h,
+                                          fit: BoxFit.contain,
+                                        ),
+                                        Gap(2.w),
+                                        Text(
+                                          '-50',
+                                          style: GoogleFonts.roboto(
+                                              fontSize: 12.sp,
+                                              height: 1.h,
+                                              fontWeight: FontWeight.w700,
+                                              color: Colors.white),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                )
+                              ],
                             ),
                           ),
                         ],
