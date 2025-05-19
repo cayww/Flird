@@ -1,4 +1,6 @@
 import 'package:drift/drift.dart' as d;
+import 'package:flird/common/animations/animation_maps.dart';
+import 'package:flird/common/animations/animations.dart';
 import 'package:flird/common/components/common.dart';
 import 'package:flird/common/components/pattern_beauty_learn_empty.dart';
 import 'package:flird/common/utils/common.dart';
@@ -90,7 +92,7 @@ class _StrapAbundantEntireProfileState
               fontWeight: FontWeight.w700,
               color: Colors.white,
             ),
-          ),
+          ).animateOnPageLoad(animationMaps['xh']!),
           actions: [
             GestureDetector(
               onTap: () async {
@@ -174,7 +176,7 @@ class _StrapAbundantEntireProfileState
                       fit: BoxFit.contain,
                     )
                   ],
-                ),
+                ).animateOnPageLoad(animationMaps['xh']!),
               ),
               Gap(20.h),
               GestureDetector(
@@ -683,7 +685,7 @@ class _LooseCasualtySettingBottomState
               child: ListTile(
                 onTap: () {
                   Get.toNamed(Routes.agreement, arguments: {
-                    'seriousNoticeLatestUrl': 'https://www.baidu.com/s?wd=users'
+                    'seriousNoticeLatestUrl': 'https://app.vngjtq0p.link/users'
                   });
                 },
                 dense: true,
@@ -722,7 +724,7 @@ class _LooseCasualtySettingBottomState
                 onTap: () {
                   Get.toNamed(Routes.agreement, arguments: {
                     'seriousNoticeLatestUrl':
-                        'https://www.baidu.com/s?wd=privacy'
+                        'https://app.vngjtq0p.link/privacy'
                   });
                 },
                 dense: true,
@@ -957,6 +959,6 @@ class _VeteranCourtDeleteDialogState extends State<VeteranCourtDeleteDialog> {
           ),
         ),
       ],
-    );
+    ).animateOnPageLoad(animationMaps['xh']!);
   }
 }

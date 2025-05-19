@@ -1,4 +1,6 @@
 import 'package:drift/drift.dart' as d;
+import 'package:flird/common/animations/animation_maps.dart';
+import 'package:flird/common/animations/animations.dart';
 import 'package:flird/common/components/common.dart';
 import 'package:flird/common/utils/common.dart';
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
@@ -85,13 +87,13 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                ),
+                ).animateOnPageLoad(animationMaps['xh']!),
                 Gap(4.h),
                 Text(
                   'to extract keywords',
                   style: GoogleFonts.roboto(
                       fontSize: 16.sp, height: 1.h, color: Colors.white),
-                ),
+                ).animateOnPageLoad(animationMaps['xh']!),
                 Gap(16.25.h),
                 InkWell(
                   borderRadius: BorderRadius.circular(16.r),
@@ -121,7 +123,7 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                     width: 334.72.w,
                     height: 231.49.h,
                     fit: BoxFit.contain,
-                  ),
+                  ).animateOnPageLoad(animationMaps['xh']!),
                 ),
                 Gap(34.25.h),
                 Padding(
@@ -387,7 +389,7 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                                   color: Colors.white,
                                 ),
                               )),
-                  ),
+                  ).animateOnPageLoad(animationMaps['sh']!),
                 ),
               ],
             ),
@@ -569,7 +571,7 @@ class _PressUnawarePayDialogState extends State<PressUnawarePayDialog> {
           ),
         ),
       ],
-    );
+    ).animateOnPageLoad(animationMaps['xh']!);
   }
 }
 
@@ -672,6 +674,6 @@ class _PressUnawareInsufDialogState extends State<PressUnawareInsufDialog> {
           ),
         ),
       ],
-    );
+    ).animateOnPageLoad(animationMaps['xh']!);
   }
 }

@@ -1,5 +1,7 @@
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:drift/drift.dart' as d;
+import 'package:flird/common/animations/animation_maps.dart';
+import 'package:flird/common/animations/animations.dart';
 import 'package:flird/common/components/common.dart';
 import 'package:flird/common/components/pattern_beauty_learn_empty.dart';
 import 'package:flird/common/components/reptile_chord_more_dialog.dart';
@@ -10,6 +12,7 @@ import 'package:flird/db/database/tables/slope_cabinet_branch_keyword/slope_cabi
 import 'package:flird/providers/app_state/app_state.dart';
 import 'package:flird/routes/app_pages.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
@@ -98,7 +101,7 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                               ),
                             )
                           ],
-                        ),
+                        ).animateOnPageLoad(animationMaps['xh']!),
                         Gap(40.h),
                         Text(
                           'Discover',
@@ -169,7 +172,7 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                     )
                                   ],
                                 ),
-                              ),
+                              ).animateOnPageLoad(animationMaps['yh']!),
                             ),
                             GestureDetector(
                               onTap: () {
@@ -218,7 +221,7 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                     )
                                   ],
                                 ),
-                              ),
+                              ).animateOnPageLoad(animationMaps['zh']!),
                             ),
                           ],
                         )
@@ -586,7 +589,23 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                           );
                                         }))
                               ],
-                            ),
+                            ).animateOnPageLoad(animationMaps['zdy']!,
+                                effects: [
+                                  FadeEffect(
+                                    curve: Curves.easeInOut,
+                                    delay: (index * 40).ms,
+                                    duration: 211.0.ms,
+                                    begin: 0.0,
+                                    end: 1.0,
+                                  ),
+                                  MoveEffect(
+                                    curve: Curves.easeInOut,
+                                    delay: (index * 40).ms,
+                                    duration: 211.0.ms,
+                                    begin: const Offset(0.0, -21.0),
+                                    end: const Offset(0.0, 0.0),
+                                  ),
+                                ]),
                           );
                         },
                         separatorBuilder: (BuildContext context, int index) {
@@ -834,7 +853,7 @@ class WheatBreezeMarginMenu extends StatelessWidget {
           ),
         ],
       ),
-    );
+    ).animateOnPageLoad(animationMaps['xh']!);
   }
 }
 
@@ -1141,6 +1160,6 @@ class _ExtraObtainAddKeywordState extends State<ExtraObtainAddKeyword> {
           ),
         ),
       ],
-    );
+    ).animateOnPageLoad(animationMaps['xh']!);
   }
 }

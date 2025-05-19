@@ -2,6 +2,8 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:device_info_plus/device_info_plus.dart';
+import 'package:flird/common/animations/animation_maps.dart';
+import 'package:flird/common/animations/animations.dart';
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
 import 'package:flird/providers/app_state/app_state.dart';
 import 'package:flird/routes/app_pages.dart';
@@ -52,7 +54,7 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                           fontSize: 28.sp,
                           fontWeight: FontWeight.w700,
                           color: const Color.fromRGBO(255, 138, 229, 1)))
-                ])),
+                ])).animateOnPageLoad(animationMaps['xh']!),
                 Gap(40.h),
                 Container(
                   decoration: BoxDecoration(
@@ -199,7 +201,7 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                                     ..onTap = () {
                                       Get.toNamed(Routes.agreement, arguments: {
                                         'seriousNoticeLatestUrl':
-                                            'https://www.baidu.com/s?wd=users'
+                                            'https://app.vngjtq0p.link/users'
                                       });
                                     },
                                   style: GoogleFonts.roboto(
@@ -223,7 +225,7 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                                     ..onTap = () {
                                       Get.toNamed(Routes.agreement, arguments: {
                                         'seriousNoticeLatestUrl':
-                                            'https://www.baidu.com/s?wd=privacy'
+                                            'https://app.vngjtq0p.link/privacy'
                                       });
                                     },
                                   style: GoogleFonts.roboto(
@@ -247,7 +249,7 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                       Gap(48.h)
                     ],
                   ),
-                )
+                ).animateOnPageLoad(animationMaps['sh']!)
               ],
             ),
           ),

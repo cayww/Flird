@@ -1,4 +1,6 @@
 import 'package:easy_debounce/easy_debounce.dart';
+import 'package:flird/common/animations/animation_maps.dart';
+import 'package:flird/common/animations/animations.dart';
 import 'package:flird/common/components/common.dart';
 import 'package:flird/pages/debut_maximum_council_wallet/controllers/motion_tolerate_wallet_controller.dart';
 import 'package:flird/providers/app_state/app_state.dart';
@@ -190,7 +192,22 @@ class _MotionTolerateChanceWalletState
                             )
                           ],
                         ),
-                      ),
+                      ).animateOnPageLoad(animationMaps['zdy']!, effects: [
+                        FadeEffect(
+                          curve: Curves.easeInOut,
+                          delay: (40 * index).ms,
+                          duration: 211.0.ms,
+                          begin: 0.0,
+                          end: 1.0,
+                        ),
+                        MoveEffect(
+                          curve: Curves.easeInOut,
+                          delay: (40 * index).ms,
+                          duration: 211.0.ms,
+                          begin: const Offset(0.0, -21.0),
+                          end: const Offset(0.0, 0.0),
+                        )
+                      ]),
                     );
                   },
                   separatorBuilder: (_, __) => Gap(12.h),

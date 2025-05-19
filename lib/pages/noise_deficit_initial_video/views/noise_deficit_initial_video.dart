@@ -1,4 +1,6 @@
 import 'package:drift/drift.dart' as d;
+import 'package:flird/common/animations/animation_maps.dart';
+import 'package:flird/common/animations/animations.dart';
 import 'package:flird/common/components/common.dart';
 import 'package:flird/common/components/reptile_chord_more_dialog.dart';
 import 'package:flird/common/utils/common.dart';
@@ -82,7 +84,7 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                 ),
               ],
             ),
-          ),
+          ).animateOnPageLoad(animationMaps['xh']!),
           actions: [
             if (controller.userEntity.loungeRealizeEmphasisUid !=
                 AppState().currentUserEntity.loungeRealizeEmphasisUid)
@@ -280,7 +282,7 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                             ),
                           ),
                         ],
-                      ),
+                      ).animateOnPageLoad(animationMaps['sh']!),
                     ),
                     Gap(11.w),
                     Column(
@@ -406,7 +408,7 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                               );
                             })
                       ],
-                    )
+                    ).animateOnPageLoad(animationMaps['zh']!)
                   ],
                 ),
               ),

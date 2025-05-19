@@ -1,14 +1,17 @@
+import 'package:flird/common/animations/animation_maps.dart';
+import 'package:flird/common/animations/animations.dart';
 import 'package:flird/common/components/common.dart';
 import 'package:flird/pages/recovery_tribute_decay_sign/controllers/recovery_tribute_login_controller.dart';
 import 'package:flird/providers/app_state/app_state.dart';
 import 'package:flird/routes/app_pages.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
-import 'package:get/get.dart';
+import 'package:get/get.dart' hide GetNumUtils;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:string_validator/string_validator.dart';
@@ -74,7 +77,22 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                     height: 1.h,
                     color: Colors.white,
                   ),
-                ),
+                ).animateOnPageLoad(animationMaps['zdy']!, effects: [
+                  FadeEffect(
+                    curve: Curves.easeInOut,
+                    delay: 0.0.ms,
+                    duration: 211.0.ms,
+                    begin: 0.0,
+                    end: 1.0,
+                  ),
+                  MoveEffect(
+                    curve: Curves.easeInOut,
+                    delay: 0.0.ms,
+                    duration: 211.0.ms,
+                    begin: const Offset(-21.0, 0.0),
+                    end: const Offset(0.0, 0.0),
+                  ),
+                ]),
                 Flexible(
                     child: Gap(
                   58.h,
@@ -104,7 +122,22 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                               ),
                             ),
                           ],
-                        ),
+                        ).animateOnPageLoad(animationMaps['zdy']!, effects: [
+                          FadeEffect(
+                            curve: Curves.easeInOut,
+                            delay: 30.0.ms,
+                            duration: 211.0.ms,
+                            begin: 0.0,
+                            end: 1.0,
+                          ),
+                          MoveEffect(
+                            curve: Curves.easeInOut,
+                            delay: 30.0.ms,
+                            duration: 211.0.ms,
+                            begin: const Offset(-21.0, 0.0),
+                            end: const Offset(0.0, 0.0),
+                          ),
+                        ]),
                         Gap(14.h),
                         TextFormField(
                           controller: controller.emailController,
@@ -136,7 +169,22 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                           ),
                           cursorColor: Colors.white,
                           validator: controller.emailValidator,
-                        ),
+                        ).animateOnPageLoad(animationMaps['zdy']!, effects: [
+                          FadeEffect(
+                            curve: Curves.easeInOut,
+                            delay: 60.0.ms,
+                            duration: 211.0.ms,
+                            begin: 0.0,
+                            end: 1.0,
+                          ),
+                          MoveEffect(
+                            curve: Curves.easeInOut,
+                            delay: 60.0.ms,
+                            duration: 211.0.ms,
+                            begin: const Offset(-21.0, 0.0),
+                            end: const Offset(0.0, 0.0),
+                          ),
+                        ]),
                         Gap(38.h),
                         Row(
                           children: [
@@ -157,39 +205,71 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                               ),
                             ),
                           ],
-                        ),
+                        ).animateOnPageLoad(animationMaps['zdy']!, effects: [
+                          FadeEffect(
+                            curve: Curves.easeInOut,
+                            delay: 90.0.ms,
+                            duration: 211.0.ms,
+                            begin: 0.0,
+                            end: 1.0,
+                          ),
+                          MoveEffect(
+                            curve: Curves.easeInOut,
+                            delay: 90.0.ms,
+                            duration: 211.0.ms,
+                            begin: const Offset(-21.0, 0.0),
+                            end: const Offset(0.0, 0.0),
+                          ),
+                        ]),
                         Gap(16.h),
                         TextFormField(
-                            controller: controller.passwordController,
-                            textInputAction: TextInputAction.done,
-                            focusNode: controller.passwordFocusNode,
-                            keyboardType: TextInputType.visiblePassword,
-                            obscureText: true,
-                            style: GoogleFonts.roboto(
-                              fontSize: 14.sp,
-                              height: 1.h,
-                              color: const Color.fromRGBO(255, 255, 255, 1),
-                            ),
-                            decoration: InputDecoration(
-                              hintText: 'Enter Your Password',
-                              filled: true,
-                              fillColor:
-                                  const Color.fromRGBO(255, 255, 255, 0.15),
-                              hintStyle: GoogleFonts.roboto(
-                                fontSize: 14.sp,
-                                height: 1.h,
-                                color: const Color.fromRGBO(255, 255, 255, 0.5),
-                              ),
-                              border: outlineInputBorder,
-                              focusedBorder: outlineInputBorder,
-                              enabledBorder: outlineInputBorder,
-                              errorBorder: outlineInputBorder,
-                              focusedErrorBorder: outlineInputBorder,
-                              contentPadding: EdgeInsets.symmetric(
-                                  horizontal: 24.w, vertical: 16.h),
-                            ),
-                            cursorColor: Colors.white,
-                            validator: controller.loginPasswordValidator),
+                                controller: controller.passwordController,
+                                textInputAction: TextInputAction.done,
+                                focusNode: controller.passwordFocusNode,
+                                keyboardType: TextInputType.visiblePassword,
+                                obscureText: true,
+                                style: GoogleFonts.roboto(
+                                  fontSize: 14.sp,
+                                  height: 1.h,
+                                  color: const Color.fromRGBO(255, 255, 255, 1),
+                                ),
+                                decoration: InputDecoration(
+                                  hintText: 'Enter Your Password',
+                                  filled: true,
+                                  fillColor:
+                                      const Color.fromRGBO(255, 255, 255, 0.15),
+                                  hintStyle: GoogleFonts.roboto(
+                                    fontSize: 14.sp,
+                                    height: 1.h,
+                                    color: const Color.fromRGBO(
+                                        255, 255, 255, 0.5),
+                                  ),
+                                  border: outlineInputBorder,
+                                  focusedBorder: outlineInputBorder,
+                                  enabledBorder: outlineInputBorder,
+                                  errorBorder: outlineInputBorder,
+                                  focusedErrorBorder: outlineInputBorder,
+                                  contentPadding: EdgeInsets.symmetric(
+                                      horizontal: 24.w, vertical: 16.h),
+                                ),
+                                cursorColor: Colors.white,
+                                validator: controller.loginPasswordValidator)
+                            .animateOnPageLoad(animationMaps['zdy']!, effects: [
+                          FadeEffect(
+                            curve: Curves.easeInOut,
+                            delay: 120.0.ms,
+                            duration: 211.0.ms,
+                            begin: 0.0,
+                            end: 1.0,
+                          ),
+                          MoveEffect(
+                            curve: Curves.easeInOut,
+                            delay: 120.0.ms,
+                            duration: 211.0.ms,
+                            begin: const Offset(-21.0, 0.0),
+                            end: const Offset(0.0, 0.0),
+                          ),
+                        ]),
                       ]),
                 ),
                 Flexible(child: Gap(120.h)),
