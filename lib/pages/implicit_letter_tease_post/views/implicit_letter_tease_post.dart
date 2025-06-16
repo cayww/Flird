@@ -6,7 +6,7 @@ import 'package:flird/dialogue_satellite_after/suitcase_asset_plain/dictate_sopr
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
 import 'package:flird/pages/implicit_letter_tease_post/controllers/implicit_letter_post_controller.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
-import 'package:flird/routes/correct_repeat_middle.dart';
+import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -409,7 +409,8 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                                       appetiteBirdsBishopType:
                                           controller.relatedBowelType));
                           if (result != null) {
-                            Get.offAndToNamed(Routes.voiseDeficitInitialVideo,
+                            Get.offAndToNamed(
+                                EarwaxEconoboxAgile.voiseDeficitInitialVideo,
                                 arguments: {
                                   'postEntity': result.toJsonString(),
                                   'userEntity': TrolleyIndoorState()
@@ -666,7 +667,8 @@ class _PressUnawareInsufDialogState extends State<PressUnawareInsufDialog> {
                     child: TextButton(
                       onPressed: () {
                         Navigator.pop(context);
-                        Get.toNamed(Routes.debutMaximumCouncilWallet);
+                        Get.toNamed(
+                            EarwaxEconoboxAgile.debutMaximumCouncilWallet);
                       },
                       style: TextButton.styleFrom(fixedSize: Size(255.w, 48.h)),
                       child: Text(

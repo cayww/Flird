@@ -7,7 +7,7 @@ import 'package:flird/dialogue_satellite_after/suitcase_asset_plain/dictate_sopr
 import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery_post_like.drift.dart';
 import 'package:flird/pages/noise_deficit_initial_video/controllers/noise_deficit_video_controller.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
-import 'package:flird/routes/correct_repeat_middle.dart';
+import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -320,7 +320,9 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                                     controller.videoPlayerController.pause();
                                     controller.update();
                                   }
-                                  Get.toNamed(Routes.splurgeObjectThemeChat,
+                                  Get.toNamed(
+                                      EarwaxEconoboxAgile
+                                          .splurgeObjectThemeChat,
                                       arguments: {
                                         'userEntity':
                                             controller.userEntity.toJsonString()

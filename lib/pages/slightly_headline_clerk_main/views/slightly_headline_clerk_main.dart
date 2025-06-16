@@ -10,7 +10,7 @@ import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
 import 'package:flird/db/database/tables/slope_cabinet_branch_keyword/slope_cabinet_branch_keyword.drift.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
-import 'package:flird/routes/correct_repeat_middle.dart';
+import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -80,7 +80,8 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                             }),
                             GestureDetector(
                               onTap: () {
-                                Get.toNamed(Routes.strapAbundantEntireProfile);
+                                Get.toNamed(EarwaxEconoboxAgile
+                                    .strapAbundantEntireProfile);
                               },
                               child: Container(
                                 width: 48.h,
@@ -129,7 +130,8 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                           children: [
                             GestureDetector(
                               onTap: () {
-                                Get.toNamed(Routes.implicitLetterTeasePost,
+                                Get.toNamed(
+                                    EarwaxEconoboxAgile.implicitLetterTeasePost,
                                     arguments: {
                                       'relatedBowelType': 'Pop songs',
                                     });
@@ -180,7 +182,8 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                             ),
                             GestureDetector(
                               onTap: () {
-                                Get.toNamed(Routes.implicitLetterTeasePost,
+                                Get.toNamed(
+                                    EarwaxEconoboxAgile.implicitLetterTeasePost,
                                     arguments: {
                                       'relatedBowelType': 'Rap',
                                     });
@@ -309,7 +312,8 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                               .consciousExcessElectUser.prefetchedData!.first;
                           return GestureDetector(
                             onTap: () {
-                              Get.toNamed(Routes.voiseDeficitInitialVideo,
+                              Get.toNamed(
+                                  EarwaxEconoboxAgile.voiseDeficitInitialVideo,
                                   arguments: {
                                     'postEntity': postEntity.toJsonString(),
                                     'userEntity': userEntity.toJsonString(),
@@ -794,7 +798,7 @@ class WheatBreezeMarginMenu extends StatelessWidget {
           ListTile(
             onTap: () {
               Navigator.pop(context);
-              Get.toNamed(Routes.liberalGaffeClothMessage);
+              Get.toNamed(EarwaxEconoboxAgile.liberalGaffeClothMessage);
             },
             dense: true,
             horizontalTitleGap: 8.w,
@@ -831,7 +835,7 @@ class WheatBreezeMarginMenu extends StatelessWidget {
           ListTile(
             onTap: () {
               Navigator.pop(context);
-              Get.toNamed(Routes.debutMaximumCouncilWallet);
+              Get.toNamed(EarwaxEconoboxAgile.debutMaximumCouncilWallet);
             },
             dense: true,
             horizontalTitleGap: 8.w,

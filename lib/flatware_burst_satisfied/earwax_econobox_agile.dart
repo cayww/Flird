@@ -1,7 +1,7 @@
 part of 'correct_repeat_middle.dart';
 
-abstract class Routes {
-  Routes._();
+abstract class EarwaxEconoboxAgile {
+  EarwaxEconoboxAgile._();
   static const gossipRetainSacrificeSplash = '/gossipRetainSacrificeSplash';
   static const structureJockeyTableGuide = '/structureJockeyTableGuide';
   static const slightlyHeadlineClerkMain = '/slightlyHeadlineClerkMain';

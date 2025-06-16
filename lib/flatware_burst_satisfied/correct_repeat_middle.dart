@@ -27,86 +27,86 @@ part 'earwax_econobox_agile.dart';
 class CorrectRepeatMiddle {
   CorrectRepeatMiddle._();
 
-  static const initial = Routes.gossipRetainSacrificeSplash;
+  static const initial = EarwaxEconoboxAgile.gossipRetainSacrificeSplash;
   static final transitionDuraiton = 120.milliseconds;
   static final routes = [
     GetPage(
-      name: Routes.gossipRetainSacrificeSplash,
+      name: EarwaxEconoboxAgile.gossipRetainSacrificeSplash,
       binding: GossipRetainSplashBinding(),
       page: () => const GossipRetainSacrificeSplash(),
       transition: Transition.noTransition,
     ),
     GetPage(
-      name: Routes.structureJockeyTableGuide,
+      name: EarwaxEconoboxAgile.structureJockeyTableGuide,
       page: () => const StructureJockeyTableGuide(),
       transition: Transition.noTransition,
     ),
     GetPage(
-      name: Routes.slightlyHeadlineClerkMain,
+      name: EarwaxEconoboxAgile.slightlyHeadlineClerkMain,
       page: () => const SlightlyHeadlineClerkMain(),
       transition: Transition.noTransition,
     ),
     GetPage(
-      name: Routes.recoveryTributeDecayRegister,
+      name: EarwaxEconoboxAgile.recoveryTributeDecayRegister,
       binding: RecoveryTributeRegisterBinding(),
       page: () => const RecoveryTributeDecayRegister(),
       transitionDuration: transitionDuraiton,
       transition: Transition.rightToLeft,
     ),
     GetPage(
-      name: Routes.recoveryTributeDecayLogin,
+      name: EarwaxEconoboxAgile.recoveryTributeDecayLogin,
       binding: RecoveryTributeLoginBinding(),
       page: () => const RecoveryTributeDecayLogin(),
       transitionDuration: transitionDuraiton,
       transition: Transition.rightToLeft,
     ),
     GetPage(
-      name: Routes.implicitLetterTeasePost,
+      name: EarwaxEconoboxAgile.implicitLetterTeasePost,
       binding: ImplicitLetterPostBinding(),
       page: () => const ImplicitLetterTeasePost(),
       transitionDuration: transitionDuraiton,
       transition: Transition.rightToLeft,
     ),
     GetPage(
-        name: Routes.debutMaximumCouncilWallet,
+        name: EarwaxEconoboxAgile.debutMaximumCouncilWallet,
         binding: DebutMaximumWalletBinding(),
         page: () => const DebutMaximumCouncilWallet(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
-        name: Routes.voiseDeficitInitialVideo,
+        name: EarwaxEconoboxAgile.voiseDeficitInitialVideo,
         binding: NoiseDeficitVideoBinding(),
         page: () => const NoiseDeficitInitialVideo(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
-        name: Routes.towardChorusWeaponReport,
+        name: EarwaxEconoboxAgile.towardChorusWeaponReport,
         page: () => const TowardChorusWeaponReport(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
-        name: Routes.splurgeObjectThemeChat,
+        name: EarwaxEconoboxAgile.splurgeObjectThemeChat,
         binding: SplurgeObjectChatBinding(),
         page: () => const SplurgeObjectThemeChat(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
-        name: Routes.liberalGaffeClothMessage,
+        name: EarwaxEconoboxAgile.liberalGaffeClothMessage,
         page: () => const LiberalGaffeClothMessage(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
-        name: Routes.strapAbundantEntireProfile,
+        name: EarwaxEconoboxAgile.strapAbundantEntireProfile,
         page: () => const StrapAbundantEntireProfile(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
-        name: Routes.temptSopranoIronyBlock,
+        name: EarwaxEconoboxAgile.temptSopranoIronyBlock,
         page: () => const TemptSopranoIronyBlock(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
-        name: Routes.brideBlessPupilAgreement,
+        name: EarwaxEconoboxAgile.brideBlessPupilAgreement,
         binding: BrideBlessAgreementBinding(),
         page: () => const BrideBlessPupilAgreement(),
         transition: Transition.rightToLeft,

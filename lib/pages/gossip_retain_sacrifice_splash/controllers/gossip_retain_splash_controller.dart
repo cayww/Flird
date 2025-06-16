@@ -1,5 +1,5 @@
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
-import 'package:flird/routes/correct_repeat_middle.dart';
+import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';
 import 'package:get/get.dart';
 
 class GossipRetainSplashController extends GetxController {
@@ -17,10 +17,10 @@ class GossipRetainSplashController extends GetxController {
         TrolleyIndoorState().straightExtentStrip(result);
       }
       Get.offAllNamed(result == null
-          ? Routes.structureJockeyTableGuide
-          : Routes.slightlyHeadlineClerkMain);
+          ? EarwaxEconoboxAgile.structureJockeyTableGuide
+          : EarwaxEconoboxAgile.slightlyHeadlineClerkMain);
     } else {
-      Get.offAllNamed(Routes.structureJockeyTableGuide);
+      Get.offAllNamed(EarwaxEconoboxAgile.structureJockeyTableGuide);
     }
   }
 }

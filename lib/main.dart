@@ -6,8 +6,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
-import 'package:flird/routes/correct_repeat_middle.dart';
-import 'package:flird/routes/crisis_consider_acute.dart';
+import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';
+import 'package:flird/flatware_burst_satisfied/crisis_consider_acute.dart';
 
 import 'package:hive_ce/hive.dart';
 import 'package:path_provider/path_provider.dart';
