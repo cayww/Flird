@@ -6,7 +6,7 @@ import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growt
 import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
-import 'package:flird/routes/app_pages.dart';
+import 'package:flird/routes/correct_repeat_middle.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -70,7 +70,7 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                   child: TextButton(
                     onPressed: () {
                       if (isAgreement.value) {
-                        Get.toNamed(Routes.login);
+                        Get.toNamed(Routes.recoveryTributeDecayLogin);
                       }
                     },
                     style: TextButton.styleFrom(
@@ -108,7 +108,7 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                               .getUserByEmail(deviceID));
                           if (user != null) {
                             TrolleyIndoorState().straightExtentStrip(user);
-                            Get.offAllNamed(Routes.main);
+                            Get.offAllNamed(Routes.slightlyHeadlineClerkMain);
                             return;
                           }
                           final newUser = await TrolleyIndoorState()
@@ -125,7 +125,7 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                               );
                           if (newUser != null) {
                             TrolleyIndoorState().straightExtentStrip(newUser);
-                            Get.offAllNamed(Routes.main);
+                            Get.offAllNamed(Routes.slightlyHeadlineClerkMain);
                           }
                         }
                       } finally {
@@ -199,10 +199,12 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                                   text: 'Our Terms',
                                   recognizer: TapGestureRecognizer()
                                     ..onTap = () {
-                                      Get.toNamed(Routes.agreement, arguments: {
-                                        'seriousNoticeLatestUrl':
-                                            'https://app.vngjtq0p.link/users'
-                                      });
+                                      Get.toNamed(
+                                          Routes.brideBlessPupilAgreement,
+                                          arguments: {
+                                            'seriousNoticeLatestUrl':
+                                                'https://app.vngjtq0p.link/users'
+                                          });
                                     },
                                   style: GoogleFonts.roboto(
                                     decoration: TextDecoration.underline,
@@ -223,10 +225,12 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                                   text: ' Privacy Policy',
                                   recognizer: TapGestureRecognizer()
                                     ..onTap = () {
-                                      Get.toNamed(Routes.agreement, arguments: {
-                                        'seriousNoticeLatestUrl':
-                                            'https://app.vngjtq0p.link/privacy'
-                                      });
+                                      Get.toNamed(
+                                          Routes.brideBlessPupilAgreement,
+                                          arguments: {
+                                            'seriousNoticeLatestUrl':
+                                                'https://app.vngjtq0p.link/privacy'
+                                          });
                                     },
                                   style: GoogleFonts.roboto(
                                     fontSize: 10.sp,

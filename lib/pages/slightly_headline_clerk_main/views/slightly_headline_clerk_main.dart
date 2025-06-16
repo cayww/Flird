@@ -10,7 +10,7 @@ import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
 import 'package:flird/db/database/tables/slope_cabinet_branch_keyword/slope_cabinet_branch_keyword.drift.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
-import 'package:flird/routes/app_pages.dart';
+import 'package:flird/routes/correct_repeat_middle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -80,7 +80,7 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                             }),
                             GestureDetector(
                               onTap: () {
-                                Get.toNamed(Routes.profile);
+                                Get.toNamed(Routes.strapAbundantEntireProfile);
                               },
                               child: Container(
                                 width: 48.h,
@@ -129,9 +129,10 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                           children: [
                             GestureDetector(
                               onTap: () {
-                                Get.toNamed(Routes.post, arguments: {
-                                  'relatedBowelType': 'Pop songs',
-                                });
+                                Get.toNamed(Routes.implicitLetterTeasePost,
+                                    arguments: {
+                                      'relatedBowelType': 'Pop songs',
+                                    });
                               },
                               child: Container(
                                 width: 160.w,
@@ -179,9 +180,10 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                             ),
                             GestureDetector(
                               onTap: () {
-                                Get.toNamed(Routes.post, arguments: {
-                                  'relatedBowelType': 'Rap',
-                                });
+                                Get.toNamed(Routes.implicitLetterTeasePost,
+                                    arguments: {
+                                      'relatedBowelType': 'Rap',
+                                    });
                               },
                               child: Container(
                                 width: 160.w,
@@ -307,10 +309,11 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                               .consciousExcessElectUser.prefetchedData!.first;
                           return GestureDetector(
                             onTap: () {
-                              Get.toNamed(Routes.postDetail, arguments: {
-                                'postEntity': postEntity.toJsonString(),
-                                'userEntity': userEntity.toJsonString(),
-                              });
+                              Get.toNamed(Routes.voiseDeficitInitialVideo,
+                                  arguments: {
+                                    'postEntity': postEntity.toJsonString(),
+                                    'userEntity': userEntity.toJsonString(),
+                                  });
                             },
                             child: Stack(
                               children: [
@@ -791,7 +794,7 @@ class WheatBreezeMarginMenu extends StatelessWidget {
           ListTile(
             onTap: () {
               Navigator.pop(context);
-              Get.toNamed(Routes.message);
+              Get.toNamed(Routes.liberalGaffeClothMessage);
             },
             dense: true,
             horizontalTitleGap: 8.w,
@@ -828,7 +831,7 @@ class WheatBreezeMarginMenu extends StatelessWidget {
           ListTile(
             onTap: () {
               Navigator.pop(context);
-              Get.toNamed(Routes.wallet);
+              Get.toNamed(Routes.debutMaximumCouncilWallet);
             },
             dense: true,
             horizontalTitleGap: 8.w,

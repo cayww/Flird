@@ -22,91 +22,91 @@ import 'package:flird/pages/tempt_soprano_irony_block/views/tempt_soprano_irony_
 import 'package:flird/pages/toward_chorus_weapon_report/views/toward_chorus_weapon_report.dart';
 import 'package:get/get.dart';
 
-part 'app_routes.dart';
+part 'earwax_econobox_agile.dart';
 
-class AppPages {
-  AppPages._();
+class CorrectRepeatMiddle {
+  CorrectRepeatMiddle._();
 
-  static const initial = Routes.splash;
+  static const initial = Routes.gossipRetainSacrificeSplash;
   static final transitionDuraiton = 120.milliseconds;
   static final routes = [
     GetPage(
-      name: Routes.splash,
+      name: Routes.gossipRetainSacrificeSplash,
       binding: GossipRetainSplashBinding(),
       page: () => const GossipRetainSacrificeSplash(),
       transition: Transition.noTransition,
     ),
     GetPage(
-      name: Routes.guide,
+      name: Routes.structureJockeyTableGuide,
       page: () => const StructureJockeyTableGuide(),
       transition: Transition.noTransition,
     ),
     GetPage(
-      name: Routes.main,
+      name: Routes.slightlyHeadlineClerkMain,
       page: () => const SlightlyHeadlineClerkMain(),
       transition: Transition.noTransition,
     ),
     GetPage(
-      name: Routes.register,
+      name: Routes.recoveryTributeDecayRegister,
       binding: RecoveryTributeRegisterBinding(),
       page: () => const RecoveryTributeDecayRegister(),
       transitionDuration: transitionDuraiton,
       transition: Transition.rightToLeft,
     ),
     GetPage(
-      name: Routes.login,
+      name: Routes.recoveryTributeDecayLogin,
       binding: RecoveryTributeLoginBinding(),
       page: () => const RecoveryTributeDecayLogin(),
       transitionDuration: transitionDuraiton,
       transition: Transition.rightToLeft,
     ),
     GetPage(
-      name: Routes.post,
+      name: Routes.implicitLetterTeasePost,
       binding: ImplicitLetterPostBinding(),
       page: () => const ImplicitLetterTeasePost(),
       transitionDuration: transitionDuraiton,
       transition: Transition.rightToLeft,
     ),
     GetPage(
-        name: Routes.wallet,
+        name: Routes.debutMaximumCouncilWallet,
         binding: DebutMaximumWalletBinding(),
         page: () => const DebutMaximumCouncilWallet(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
-        name: Routes.postDetail,
+        name: Routes.voiseDeficitInitialVideo,
         binding: NoiseDeficitVideoBinding(),
         page: () => const NoiseDeficitInitialVideo(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
-        name: Routes.report,
+        name: Routes.towardChorusWeaponReport,
         page: () => const TowardChorusWeaponReport(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
-        name: Routes.chat,
+        name: Routes.splurgeObjectThemeChat,
         binding: SplurgeObjectChatBinding(),
         page: () => const SplurgeObjectThemeChat(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
-        name: Routes.message,
+        name: Routes.liberalGaffeClothMessage,
         page: () => const LiberalGaffeClothMessage(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
-        name: Routes.profile,
+        name: Routes.strapAbundantEntireProfile,
         page: () => const StrapAbundantEntireProfile(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
-        name: Routes.blocklist,
+        name: Routes.temptSopranoIronyBlock,
         page: () => const TemptSopranoIronyBlock(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
-        name: Routes.agreement,
+        name: Routes.brideBlessPupilAgreement,
         binding: BrideBlessAgreementBinding(),
         page: () => const BrideBlessPupilAgreement(),
         transition: Transition.rightToLeft,

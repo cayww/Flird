@@ -12,7 +12,7 @@ import 'package:flird/db/database/tables/coincide_regular_voter_message/coincide
 import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
 import 'package:flird/pages/splurge_object_theme_chat/controllers/splurge_object_chat_controller.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
-import 'package:flird/routes/app_pages.dart';
+import 'package:flird/routes/correct_repeat_middle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
@@ -115,8 +115,10 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                       ) ??
                       false;
                   if (result) {
-                    if (previousRoute.contains(Routes.postDetail)) {
-                      Get.offNamedUntil(Routes.main, (_) => false);
+                    if (previousRoute
+                        .contains(Routes.voiseDeficitInitialVideo)) {
+                      Get.offNamedUntil(
+                          Routes.slightlyHeadlineClerkMain, (_) => false);
                     } else {
                       Get.back();
                     }

@@ -4,7 +4,7 @@ import 'package:flird/dialogue_satellite_after/jealous_bless_practical/pattern_b
 import 'package:flird/dialogue_satellite_after/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
-import 'package:flird/routes/app_pages.dart';
+import 'package:flird/routes/correct_repeat_middle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -101,9 +101,10 @@ class _LiberalGaffeClothMessageState extends State<LiberalGaffeClothMessage> {
                                   .hoverSwearGravelSecond.prefetchedData!.first;
                               return GestureDetector(
                                 onTap: () {
-                                  Get.toNamed(Routes.chat, arguments: {
-                                    'userEntity': userEntity.toJsonString()
-                                  });
+                                  Get.toNamed(Routes.splurgeObjectThemeChat,
+                                      arguments: {
+                                        'userEntity': userEntity.toJsonString()
+                                      });
                                 },
                                 child: Container(
                                   padding: EdgeInsets.symmetric(

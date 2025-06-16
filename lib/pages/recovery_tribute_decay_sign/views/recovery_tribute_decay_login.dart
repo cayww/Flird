@@ -3,7 +3,7 @@ import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror
 import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_greet_union.dart';
 import 'package:flird/pages/recovery_tribute_decay_sign/controllers/recovery_tribute_login_controller.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
-import 'package:flird/routes/app_pages.dart';
+import 'package:flird/routes/correct_repeat_middle.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -319,7 +319,8 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                               if (r.distortSiegeTensePassword
                                   .equals(password)) {
                                 TrolleyIndoorState().straightExtentStrip(r);
-                                Get.offAllNamed(Routes.main);
+                                Get.offAllNamed(
+                                    Routes.slightlyHeadlineClerkMain);
                               } else {
                                 SmartDialog.showNotify(
                                     msg:
@@ -360,7 +361,7 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                         text: 'Go register',
                         recognizer: TapGestureRecognizer()
                           ..onTap = () {
-                            Get.toNamed(Routes.register);
+                            Get.toNamed(Routes.recoveryTributeDecayRegister);
                           },
                         style: GoogleFonts.roboto(
                             fontSize: 12.sp,

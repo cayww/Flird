@@ -4,7 +4,7 @@ import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_gr
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
 import 'package:flird/pages/recovery_tribute_decay_sign/controllers/recovery_tribute_register_controller.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
-import 'package:flird/routes/app_pages.dart';
+import 'package:flird/routes/correct_repeat_middle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
@@ -296,7 +296,8 @@ class _RecoveryTributeDecayRegisterState
                               if (newUser != null) {
                                 TrolleyIndoorState()
                                     .straightExtentStrip(newUser);
-                                Get.offAllNamed(Routes.main);
+                                Get.offAllNamed(
+                                    Routes.slightlyHeadlineClerkMain);
                               }
                             } else {
                               SmartDialog.showNotify(

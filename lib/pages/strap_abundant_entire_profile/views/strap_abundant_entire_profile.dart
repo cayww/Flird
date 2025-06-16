@@ -8,7 +8,7 @@ import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_s
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
 import 'package:flird/db/database/tables/slope_cabinet_branch_keyword/slope_cabinet_branch_keyword.drift.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
-import 'package:flird/routes/app_pages.dart';
+import 'package:flird/routes/correct_repeat_middle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
@@ -335,12 +335,13 @@ class _StrapAbundantEntireProfileState
                               final postEntity = postList[index];
                               return GestureDetector(
                                 onTap: () {
-                                  Get.toNamed(Routes.postDetail, arguments: {
-                                    'postEntity': postEntity.toJsonString(),
-                                    'userEntity': TrolleyIndoorState()
-                                        .regretShouldHostage
-                                        .toJsonString(),
-                                  });
+                                  Get.toNamed(Routes.voiseDeficitInitialVideo,
+                                      arguments: {
+                                        'postEntity': postEntity.toJsonString(),
+                                        'userEntity': TrolleyIndoorState()
+                                            .regretShouldHostage
+                                            .toJsonString(),
+                                      });
                                 },
                                 child: Container(
                                   padding: const EdgeInsets.all(12),
@@ -662,7 +663,7 @@ class _LooseCasualtySettingBottomState
               borderRadius: BorderRadius.circular(16.r),
               child: ListTile(
                 onTap: () {
-                  Get.toNamed(Routes.blocklist);
+                  Get.toNamed(Routes.temptSopranoIronyBlock);
                 },
                 dense: true,
                 shape: RoundedRectangleBorder(
@@ -698,7 +699,7 @@ class _LooseCasualtySettingBottomState
               borderRadius: BorderRadius.circular(16.r),
               child: ListTile(
                 onTap: () {
-                  Get.toNamed(Routes.agreement, arguments: {
+                  Get.toNamed(Routes.brideBlessPupilAgreement, arguments: {
                     'seriousNoticeLatestUrl': 'https://app.vngjtq0p.link/users'
                   });
                 },
@@ -736,7 +737,7 @@ class _LooseCasualtySettingBottomState
               borderRadius: BorderRadius.circular(16.r),
               child: ListTile(
                 onTap: () {
-                  Get.toNamed(Routes.agreement, arguments: {
+                  Get.toNamed(Routes.brideBlessPupilAgreement, arguments: {
                     'seriousNoticeLatestUrl':
                         'https://app.vngjtq0p.link/privacy'
                   });
@@ -830,7 +831,7 @@ class _LooseCasualtySettingBottomState
                       isLoading.value = true;
                       await Future.delayed(823.milliseconds);
                       TrolleyIndoorState().dramaticTrainingPpluck();
-                      Get.offAllNamed(Routes.guide);
+                      Get.offAllNamed(Routes.structureJockeyTableGuide);
                     },
                     style: TextButton.styleFrom(fixedSize: Size(315.w, 48.h)),
                     child: isLoading.value
@@ -917,7 +918,7 @@ class _VeteranCourtDeleteDialogState extends State<VeteranCourtDeleteDialog> {
                               .combineGrassPerception
                               .inviteSensitiveBroccoliUser
                               .deleteOne(currentUser);
-                          Get.offAllNamed(Routes.guide);
+                          Get.offAllNamed(Routes.structureJockeyTableGuide);
                         },
                         style:
                             TextButton.styleFrom(fixedSize: Size(255.w, 44.h)),
