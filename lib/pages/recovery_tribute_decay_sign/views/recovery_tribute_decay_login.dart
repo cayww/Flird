@@ -1,5 +1,5 @@
-import 'package:flird/common/animations/animation_maps.dart';
-import 'package:flird/common/animations/animations.dart';
+import 'package:flird/common/reduce_heaven_carve/animation_maps.dart';
+import 'package:flird/common/reduce_heaven_carve/animations.dart';
 import 'package:flird/common/components/common.dart';
 import 'package:flird/pages/recovery_tribute_decay_sign/controllers/recovery_tribute_login_controller.dart';
 import 'package:flird/providers/app_state/app_state.dart';

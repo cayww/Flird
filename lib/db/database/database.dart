@@ -51,9 +51,10 @@ class FlirdDriftDataBase extends $FlirdDriftDataBase {
     return LazyDatabase(() async {
       final version = AppState().version.split('.').toList().join();
       final cachedPath = path.join(
-          (await getApplicationDocumentsDirectory()).path, 'db$version.db');
+          (await getApplicationDocumentsDirectory()).path,
+          'FlirdDB$version.db');
       if (!await File(cachedPath).exists()) {
-        final dbPath = await rootBundle.load('assets/databases/db.db');
+        final dbPath = await rootBundle.load('assets/databases/FlirdDB.db');
         await File(cachedPath).writeAsBytes(dbPath.buffer.asUint8List());
       }
       if (Platform.isAndroid) {

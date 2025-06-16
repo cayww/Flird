@@ -1,5 +1,5 @@
-import 'package:flird/common/animations/animation_maps.dart';
-import 'package:flird/common/animations/animations.dart';
+import 'package:flird/common/reduce_heaven_carve/animation_maps.dart';
+import 'package:flird/common/reduce_heaven_carve/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';

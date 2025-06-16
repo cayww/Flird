@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:drift/drift.dart' as d;
-import 'package:flird/common/animations/animation_maps.dart';
-import 'package:flird/common/animations/animations.dart';
+import 'package:flird/common/reduce_heaven_carve/animation_maps.dart';
+import 'package:flird/common/reduce_heaven_carve/animations.dart';
 import 'package:flird/common/components/common.dart';
 import 'package:flird/common/components/reptile_chord_more_dialog.dart';
 import 'package:flird/common/controllers/voice_recorder_controller.dart';

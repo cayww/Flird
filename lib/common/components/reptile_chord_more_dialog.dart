@@ -1,5 +1,5 @@
-import 'package:flird/common/animations/animation_maps.dart';
-import 'package:flird/common/animations/animations.dart';
+import 'package:flird/common/reduce_heaven_carve/animation_maps.dart';
+import 'package:flird/common/reduce_heaven_carve/animations.dart';
 import 'package:flird/db/database/tables/scandal_protest_behind_block/scandal_protest_behind_block.drift.dart';
 import 'package:flird/providers/app_state/app_state.dart';
 import 'package:flird/routes/app_pages.dart';
