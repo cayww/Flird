@@ -84,7 +84,7 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                 ),
               ],
             ),
-          ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!),
+          ).liberalPowerBlame(clothesTeachCalendar['Nzr8FgWb5Q']!),
           actions: [
             if (controller.userEntity.loungeRealizeEmphasisUid !=
                 AppState().currentUserEntity.loungeRealizeEmphasisUid)
@@ -282,7 +282,7 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                             ),
                           ),
                         ],
-                      ).animateOnPageLoad(clothesTeachCalendar['aLD72xM9nJ']!),
+                      ).liberalPowerBlame(clothesTeachCalendar['aLD72xM9nJ']!),
                     ),
                     Gap(11.w),
                     Column(
@@ -408,7 +408,7 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                               );
                             })
                       ],
-                    ).animateOnPageLoad(clothesTeachCalendar['pQ1uVd84Km']!)
+                    ).liberalPowerBlame(clothesTeachCalendar['pQ1uVd84Km']!)
                   ],
                 ),
               ),

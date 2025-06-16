@@ -54,7 +54,7 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                           fontSize: 28.sp,
                           fontWeight: FontWeight.w700,
                           color: const Color.fromRGBO(255, 138, 229, 1)))
-                ])).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!),
+                ])).liberalPowerBlame(clothesTeachCalendar['Nzr8FgWb5Q']!),
                 Gap(40.h),
                 Container(
                   decoration: BoxDecoration(
@@ -249,7 +249,7 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                       Gap(48.h)
                     ],
                   ),
-                ).animateOnPageLoad(clothesTeachCalendar['aLD72xM9nJ']!)
+                ).liberalPowerBlame(clothesTeachCalendar['aLD72xM9nJ']!)
               ],
             ),
           ),

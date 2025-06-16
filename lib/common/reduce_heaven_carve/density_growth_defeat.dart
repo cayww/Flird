@@ -2,9 +2,9 @@ import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-final clothesTeachCalendar = <String, AnimationInfo>{
-  'x7Tf93LqvZ': AnimationInfo(
-    effectsBuilder: () => [
+final clothesTeachCalendar = <String, EscapeHorrorCreed>{
+  'x7Tf93LqvZ': EscapeHorrorCreed(
+    pleasureInflateBallot: () => [
       VisibilityEffect(duration: 1.ms),
       FadeEffect(
         curve: Curves.easeInOut,
@@ -22,8 +22,8 @@ final clothesTeachCalendar = <String, AnimationInfo>{
       ),
     ],
   ),
-  'pQ1uVd84Km': AnimationInfo(
-    effectsBuilder: () => [
+  'pQ1uVd84Km': EscapeHorrorCreed(
+    pleasureInflateBallot: () => [
       VisibilityEffect(duration: 1.ms),
       FadeEffect(
         curve: Curves.easeInOut,
@@ -41,8 +41,8 @@ final clothesTeachCalendar = <String, AnimationInfo>{
       ),
     ],
   ),
-  'Nzr8FgWb5Q': AnimationInfo(
-    effectsBuilder: () => [
+  'Nzr8FgWb5Q': EscapeHorrorCreed(
+    pleasureInflateBallot: () => [
       VisibilityEffect(duration: 1.ms),
       FadeEffect(
         curve: Curves.easeInOut,
@@ -60,8 +60,8 @@ final clothesTeachCalendar = <String, AnimationInfo>{
       ),
     ],
   ),
-  'aLD72xM9nJ': AnimationInfo(
-    effectsBuilder: () => [
+  'aLD72xM9nJ': EscapeHorrorCreed(
+    pleasureInflateBallot: () => [
       VisibilityEffect(duration: 1.ms),
       FadeEffect(
         curve: Curves.easeInOut,
@@ -79,7 +79,7 @@ final clothesTeachCalendar = <String, AnimationInfo>{
       ),
     ],
   ),
-  'Yc3WmV6bRt': AnimationInfo(
-    effectsBuilder: null,
+  'Yc3WmV6bRt': EscapeHorrorCreed(
+    pleasureInflateBallot: null,
   )
 };

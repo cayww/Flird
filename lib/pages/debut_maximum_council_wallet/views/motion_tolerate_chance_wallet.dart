@@ -192,8 +192,8 @@ class _MotionTolerateChanceWalletState
                             )
                           ],
                         ),
-                      ).animateOnPageLoad(clothesTeachCalendar['Yc3WmV6bRt']!,
-                          effects: [
+                      ).liberalPowerBlame(clothesTeachCalendar['Yc3WmV6bRt']!,
+                          divideWaterHealth: [
                             FadeEffect(
                               curve: Curves.easeInOut,
                               delay: (40 * index).ms,

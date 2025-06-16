@@ -101,7 +101,7 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                               ),
                             )
                           ],
-                        ).animateOnPageLoad(
+                        ).liberalPowerBlame(
                             clothesTeachCalendar['Nzr8FgWb5Q']!),
                         Gap(40.h),
                         Text(
@@ -173,7 +173,7 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                     )
                                   ],
                                 ),
-                              ).animateOnPageLoad(
+                              ).liberalPowerBlame(
                                   clothesTeachCalendar['x7Tf93LqvZ']!),
                             ),
                             GestureDetector(
@@ -223,7 +223,7 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                     )
                                   ],
                                 ),
-                              ).animateOnPageLoad(
+                              ).liberalPowerBlame(
                                   clothesTeachCalendar['pQ1uVd84Km']!),
                             ),
                           ],
@@ -592,9 +592,9 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                           );
                                         }))
                               ],
-                            ).animateOnPageLoad(
+                            ).liberalPowerBlame(
                                 clothesTeachCalendar['Yc3WmV6bRt']!,
-                                effects: [
+                                divideWaterHealth: [
                                   FadeEffect(
                                     curve: Curves.easeInOut,
                                     delay: (index * 40).ms,
@@ -857,7 +857,7 @@ class WheatBreezeMarginMenu extends StatelessWidget {
           ),
         ],
       ),
-    ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!);
+    ).liberalPowerBlame(clothesTeachCalendar['Nzr8FgWb5Q']!);
   }
 }
 
@@ -1164,6 +1164,6 @@ class _ExtraObtainAddKeywordState extends State<ExtraObtainAddKeyword> {
           ),
         ),
       ],
-    ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!);
+    ).liberalPowerBlame(clothesTeachCalendar['Nzr8FgWb5Q']!);
   }
 }

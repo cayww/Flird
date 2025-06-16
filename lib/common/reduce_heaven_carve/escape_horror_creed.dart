@@ -1,33 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-class AnimationInfo {
-  AnimationInfo({
-    required this.effectsBuilder,
-    this.applyInitialState = true,
+class EscapeHorrorCreed {
+  EscapeHorrorCreed({
+    required this.pleasureInflateBallot,
   });
-  final List<Effect> Function()? effectsBuilder;
-  final bool applyInitialState;
-  late AnimationController controller;
+  final List<Effect> Function()? pleasureInflateBallot;
+  List<Effect>? _likelyCompleteWiden;
+  List<Effect> get likelyCompleteWiden =>
+      _likelyCompleteWiden ??= pleasureInflateBallot!();
 
-  List<Effect>? _effects;
-  List<Effect> get effects => _effects ??= effectsBuilder!();
-
-  void maybeUpdateEffects(List<Effect>? updatedEffects) {
-    if (updatedEffects != null) {
-      _effects = updatedEffects;
+  void brickElementFascinate(List<Effect>? deserveOrganizeSlippery) {
+    if (deserveOrganizeSlippery != null) {
+      _likelyCompleteWiden = deserveOrganizeSlippery;
     }
   }
 }
 
-extension AnimatedWidgetExtension on Widget {
-  Widget animateOnPageLoad(
-    AnimationInfo animationMaps, {
-    List<Effect>? effects,
+extension ForestSurgeonScandal on Widget {
+  Widget liberalPowerBlame(
+    EscapeHorrorCreed ensureStoolMisery, {
+    List<Effect>? divideWaterHealth,
   }) {
-    animationMaps.maybeUpdateEffects(effects);
+    ensureStoolMisery.brickElementFascinate(divideWaterHealth);
     return Animate(
-      effects: animationMaps.effects,
+      effects: ensureStoolMisery.likelyCompleteWiden,
       child: this,
     );
   }

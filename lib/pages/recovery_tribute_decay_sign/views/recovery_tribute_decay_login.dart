@@ -77,8 +77,8 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                     height: 1.h,
                     color: Colors.white,
                   ),
-                ).animateOnPageLoad(clothesTeachCalendar['Yc3WmV6bRt']!,
-                    effects: [
+                ).liberalPowerBlame(clothesTeachCalendar['Yc3WmV6bRt']!,
+                    divideWaterHealth: [
                       FadeEffect(
                         curve: Curves.easeInOut,
                         delay: 0.0.ms,
@@ -123,8 +123,8 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                               ),
                             ),
                           ],
-                        ).animateOnPageLoad(clothesTeachCalendar['Yc3WmV6bRt']!,
-                            effects: [
+                        ).liberalPowerBlame(clothesTeachCalendar['Yc3WmV6bRt']!,
+                            divideWaterHealth: [
                               FadeEffect(
                                 curve: Curves.easeInOut,
                                 delay: 30.0.ms,
@@ -171,8 +171,8 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                           ),
                           cursorColor: Colors.white,
                           validator: controller.emailValidator,
-                        ).animateOnPageLoad(clothesTeachCalendar['Yc3WmV6bRt']!,
-                            effects: [
+                        ).liberalPowerBlame(clothesTeachCalendar['Yc3WmV6bRt']!,
+                            divideWaterHealth: [
                               FadeEffect(
                                 curve: Curves.easeInOut,
                                 delay: 60.0.ms,
@@ -208,8 +208,8 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                               ),
                             ),
                           ],
-                        ).animateOnPageLoad(clothesTeachCalendar['Yc3WmV6bRt']!,
-                            effects: [
+                        ).liberalPowerBlame(clothesTeachCalendar['Yc3WmV6bRt']!,
+                            divideWaterHealth: [
                               FadeEffect(
                                 curve: Curves.easeInOut,
                                 delay: 90.0.ms,
@@ -258,9 +258,9 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                                 ),
                                 cursorColor: Colors.white,
                                 validator: controller.loginPasswordValidator)
-                            .animateOnPageLoad(
+                            .liberalPowerBlame(
                                 clothesTeachCalendar['Yc3WmV6bRt']!,
-                                effects: [
+                                divideWaterHealth: [
                               FadeEffect(
                                 curve: Curves.easeInOut,
                                 delay: 120.0.ms,

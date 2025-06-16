@@ -149,6 +149,6 @@ class _ReptileChordMoreDialogState extends State<ReptileChordMoreDialog> {
           ),
         ),
       ],
-    ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!);
+    ).liberalPowerBlame(clothesTeachCalendar['Nzr8FgWb5Q']!);
   }
 }

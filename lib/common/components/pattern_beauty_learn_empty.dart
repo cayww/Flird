@@ -31,6 +31,6 @@ class PatternBeautyLearnEmpty extends StatelessWidget {
           )
         ],
       ),
-    ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!);
+    ).liberalPowerBlame(clothesTeachCalendar['Nzr8FgWb5Q']!);
   }
 }
