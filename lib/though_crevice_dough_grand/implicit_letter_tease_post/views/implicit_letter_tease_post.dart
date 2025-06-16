@@ -3,7 +3,7 @@ import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growt
 import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_greet_union.dart';
 import 'package:flird/dialogue_satellite_after/suitcase_asset_plain/dictate_soprano_nearest.dart';
-import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
 import 'package:flird/though_crevice_dough_grand/implicit_letter_tease_post/controllers/implicit_letter_post_controller.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';

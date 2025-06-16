@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:drift/drift.dart' as d;
-import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
-import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

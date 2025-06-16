@@ -1,12 +1,12 @@
 import 'dart:async';
 
 import 'package:drift/drift.dart';
-import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
-import 'package:flird/db/database/tables/shrink_regret_completely_wallet/shrink_regret_completely_wallet.drift.dart';
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/shrink_regret_completely_wallet/shrink_regret_completely_wallet.drift.dart';
 
 import 'package:flutter/material.dart';
-import 'package:flird/db/database/database.dart';
-import 'package:flird/db/poetry_cinema_chaos/poetry_cinema_chaos_db.dart';
+import 'package:flird/velvet_authority_upward/double_grace_chorus/database.dart';
+import 'package:flird/velvet_authority_upward/poetry_cinema_chaos/poetry_cinema_chaos_db.dart';
 
 import 'package:package_info_plus/package_info_plus.dart';
 

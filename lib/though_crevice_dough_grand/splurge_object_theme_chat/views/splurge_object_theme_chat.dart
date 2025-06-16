@@ -8,8 +8,8 @@ import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_gr
 import 'package:flird/dialogue_satellite_after/jealous_bless_practical/reptile_chord_more_dialog.dart';
 import 'package:flird/dialogue_satellite_after/swallow_assume_nuclear/swallow_assume_nuclear.dart';
 import 'package:flird/dialogue_satellite_after/suitcase_asset_plain/dictate_soprano_nearest.dart';
-import 'package:flird/db/database/tables/coincide_regular_voter_message/coincide_regular_voter_message.drift.dart';
-import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/coincide_regular_voter_message/coincide_regular_voter_message.drift.dart';
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
 import 'package:flird/though_crevice_dough_grand/splurge_object_theme_chat/controllers/splurge_object_chat_controller.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';

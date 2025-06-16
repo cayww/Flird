@@ -2,7 +2,7 @@ import 'package:drift/drift.dart' as d;
 import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_greet_union.dart';
 import 'package:flird/dialogue_satellite_after/jealous_bless_practical/pattern_beauty_learn_empty.dart';
 import 'package:flird/dialogue_satellite_after/suitcase_asset_plain/dictate_soprano_nearest.dart';
-import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';
 import 'package:flutter/material.dart';

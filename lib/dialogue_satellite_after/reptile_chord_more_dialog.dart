@@ -1,6 +1,6 @@
 import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
-import 'package:flird/db/database/tables/scandal_protest_behind_block/scandal_protest_behind_block.drift.dart';
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/scandal_protest_behind_block/scandal_protest_behind_block.drift.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';
 import 'package:flutter/material.dart';

@@ -4,7 +4,7 @@ import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror
 import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_greet_union.dart';
 import 'package:flird/dialogue_satellite_after/jealous_bless_practical/reptile_chord_more_dialog.dart';
 import 'package:flird/dialogue_satellite_after/suitcase_asset_plain/dictate_soprano_nearest.dart';
-import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery_post_like.drift.dart';
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/crutch_battery_post_like/crutch_battery_post_like.drift.dart';
 import 'package:flird/though_crevice_dough_grand/noise_deficit_initial_video/controllers/noise_deficit_video_controller.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';
