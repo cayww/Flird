@@ -2,115 +2,84 @@ import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-final animationMaps = <String, AnimationInfo>{
-  'fd': AnimationInfo(
+final clothesTeachCalendar = <String, AnimationInfo>{
+  'x7Tf93LqvZ': AnimationInfo(
     effectsBuilder: () => [
       VisibilityEffect(duration: 1.ms),
       FadeEffect(
         curve: Curves.easeInOut,
         delay: 0.0.ms,
-        duration: 211.0.ms,
-        begin: 0.0,
-        end: 1.0,
-      ),
-      ScaleEffect(
-        curve: Curves.bounceInOut,
-        delay: 0.0.ms,
-        duration: 211.0.ms,
-        begin: const Offset(0.0, 0.0),
-        end: const Offset(1.0, 1.0),
-      ),
-    ],
-  ),
-  'dc': AnimationInfo(
-    effectsBuilder: () => [
-      VisibilityEffect(duration: 1.ms),
-      FadeEffect(
-        curve: Curves.easeInOut,
-        delay: 0.0.ms,
-        duration: 211.0.ms,
-        begin: 0.0,
-        end: 1.0,
-      ),
-    ],
-  ),
-  'yh': AnimationInfo(
-    effectsBuilder: () => [
-      VisibilityEffect(duration: 1.ms),
-      FadeEffect(
-        curve: Curves.easeInOut,
-        delay: 0.0.ms,
-        duration: 211.0.ms,
+        duration: 212.4.ms,
         begin: 0.0,
         end: 1.0,
       ),
       MoveEffect(
         curve: Curves.easeInOut,
         delay: 0.0.ms,
-        duration: 211.0.ms,
-        begin: const Offset(-21.0, 0.0),
+        duration: 212.4.ms,
+        begin: const Offset(-21.8, 0.0),
         end: const Offset(0.0, 0.0),
       ),
     ],
   ),
-  'zh': AnimationInfo(
+  'pQ1uVd84Km': AnimationInfo(
     effectsBuilder: () => [
       VisibilityEffect(duration: 1.ms),
       FadeEffect(
         curve: Curves.easeInOut,
         delay: 0.0.ms,
-        duration: 211.0.ms,
+        duration: 212.4.ms,
         begin: 0.0,
         end: 1.0,
       ),
       MoveEffect(
         curve: Curves.easeInOut,
         delay: 0.0.ms,
-        duration: 211.0.ms,
-        begin: const Offset(21.0, 0.0),
+        duration: 212.4.ms,
+        begin: const Offset(21.8, 0.0),
         end: const Offset(0.0, 0.0),
       ),
     ],
   ),
-  'xh': AnimationInfo(
+  'Nzr8FgWb5Q': AnimationInfo(
     effectsBuilder: () => [
       VisibilityEffect(duration: 1.ms),
       FadeEffect(
         curve: Curves.easeInOut,
         delay: 0.0.ms,
-        duration: 211.0.ms,
+        duration: 212.4.ms,
         begin: 0.0,
         end: 1.0,
       ),
       MoveEffect(
         curve: Curves.easeInOut,
         delay: 0.0.ms,
-        duration: 211.0.ms,
-        begin: const Offset(0.0, -21.0),
+        duration: 212.4.ms,
+        begin: const Offset(0.0, -21.8),
         end: const Offset(0.0, 0.0),
       ),
     ],
   ),
-  'sh': AnimationInfo(
+  'aLD72xM9nJ': AnimationInfo(
     effectsBuilder: () => [
       VisibilityEffect(duration: 1.ms),
       FadeEffect(
         curve: Curves.easeInOut,
         delay: 0.0.ms,
-        duration: 211.0.ms,
+        duration: 212.4.ms,
         begin: 0.0,
         end: 1.0,
       ),
       MoveEffect(
         curve: Curves.easeInOut,
         delay: 0.0.ms,
-        duration: 211.0.ms,
-        begin: const Offset(0.0, 21.0),
+        duration: 212.4.ms,
+        begin: const Offset(0.0, 21.8),
         end: const Offset(0.0, 0.0),
       ),
     ],
   ),
-  'zdy': AnimationInfo(
+  'Yc3WmV6bRt': AnimationInfo(
     effectsBuilder: null,
   )
 };

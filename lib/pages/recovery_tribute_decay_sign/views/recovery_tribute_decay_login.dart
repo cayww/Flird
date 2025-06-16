@@ -77,22 +77,23 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                     height: 1.h,
                     color: Colors.white,
                   ),
-                ).animateOnPageLoad(animationMaps['zdy']!, effects: [
-                  FadeEffect(
-                    curve: Curves.easeInOut,
-                    delay: 0.0.ms,
-                    duration: 211.0.ms,
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
-                  MoveEffect(
-                    curve: Curves.easeInOut,
-                    delay: 0.0.ms,
-                    duration: 211.0.ms,
-                    begin: const Offset(-21.0, 0.0),
-                    end: const Offset(0.0, 0.0),
-                  ),
-                ]),
+                ).animateOnPageLoad(clothesTeachCalendar['Yc3WmV6bRt']!,
+                    effects: [
+                      FadeEffect(
+                        curve: Curves.easeInOut,
+                        delay: 0.0.ms,
+                        duration: 212.4.ms,
+                        begin: 0.0,
+                        end: 1.0,
+                      ),
+                      MoveEffect(
+                        curve: Curves.easeInOut,
+                        delay: 0.0.ms,
+                        duration: 212.4.ms,
+                        begin: const Offset(-21.8, 0.0),
+                        end: const Offset(0.0, 0.0),
+                      ),
+                    ]),
                 Flexible(
                     child: Gap(
                   58.h,
@@ -122,22 +123,23 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                               ),
                             ),
                           ],
-                        ).animateOnPageLoad(animationMaps['zdy']!, effects: [
-                          FadeEffect(
-                            curve: Curves.easeInOut,
-                            delay: 30.0.ms,
-                            duration: 211.0.ms,
-                            begin: 0.0,
-                            end: 1.0,
-                          ),
-                          MoveEffect(
-                            curve: Curves.easeInOut,
-                            delay: 30.0.ms,
-                            duration: 211.0.ms,
-                            begin: const Offset(-21.0, 0.0),
-                            end: const Offset(0.0, 0.0),
-                          ),
-                        ]),
+                        ).animateOnPageLoad(clothesTeachCalendar['Yc3WmV6bRt']!,
+                            effects: [
+                              FadeEffect(
+                                curve: Curves.easeInOut,
+                                delay: 30.0.ms,
+                                duration: 212.4.ms,
+                                begin: 0.0,
+                                end: 1.0,
+                              ),
+                              MoveEffect(
+                                curve: Curves.easeInOut,
+                                delay: 30.0.ms,
+                                duration: 212.4.ms,
+                                begin: const Offset(-21.8, 0.0),
+                                end: const Offset(0.0, 0.0),
+                              ),
+                            ]),
                         Gap(14.h),
                         TextFormField(
                           controller: controller.emailController,
@@ -169,22 +171,23 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                           ),
                           cursorColor: Colors.white,
                           validator: controller.emailValidator,
-                        ).animateOnPageLoad(animationMaps['zdy']!, effects: [
-                          FadeEffect(
-                            curve: Curves.easeInOut,
-                            delay: 60.0.ms,
-                            duration: 211.0.ms,
-                            begin: 0.0,
-                            end: 1.0,
-                          ),
-                          MoveEffect(
-                            curve: Curves.easeInOut,
-                            delay: 60.0.ms,
-                            duration: 211.0.ms,
-                            begin: const Offset(-21.0, 0.0),
-                            end: const Offset(0.0, 0.0),
-                          ),
-                        ]),
+                        ).animateOnPageLoad(clothesTeachCalendar['Yc3WmV6bRt']!,
+                            effects: [
+                              FadeEffect(
+                                curve: Curves.easeInOut,
+                                delay: 60.0.ms,
+                                duration: 212.4.ms,
+                                begin: 0.0,
+                                end: 1.0,
+                              ),
+                              MoveEffect(
+                                curve: Curves.easeInOut,
+                                delay: 60.0.ms,
+                                duration: 212.4.ms,
+                                begin: const Offset(-21.8, 0.0),
+                                end: const Offset(0.0, 0.0),
+                              ),
+                            ]),
                         Gap(38.h),
                         Row(
                           children: [
@@ -205,22 +208,23 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                               ),
                             ),
                           ],
-                        ).animateOnPageLoad(animationMaps['zdy']!, effects: [
-                          FadeEffect(
-                            curve: Curves.easeInOut,
-                            delay: 90.0.ms,
-                            duration: 211.0.ms,
-                            begin: 0.0,
-                            end: 1.0,
-                          ),
-                          MoveEffect(
-                            curve: Curves.easeInOut,
-                            delay: 90.0.ms,
-                            duration: 211.0.ms,
-                            begin: const Offset(-21.0, 0.0),
-                            end: const Offset(0.0, 0.0),
-                          ),
-                        ]),
+                        ).animateOnPageLoad(clothesTeachCalendar['Yc3WmV6bRt']!,
+                            effects: [
+                              FadeEffect(
+                                curve: Curves.easeInOut,
+                                delay: 90.0.ms,
+                                duration: 212.4.ms,
+                                begin: 0.0,
+                                end: 1.0,
+                              ),
+                              MoveEffect(
+                                curve: Curves.easeInOut,
+                                delay: 90.0.ms,
+                                duration: 212.4.ms,
+                                begin: const Offset(-21.8, 0.0),
+                                end: const Offset(0.0, 0.0),
+                              ),
+                            ]),
                         Gap(16.h),
                         TextFormField(
                                 controller: controller.passwordController,
@@ -254,22 +258,24 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                                 ),
                                 cursorColor: Colors.white,
                                 validator: controller.loginPasswordValidator)
-                            .animateOnPageLoad(animationMaps['zdy']!, effects: [
-                          FadeEffect(
-                            curve: Curves.easeInOut,
-                            delay: 120.0.ms,
-                            duration: 211.0.ms,
-                            begin: 0.0,
-                            end: 1.0,
-                          ),
-                          MoveEffect(
-                            curve: Curves.easeInOut,
-                            delay: 120.0.ms,
-                            duration: 211.0.ms,
-                            begin: const Offset(-21.0, 0.0),
-                            end: const Offset(0.0, 0.0),
-                          ),
-                        ]),
+                            .animateOnPageLoad(
+                                clothesTeachCalendar['Yc3WmV6bRt']!,
+                                effects: [
+                              FadeEffect(
+                                curve: Curves.easeInOut,
+                                delay: 120.0.ms,
+                                duration: 212.4.ms,
+                                begin: 0.0,
+                                end: 1.0,
+                              ),
+                              MoveEffect(
+                                curve: Curves.easeInOut,
+                                delay: 120.0.ms,
+                                duration: 212.4.ms,
+                                begin: const Offset(-21.8, 0.0),
+                                end: const Offset(0.0, 0.0),
+                              ),
+                            ]),
                       ]),
                 ),
                 Flexible(child: Gap(120.h)),

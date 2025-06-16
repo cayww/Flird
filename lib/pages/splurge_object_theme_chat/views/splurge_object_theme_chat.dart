@@ -92,7 +92,7 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                   ),
                 ),
               ],
-            ).animateOnPageLoad(animationMaps['zh']!),
+            ).animateOnPageLoad(clothesTeachCalendar['pQ1uVd84Km']!),
             actions: [
               GestureDetector(
                 onTap: () async {
@@ -467,7 +467,7 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                       )
                     ],
                   ),
-                ).animateOnPageLoad(animationMaps['sh']!),
+                ).animateOnPageLoad(clothesTeachCalendar['aLD72xM9nJ']!),
               ],
             ),
           ),

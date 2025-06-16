@@ -101,7 +101,8 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                               ),
                             )
                           ],
-                        ).animateOnPageLoad(animationMaps['xh']!),
+                        ).animateOnPageLoad(
+                            clothesTeachCalendar['Nzr8FgWb5Q']!),
                         Gap(40.h),
                         Text(
                           'Discover',
@@ -172,7 +173,8 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                     )
                                   ],
                                 ),
-                              ).animateOnPageLoad(animationMaps['yh']!),
+                              ).animateOnPageLoad(
+                                  clothesTeachCalendar['x7Tf93LqvZ']!),
                             ),
                             GestureDetector(
                               onTap: () {
@@ -221,7 +223,8 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                     )
                                   ],
                                 ),
-                              ).animateOnPageLoad(animationMaps['zh']!),
+                              ).animateOnPageLoad(
+                                  clothesTeachCalendar['pQ1uVd84Km']!),
                             ),
                           ],
                         )
@@ -589,20 +592,21 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                           );
                                         }))
                               ],
-                            ).animateOnPageLoad(animationMaps['zdy']!,
+                            ).animateOnPageLoad(
+                                clothesTeachCalendar['Yc3WmV6bRt']!,
                                 effects: [
                                   FadeEffect(
                                     curve: Curves.easeInOut,
                                     delay: (index * 40).ms,
-                                    duration: 211.0.ms,
+                                    duration: 212.4.ms,
                                     begin: 0.0,
                                     end: 1.0,
                                   ),
                                   MoveEffect(
                                     curve: Curves.easeInOut,
                                     delay: (index * 40).ms,
-                                    duration: 211.0.ms,
-                                    begin: const Offset(0.0, -21.0),
+                                    duration: 212.4.ms,
+                                    begin: const Offset(0.0, -21.8),
                                     end: const Offset(0.0, 0.0),
                                   ),
                                 ]),
@@ -853,7 +857,7 @@ class WheatBreezeMarginMenu extends StatelessWidget {
           ),
         ],
       ),
-    ).animateOnPageLoad(animationMaps['xh']!);
+    ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!);
   }
 }
 
@@ -1160,6 +1164,6 @@ class _ExtraObtainAddKeywordState extends State<ExtraObtainAddKeyword> {
           ),
         ),
       ],
-    ).animateOnPageLoad(animationMaps['xh']!);
+    ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!);
   }
 }

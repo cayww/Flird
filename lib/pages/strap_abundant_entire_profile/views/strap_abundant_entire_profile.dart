@@ -92,7 +92,7 @@ class _StrapAbundantEntireProfileState
               fontWeight: FontWeight.w700,
               color: Colors.white,
             ),
-          ).animateOnPageLoad(animationMaps['xh']!),
+          ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!),
           actions: [
             GestureDetector(
               onTap: () async {
@@ -176,7 +176,7 @@ class _StrapAbundantEntireProfileState
                       fit: BoxFit.contain,
                     )
                   ],
-                ).animateOnPageLoad(animationMaps['xh']!),
+                ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!),
               ),
               Gap(20.h),
               GestureDetector(
@@ -959,6 +959,6 @@ class _VeteranCourtDeleteDialogState extends State<VeteranCourtDeleteDialog> {
           ),
         ),
       ],
-    ).animateOnPageLoad(animationMaps['xh']!);
+    ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!);
   }
 }

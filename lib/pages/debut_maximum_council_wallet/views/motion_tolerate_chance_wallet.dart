@@ -192,22 +192,23 @@ class _MotionTolerateChanceWalletState
                             )
                           ],
                         ),
-                      ).animateOnPageLoad(animationMaps['zdy']!, effects: [
-                        FadeEffect(
-                          curve: Curves.easeInOut,
-                          delay: (40 * index).ms,
-                          duration: 211.0.ms,
-                          begin: 0.0,
-                          end: 1.0,
-                        ),
-                        MoveEffect(
-                          curve: Curves.easeInOut,
-                          delay: (40 * index).ms,
-                          duration: 211.0.ms,
-                          begin: const Offset(0.0, -21.0),
-                          end: const Offset(0.0, 0.0),
-                        )
-                      ]),
+                      ).animateOnPageLoad(clothesTeachCalendar['Yc3WmV6bRt']!,
+                          effects: [
+                            FadeEffect(
+                              curve: Curves.easeInOut,
+                              delay: (40 * index).ms,
+                              duration: 212.4.ms,
+                              begin: 0.0,
+                              end: 1.0,
+                            ),
+                            MoveEffect(
+                              curve: Curves.easeInOut,
+                              delay: (40 * index).ms,
+                              duration: 212.4.ms,
+                              begin: const Offset(0.0, -21.8),
+                              end: const Offset(0.0, 0.0),
+                            )
+                          ]),
                     );
                   },
                   separatorBuilder: (_, __) => Gap(12.h),

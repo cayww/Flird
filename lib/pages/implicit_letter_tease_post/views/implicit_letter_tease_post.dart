@@ -87,13 +87,13 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                ).animateOnPageLoad(animationMaps['xh']!),
+                ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!),
                 Gap(4.h),
                 Text(
                   'to extract keywords',
                   style: GoogleFonts.roboto(
                       fontSize: 16.sp, height: 1.h, color: Colors.white),
-                ).animateOnPageLoad(animationMaps['xh']!),
+                ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!),
                 Gap(16.25.h),
                 InkWell(
                   borderRadius: BorderRadius.circular(16.r),
@@ -123,7 +123,7 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                     width: 334.72.w,
                     height: 231.49.h,
                     fit: BoxFit.contain,
-                  ).animateOnPageLoad(animationMaps['xh']!),
+                  ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!),
                 ),
                 Gap(34.25.h),
                 Padding(
@@ -430,7 +430,7 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                                   color: Colors.white,
                                 ),
                               )),
-                  ).animateOnPageLoad(animationMaps['sh']!),
+                  ).animateOnPageLoad(clothesTeachCalendar['aLD72xM9nJ']!),
                 ),
               ],
             ),
@@ -612,7 +612,7 @@ class _PressUnawarePayDialogState extends State<PressUnawarePayDialog> {
           ),
         ),
       ],
-    ).animateOnPageLoad(animationMaps['xh']!);
+    ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!);
   }
 }
 
@@ -715,6 +715,6 @@ class _PressUnawareInsufDialogState extends State<PressUnawareInsufDialog> {
           ),
         ),
       ],
-    ).animateOnPageLoad(animationMaps['xh']!);
+    ).animateOnPageLoad(clothesTeachCalendar['Nzr8FgWb5Q']!);
   }
 }
