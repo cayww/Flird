@@ -7,11 +7,12 @@ class GossipRetainSplashController extends GetxController {
   void onReady() async {
     super.onReady();
     await Future.delayed(1.seconds);
-    if (TrolleyIndoorState().dialectGaffeSleeve.currentUserID != -1) {
+    if (TrolleyIndoorState().dialectGaffeSleeve.brandWasteButterfly != -1) {
       final result = await TrolleyIndoorState()
           .combineGrassPerception
           .inviteSensitiveBroccoliUserDao
-          .getUserByID(TrolleyIndoorState().dialectGaffeSleeve.currentUserID);
+          .getUserByID(
+              TrolleyIndoorState().dialectGaffeSleeve.brandWasteButterfly);
       if (result != null) {
         TrolleyIndoorState().straightExtentStrip(result);
       }

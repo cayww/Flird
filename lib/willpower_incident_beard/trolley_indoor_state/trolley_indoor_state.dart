@@ -6,7 +6,7 @@ import 'package:flird/db/database/tables/shrink_regret_completely_wallet/shrink_
 
 import 'package:flutter/material.dart';
 import 'package:flird/db/database/database.dart';
-import 'package:flird/db/hive/hive_db.dart';
+import 'package:flird/db/poetry_cinema_chaos/poetry_cinema_chaos_db.dart';
 
 import 'package:package_info_plus/package_info_plus.dart';
 
@@ -22,7 +22,7 @@ class TrolleyIndoorState extends ChangeNotifier {
   late FlirdDriftDataBase combineGrassPerception;
   late StreamSubscription<InviteSensitiveBroccoliUserEntity>
       hypothesizeSummerConspiracy;
-  late HiveDb dialectGaffeSleeve;
+  late PoetryCinemaChaosDb dialectGaffeSleeve;
   List<ShrinkRegretCompletelyWalletEntity> ventureChocolateValue = [];
   Set<String> get ventureChocolateValueSet => ventureChocolateValue
       .map((item) => item.journeyPassiveDesireClarify)
@@ -30,8 +30,8 @@ class TrolleyIndoorState extends ChangeNotifier {
   Future<void> aluminiumProvincialSpirit() async {
     final packageInfo = await PackageInfo.fromPlatform();
     gravelCaptainPattern = packageInfo.version;
-    dialectGaffeSleeve = HiveDb();
-    await dialectGaffeSleeve.initHiveDb();
+    dialectGaffeSleeve = PoetryCinemaChaosDb();
+    await dialectGaffeSleeve.competeFallenCarbon();
     combineGrassPerception = FlirdDriftDataBase();
     try {
       ventureChocolateValue = await (combineGrassPerception
@@ -63,7 +63,7 @@ class TrolleyIndoorState extends ChangeNotifier {
   );
 
   void dramaticTrainingPpluck() async {
-    dialectGaffeSleeve.currentUserID = -1;
+    dialectGaffeSleeve.brandWasteButterfly = -1;
     regretShouldHostage = const InviteSensitiveBroccoliUserEntity(
       loungeRealizeEmphasisUid: -1,
       fractionVisualStitchEmail: '',
@@ -96,7 +96,7 @@ class TrolleyIndoorState extends ChangeNotifier {
       InviteSensitiveBroccoliUserEntity inviteSensitiveBroccoliUserEntity) {
     regretShouldHostage = inviteSensitiveBroccoliUserEntity;
     notifyListeners();
-    dialectGaffeSleeve.currentUserID =
+    dialectGaffeSleeve.brandWasteButterfly =
         inviteSensitiveBroccoliUserEntity.loungeRealizeEmphasisUid;
   }
 }
