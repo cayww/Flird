@@ -1,4 +1,4 @@
-import 'package:flird/common/components/common.dart';
+import 'package:flird/common/components/rabbit_greet_union.dart';
 import 'package:flird/pages/gossip_retain_sacrifice_splash/controllers/gossip_retain_splash_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -19,7 +19,7 @@ class _GossipRetainSacrificeSplashState
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: defaultGradientBg,
+      decoration: nativeIdealPossible,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Column(

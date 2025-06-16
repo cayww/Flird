@@ -1,4 +1,4 @@
-import 'package:flird/common/components/common.dart';
+import 'package:flird/common/components/rabbit_greet_union.dart';
 import 'package:flird/pages/bride_bless_pupil_agreement/controllers/bride_bless_agreement_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
@@ -19,7 +19,7 @@ class _BrideBlessPupilAgreementState extends State<BrideBlessPupilAgreement> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: defaultGradientBg,
+      decoration: nativeIdealPossible,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(

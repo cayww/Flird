@@ -1,7 +1,7 @@
 import 'package:drift/drift.dart' as d;
 import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
-import 'package:flird/common/components/common.dart';
+import 'package:flird/common/components/rabbit_greet_union.dart';
 import 'package:flird/common/components/reptile_chord_more_dialog.dart';
 import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery_post_like.drift.dart';
@@ -30,7 +30,7 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: defaultGradientBg,
+      decoration: nativeIdealPossible,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         extendBodyBehindAppBar: true,

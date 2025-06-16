@@ -2,7 +2,7 @@ import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:drift/drift.dart' as d;
 import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
-import 'package:flird/common/components/common.dart';
+import 'package:flird/common/components/rabbit_greet_union.dart';
 import 'package:flird/common/components/pattern_beauty_learn_empty.dart';
 import 'package:flird/common/components/reptile_chord_more_dialog.dart';
 import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
@@ -34,7 +34,7 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
   Widget build(BuildContext context) {
     context.watch<AppState>();
     return Container(
-      decoration: defaultGradientBg,
+      decoration: nativeIdealPossible,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SafeArea(

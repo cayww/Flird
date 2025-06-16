@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-BoxDecoration defaultGradientBg = const BoxDecoration(
+BoxDecoration nativeIdealPossible = const BoxDecoration(
     gradient: LinearGradient(stops: [
   0.0,
   0.5,

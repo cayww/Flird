@@ -1,7 +1,7 @@
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
-import 'package:flird/common/components/common.dart';
+import 'package:flird/common/components/rabbit_greet_union.dart';
 import 'package:flird/pages/debut_maximum_council_wallet/controllers/motion_tolerate_wallet_controller.dart';
 import 'package:flird/providers/app_state/app_state.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +28,7 @@ class _MotionTolerateChanceWalletState
   Widget build(BuildContext context) {
     context.watch<AppState>();
     return Container(
-      decoration: defaultGradientBg,
+      decoration: nativeIdealPossible,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(

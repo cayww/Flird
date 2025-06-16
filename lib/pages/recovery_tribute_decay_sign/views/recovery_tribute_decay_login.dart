@@ -1,6 +1,6 @@
 import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
-import 'package:flird/common/components/common.dart';
+import 'package:flird/common/components/rabbit_greet_union.dart';
 import 'package:flird/pages/recovery_tribute_decay_sign/controllers/recovery_tribute_login_controller.dart';
 import 'package:flird/providers/app_state/app_state.dart';
 import 'package:flird/routes/app_pages.dart';
@@ -38,7 +38,7 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
         FocusManager.instance.primaryFocus?.unfocus();
       },
       child: Container(
-        decoration: defaultGradientBg,
+        decoration: nativeIdealPossible,
         child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
