@@ -1,4 +1,4 @@
-import 'package:flird/common/components/rabbit_greet_union.dart';
+import 'package:flird/dialogue_satellite_after/components/rabbit_greet_union.dart';
 import 'package:flird/pages/bride_bless_pupil_agreement/controllers/bride_bless_agreement_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';

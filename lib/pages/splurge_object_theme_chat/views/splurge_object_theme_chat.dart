@@ -2,12 +2,12 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:drift/drift.dart' as d;
-import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
-import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
-import 'package:flird/common/components/rabbit_greet_union.dart';
-import 'package:flird/common/components/reptile_chord_more_dialog.dart';
-import 'package:flird/common/controllers/voice_recorder_controller.dart';
-import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
+import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growth_defeat.dart';
+import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
+import 'package:flird/dialogue_satellite_after/components/rabbit_greet_union.dart';
+import 'package:flird/dialogue_satellite_after/components/reptile_chord_more_dialog.dart';
+import 'package:flird/dialogue_satellite_after/controllers/voice_recorder_controller.dart';
+import 'package:flird/dialogue_satellite_after/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/coincide_regular_voter_message/coincide_regular_voter_message.drift.dart';
 import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
 import 'package:flird/pages/splurge_object_theme_chat/controllers/splurge_object_chat_controller.dart';

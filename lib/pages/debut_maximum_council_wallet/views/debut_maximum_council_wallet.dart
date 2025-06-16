@@ -1,7 +1,7 @@
 import 'package:easy_debounce/easy_debounce.dart';
-import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
-import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
-import 'package:flird/common/components/rabbit_greet_union.dart';
+import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growth_defeat.dart';
+import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
+import 'package:flird/dialogue_satellite_after/components/rabbit_greet_union.dart';
 import 'package:flird/pages/debut_maximum_council_wallet/controllers/debut_maximum_wallet_controller.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flutter/material.dart';

@@ -1,5 +1,5 @@
-import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
-import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
+import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growth_defeat.dart';
+import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';

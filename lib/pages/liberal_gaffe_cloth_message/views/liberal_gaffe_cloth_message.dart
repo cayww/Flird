@@ -1,7 +1,7 @@
 import 'package:drift/drift.dart' as d;
-import 'package:flird/common/components/rabbit_greet_union.dart';
-import 'package:flird/common/components/pattern_beauty_learn_empty.dart';
-import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
+import 'package:flird/dialogue_satellite_after/components/rabbit_greet_union.dart';
+import 'package:flird/dialogue_satellite_after/components/pattern_beauty_learn_empty.dart';
+import 'package:flird/dialogue_satellite_after/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/routes/app_pages.dart';

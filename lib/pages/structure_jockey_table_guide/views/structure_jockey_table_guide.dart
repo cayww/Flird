@@ -2,8 +2,8 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:device_info_plus/device_info_plus.dart';
-import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
-import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
+import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growth_defeat.dart';
+import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/routes/app_pages.dart';
