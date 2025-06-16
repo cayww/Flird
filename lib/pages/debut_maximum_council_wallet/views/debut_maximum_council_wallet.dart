@@ -2,7 +2,7 @@ import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flird/common/components/rabbit_greet_union.dart';
-import 'package:flird/pages/debut_maximum_council_wallet/controllers/motion_tolerate_wallet_controller.dart';
+import 'package:flird/pages/debut_maximum_council_wallet/controllers/debut_maximum_wallet_controller.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -13,17 +13,16 @@ import 'package:get/get.dart' hide GetNumUtils;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class MotionTolerateChanceWallet extends StatefulWidget {
-  const MotionTolerateChanceWallet({super.key});
+class DebutMaximumCouncilWallet extends StatefulWidget {
+  const DebutMaximumCouncilWallet({super.key});
 
   @override
-  State<MotionTolerateChanceWallet> createState() =>
-      _MotionTolerateChanceWalletState();
+  State<DebutMaximumCouncilWallet> createState() =>
+      _DebutMaximumCouncilWalletState();
 }
 
-class _MotionTolerateChanceWalletState
-    extends State<MotionTolerateChanceWallet> {
-  final controller = Get.find<MotionTolerateWalletController>();
+class _DebutMaximumCouncilWalletState extends State<DebutMaximumCouncilWallet> {
+  final controller = Get.find<DebutMaximumWalletController>();
   @override
   Widget build(BuildContext context) {
     context.watch<TrolleyIndoorState>();

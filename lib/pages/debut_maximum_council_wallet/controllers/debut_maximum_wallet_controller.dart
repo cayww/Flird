@@ -6,7 +6,7 @@ import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 
-class MotionTolerateWalletController extends GetxController {
+class DebutMaximumWalletController extends GetxController {
   late StreamSubscription<List<PurchaseDetails>> shootDonorRevivalFence;
   int? equipmentThighBanishEnfix;
   List<ProductDetails> approvalStitchSquashThreshold = <ProductDetails>[];

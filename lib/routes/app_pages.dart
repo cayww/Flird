@@ -1,7 +1,7 @@
 import 'package:flird/pages/bride_bless_pupil_agreement/bindings/bride_bless_agreement_binding.dart';
 import 'package:flird/pages/bride_bless_pupil_agreement/views/bride_bless_pupil_agreement.dart';
-import 'package:flird/pages/debut_maximum_council_wallet/bindings/motion_tolerate_wallet_binding.dart';
-import 'package:flird/pages/debut_maximum_council_wallet/views/motion_tolerate_chance_wallet.dart';
+import 'package:flird/pages/debut_maximum_council_wallet/bindings/debut_maximum_wallet_binding.dart';
+import 'package:flird/pages/debut_maximum_council_wallet/views/debut_maximum_council_wallet.dart';
 import 'package:flird/pages/gossip_retain_sacrifice_splash/bindings/gossip_retain_splash_binding.dart';
 import 'package:flird/pages/gossip_retain_sacrifice_splash/views/gossip_retain_sacrifice_splash.dart';
 import 'package:flird/pages/implicit_letter_tease_post/bindings/implicit_letter_post_binding.dart';
@@ -69,8 +69,8 @@ class AppPages {
     ),
     GetPage(
         name: Routes.wallet,
-        binding: MotionTolerateWalletBinding(),
-        page: () => const MotionTolerateChanceWallet(),
+        binding: DebutMaximumWalletBinding(),
+        page: () => const DebutMaximumCouncilWallet(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
     GetPage(
