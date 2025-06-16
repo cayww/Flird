@@ -7,192 +7,182 @@ import 'package:get/get.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 
 class DebutMaximumWalletController extends GetxController {
-  late StreamSubscription<List<PurchaseDetails>> shootDonorRevivalFence;
-  int? equipmentThighBanishEnfix;
-  List<ProductDetails> approvalStitchSquashThreshold = <ProductDetails>[];
-  String removeDisappointMarathon = '';
-  final InAppPurchase paragraphEstimateReliance = InAppPurchase.instance;
-  List<PurchaseDetails> utterClerkVariableObtain = <PurchaseDetails>[];
-  late ProductDetails? believedTransactionStride;
+  late StreamSubscription<List<PurchaseDetails>> snarlSanctuaryLineage;
+  int? casualtyGrowthDelay;
+  List<ProductDetails> causeComposeStandard = <ProductDetails>[];
+  String shaftEffectAttention = '';
+  final InAppPurchase decisiveCancelHauntCouple = InAppPurchase.instance;
+  List<PurchaseDetails> scatterInstinctTourist = <PurchaseDetails>[];
+  late ProductDetails? divorceElectionDrive;
 
   @override
   void onInit() {
     super.onInit();
-    fraudTwistPoetrySampleAvenue();
+    precedeWarrantCornerAssertive();
   }
 
-  void fraudTwistPoetrySampleAvenue() async {
-    shootDonorRevivalFence =
-        paragraphEstimateReliance.purchaseStream.listen((data) async {
-      await chanceGuiltBrassElapseTicket(data);
-    }, onDone: () {
-      shootDonorRevivalFence.cancel();
-    }, onError: (_) {
-      showErrorMessage(
-          'An error occurred while processing the payment. Please try again later.');
-    });
-    await flawedCliqueConfrontationSpare();
-  }
-
-  void showErrorMessage(String message) {
-    SmartDialog.showNotify(
-        msg: message,
-        notifyType: NotifyType.error,
-        useAnimation: true,
-        alignment: Alignment.center,
-        animationTime: const Duration(milliseconds: 70));
-  }
-
-  Future<void> flawedCliqueConfrontationSpare() async {
-    if (await paragraphEstimateReliance.isAvailable()) {
+  Future<void> globalPopulationWorkshop() async {
+    if (await decisiveCancelHauntCouple.isAvailable()) {
       SmartDialog.showLoading(msg: 'Loading...');
-      ProductDetailsResponse? vacuumAfterIntermediate =
-          await paragraphEstimateReliance.queryProductDetails(
+      ProductDetailsResponse? exampleRecoveryPremature =
+          await decisiveCancelHauntCouple.queryProductDetails(
               TrolleyIndoorState().ventureChocolateValueSet);
       SmartDialog.dismiss();
-      if (vacuumAfterIntermediate.error != null) {
-        showErrorMessage('An unexpected error has occurred.');
-        approvalStitchSquashThreshold = vacuumAfterIntermediate.productDetails;
-        utterClerkVariableObtain = [];
+      if (exampleRecoveryPremature.error != null) {
+        expandEmbarkHeadquarters('An unexpected error has occurred.');
+        causeComposeStandard = exampleRecoveryPremature.productDetails;
+        scatterInstinctTourist = [];
       } else {
-        if (!vacuumAfterIntermediate.productDetails.isNotEmpty) {
-          approvalStitchSquashThreshold =
-              vacuumAfterIntermediate.productDetails;
+        if (!exampleRecoveryPremature.productDetails.isNotEmpty) {
+          causeComposeStandard = exampleRecoveryPremature.productDetails;
         } else {
-          utterClerkVariableObtain = [];
-          approvalStitchSquashThreshold =
-              judgmentMentalOverviewBarrel(vacuumAfterIntermediate);
+          scatterInstinctTourist = [];
+          causeComposeStandard =
+              crutchAppetiteWriggleAnnual(exampleRecoveryPremature);
         }
       }
     }
   }
 
-  Future<bool> rewardScrambleLodgeSecure(PurchaseDetails grudgeBroccoliTycoon) {
+  Future<void> cerealReceptionCustomerForbid(
+      List<PurchaseDetails> worseCottageTrench) async {
+    for (int i = 0; i < worseCottageTrench.length; i++) {
+      if (worseCottageTrench[i].status != PurchaseStatus.pending) {
+        SmartDialog.dismiss();
+        if (worseCottageTrench[i].status == PurchaseStatus.error) {
+          if (worseCottageTrench[i].pendingCompletePurchase) {
+            await decisiveCancelHauntCouple
+                .completePurchase(worseCottageTrench[i]);
+          }
+          await reliancePerceptionImposter();
+          expandEmbarkHeadquarters(
+              'Error: ${worseCottageTrench[i].error!.message}');
+        } else if ((PurchaseStatus.restored == worseCottageTrench[i].status) ||
+            (PurchaseStatus.purchased == worseCottageTrench[i].status)) {
+          if (!await believedOffendPermissionArrow(worseCottageTrench[i])) {
+            return;
+          } else {
+            if (worseCottageTrench[i].pendingCompletePurchase) {
+              await decisiveCancelHauntCouple
+                  .completePurchase(worseCottageTrench[i]);
+            }
+            if (!TrolleyIndoorState().standConfineTrial) {
+              await availableCoincideEarthflax();
+            }
+            await reliancePerceptionImposter();
+          }
+        } else if (PurchaseStatus.canceled == worseCottageTrench[i].status) {
+          if (worseCottageTrench[i].pendingCompletePurchase) {
+            await decisiveCancelHauntCouple
+                .completePurchase(worseCottageTrench[i]);
+          }
+          await reliancePerceptionImposter();
+          expandEmbarkHeadquarters('The payment was not approved.');
+        }
+      } else {
+        SmartDialog.showLoading(msg: 'Loading...');
+        if (worseCottageTrench[i].pendingCompletePurchase) {
+          InAppPurchase.instance.completePurchase(worseCottageTrench[i]);
+        }
+      }
+    }
+  }
+
+  void expandEmbarkHeadquarters(String message) {
+    SmartDialog.showNotify(
+      msg: message,
+      notifyType: NotifyType.error,
+      alignment: Alignment.center,
+    );
+  }
+
+  Future<bool> believedOffendPermissionArrow(
+      PurchaseDetails bannerDefineSolve) async {
+    if (!await socialistGarageFunction(bannerDefineSolve)) {
+      expandEmbarkHeadquarters(
+          'The purchase verification was unsuccessful. Please try again.');
+      return false;
+    } else {
+      if (bannerDefineSolve.productID != shaftEffectAttention) {
+        scatterInstinctTourist.add(bannerDefineSolve);
+      }
+      return true;
+    }
+  }
+
+  Future<bool> socialistGarageFunction(
+      PurchaseDetails obeseRugbyFragmentDitch) {
     if (TrolleyIndoorState().standConfineTrial) {
       return forecastmissileStiffFolklore(
-        grudgeBroccoliTycoon.verificationData.serverVerificationData,
-        grudgeBroccoliTycoon.purchaseID,
+        obeseRugbyFragmentDitch.verificationData.serverVerificationData,
+        obeseRugbyFragmentDitch.purchaseID,
       );
     } else {
       return Future.value(true);
     }
   }
 
-  Future<void> panelEnhanceAnalystQualify() async =>
+  Future<void> reliancePerceptionImposter() async =>
       (await SKPaymentQueueWrapper().transactions())
-          .map((furnitureSculptureField) async {
-        await SKPaymentQueueWrapper()
-            .finishTransaction(furnitureSculptureField);
+          .map((frankDetectorIssue) async {
+        await SKPaymentQueueWrapper().finishTransaction(frankDetectorIssue);
       });
-
-  List<ProductDetails> judgmentMentalOverviewBarrel(
-      ProductDetailsResponse craftScrewConfidence) {
-    return craftScrewConfidence.productDetails
-      ..sort((siegeGrimaceQuarter, criticismAbolish) =>
-          siegeGrimaceQuarter.rawPrice.compareTo(criticismAbolish.rawPrice));
-  }
 
 // td
   Future<bool> forecastmissileStiffFolklore(
-      String evidenceCancerHobby, String? omissionScientific) async {
-    bool satelliteOriginalTreatment = false;
-    return satelliteOriginalTreatment;
+      String privateMatterMinimizePaper, String? ideologySurveyBetter) async {
+    bool igniteCreamQuestion = false;
+    return igniteCreamQuestion;
   }
 
-  Future<void> surpriseHeroinActivateFrown(
-      String dressDepositConversation) async {
+  Future<void> availableCoincideEarthflax() async {
+    await TrolleyIndoorState()
+        .combineGrassPerception
+        .inviteSensitiveBroccoliUserDao
+        .updateUserCoins(
+            TrolleyIndoorState().regretShouldHostage.loungeRealizeEmphasisUid,
+            TrolleyIndoorState().regretShouldHostage.evidenceSweetDigressCoin +
+                TrolleyIndoorState()
+                    .ventureChocolateValue[casualtyGrowthDelay!]
+                    .originalIgnoreEscapeSides);
+    SmartDialog.showNotify(
+      msg: 'Recharge successful!',
+      alignment: Alignment.center,
+      notifyType: NotifyType.success,
+    );
+  }
+
+  Future<void> sleeveInvestigationFeathers(String crashPoundReward) async {
     try {
-      believedTransactionStride = approvalStitchSquashThreshold
-          .firstWhere((item) => item.id == dressDepositConversation);
-      await panelEnhanceAnalystQualify();
-      await paragraphEstimateReliance.buyConsumable(
+      divorceElectionDrive = causeComposeStandard
+          .firstWhere((item) => item.id == crashPoundReward);
+      await reliancePerceptionImposter();
+      await decisiveCancelHauntCouple.buyConsumable(
           purchaseParam: PurchaseParam(
-        productDetails: believedTransactionStride!,
+        productDetails: divorceElectionDrive!,
       ));
     } catch (_) {
-      showErrorMessage(
+      expandEmbarkHeadquarters(
           'The payment attempt was unsuccessful. Please try again.');
     }
   }
 
-  Future<void> chanceGuiltBrassElapseTicket(
-      List<PurchaseDetails> sprayRegretClearanceNoted) async {
-    for (int i = 0; i < sprayRegretClearanceNoted.length; i++) {
-      if (sprayRegretClearanceNoted[i].status != PurchaseStatus.pending) {
-        SmartDialog.dismiss();
-        if (sprayRegretClearanceNoted[i].status == PurchaseStatus.error) {
-          if (sprayRegretClearanceNoted[i].pendingCompletePurchase) {
-            await paragraphEstimateReliance
-                .completePurchase(sprayRegretClearanceNoted[i]);
-          }
-          await panelEnhanceAnalystQualify();
-          showErrorMessage(
-              'Error: ${sprayRegretClearanceNoted[i].error!.message}');
-        } else if ((PurchaseStatus.restored ==
-                sprayRegretClearanceNoted[i].status) ||
-            (PurchaseStatus.purchased == sprayRegretClearanceNoted[i].status)) {
-          if (!await syndromeDeclarationSmoke(sprayRegretClearanceNoted[i])) {
-            return;
-          } else {
-            if (sprayRegretClearanceNoted[i].pendingCompletePurchase) {
-              await paragraphEstimateReliance
-                  .completePurchase(sprayRegretClearanceNoted[i]);
-            }
-            if (!TrolleyIndoorState().standConfineTrial) {
-              await seasonLunchRemarkApproval();
-            }
-            await panelEnhanceAnalystQualify();
-          }
-        } else if (PurchaseStatus.canceled ==
-            sprayRegretClearanceNoted[i].status) {
-          if (sprayRegretClearanceNoted[i].pendingCompletePurchase) {
-            await paragraphEstimateReliance
-                .completePurchase(sprayRegretClearanceNoted[i]);
-          }
-          await panelEnhanceAnalystQualify();
-          showErrorMessage('The payment was not approved.');
-        }
-      } else {
-        SmartDialog.showLoading(msg: 'Loading...');
-        if (sprayRegretClearanceNoted[i].pendingCompletePurchase) {
-          InAppPurchase.instance.completePurchase(sprayRegretClearanceNoted[i]);
-        }
-      }
-    }
+  void precedeWarrantCornerAssertive() async {
+    snarlSanctuaryLineage =
+        decisiveCancelHauntCouple.purchaseStream.listen((data) async {
+      await cerealReceptionCustomerForbid(data);
+    }, onDone: () {
+      snarlSanctuaryLineage.cancel();
+    }, onError: (_) {
+      expandEmbarkHeadquarters(
+          'An error occurred while processing the payment. Please try again later.');
+    });
+    await globalPopulationWorkshop();
   }
 
-  Future<bool> syndromeDeclarationSmoke(
-      PurchaseDetails flockCanalScholarProvoke) async {
-    if (!await rewardScrambleLodgeSecure(flockCanalScholarProvoke)) {
-      showErrorMessage(
-          'The purchase verification was unsuccessful. Please try again.');
-      return false;
-    } else {
-      if (flockCanalScholarProvoke.productID != removeDisappointMarathon) {
-        utterClerkVariableObtain.add(flockCanalScholarProvoke);
-      }
-      return true;
-    }
-  }
-
-  Future<void> seasonLunchRemarkApproval() async {
-    try {
-      await TrolleyIndoorState()
-          .combineGrassPerception
-          .inviteSensitiveBroccoliUserDao
-          .updateUserCoins(
-              TrolleyIndoorState().regretShouldHostage.loungeRealizeEmphasisUid,
-              TrolleyIndoorState()
-                      .regretShouldHostage
-                      .evidenceSweetDigressCoin +
-                  TrolleyIndoorState()
-                      .ventureChocolateValue[equipmentThighBanishEnfix!]
-                      .originalIgnoreEscapeSides);
-      SmartDialog.showNotify(
-        msg: 'Recharge successful!',
-        alignment: Alignment.center,
-        notifyType: NotifyType.success,
-      );
-    } catch (_) {}
+  List<ProductDetails> crutchAppetiteWriggleAnnual(
+      ProductDetailsResponse virusAloofSudden) {
+    return virusAloofSudden.productDetails
+      ..sort((prd1, prd2) => prd1.rawPrice.compareTo(prd2.rawPrice));
   }
 }

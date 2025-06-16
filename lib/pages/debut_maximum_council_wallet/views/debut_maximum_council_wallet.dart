@@ -133,14 +133,13 @@ class _DebutMaximumCouncilWalletState extends State<DebutMaximumCouncilWallet> {
                       onTap: () {
                         EasyDebounce.debounce('recharge', 120.milliseconds,
                             () async {
-                          controller.equipmentThighBanishEnfix = index;
-                          controller.removeDisappointMarathon =
-                              TrolleyIndoorState()
-                                  .ventureChocolateValue[
-                                      controller.equipmentThighBanishEnfix!]
-                                  .journeyPassiveDesireClarify;
-                          await controller.surpriseHeroinActivateFrown(
-                              controller.removeDisappointMarathon);
+                          controller.casualtyGrowthDelay = index;
+                          controller.shaftEffectAttention = TrolleyIndoorState()
+                              .ventureChocolateValue[
+                                  controller.casualtyGrowthDelay!]
+                              .journeyPassiveDesireClarify;
+                          await controller.sleeveInvestigationFeathers(
+                              controller.shaftEffectAttention);
                         });
                       },
                       child: Container(
