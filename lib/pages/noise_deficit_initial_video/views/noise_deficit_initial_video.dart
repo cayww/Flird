@@ -6,7 +6,7 @@ import 'package:flird/common/components/reptile_chord_more_dialog.dart';
 import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery_post_like.drift.dart';
 import 'package:flird/pages/noise_deficit_initial_video/controllers/noise_deficit_video_controller.dart';
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -87,7 +87,9 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
           ).liberalPowerBlame(clothesTeachCalendar['Nzr8FgWb5Q']!),
           actions: [
             if (controller.userEntity.loungeRealizeEmphasisUid !=
-                AppState().currentUserEntity.loungeRealizeEmphasisUid)
+                TrolleyIndoorState()
+                    .regretShouldHostage
+                    .loungeRealizeEmphasisUid)
               GestureDetector(
                 onTap: () async {
                   if (controller.videoPlayerController.value.isPlaying) {
@@ -306,8 +308,8 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                         ),
                         Gap(4.h),
                         if (controller.userEntity.loungeRealizeEmphasisUid !=
-                            AppState()
-                                .currentUserEntity
+                            TrolleyIndoorState()
+                                .regretShouldHostage
                                 .loungeRealizeEmphasisUid)
                           Column(
                             children: [
@@ -334,8 +336,8 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                             ],
                           ),
                         StreamBuilder<List<CrutchBatteryPostLikeEntity>>(
-                            stream: (AppState()
-                                    .driftDB
+                            stream: (TrolleyIndoorState()
+                                    .combineGrassPerception
                                     .crutchBatteryPostLike
                                     .select()
                                   ..where((f) => f.morselCrossSpentPost.equals(
@@ -349,8 +351,8 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                                 likeCount = snapshot.data!.length;
                                 for (final element in snapshot.data!) {
                                   if (element.promoteEmpireBirthUser ==
-                                      AppState()
-                                          .currentUserEntity
+                                      TrolleyIndoorState()
+                                          .regretShouldHostage
                                           .loungeRealizeEmphasisUid) {
                                     liked = true;
                                     break;
@@ -362,27 +364,29 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                                   GestureDetector(
                                     onTap: () async {
                                       if (!liked) {
-                                        await AppState()
-                                            .driftDB
+                                        await TrolleyIndoorState()
+                                            .combineGrassPerception
                                             .crutchBatteryPostLike
-                                            .insertOne(CrutchBatteryPostLikeCompanion.insert(
-                                                morselCrossSpentPost: controller
-                                                    .postEntity
-                                                    .crownImagineDecadeId,
-                                                promoteEmpireBirthUser: AppState()
-                                                    .currentUserEntity
-                                                    .loungeRealizeEmphasisUid));
+                                            .insertOne(CrutchBatteryPostLikeCompanion
+                                                .insert(
+                                                    morselCrossSpentPost:
+                                                        controller.postEntity
+                                                            .crownImagineDecadeId,
+                                                    promoteEmpireBirthUser:
+                                                        TrolleyIndoorState()
+                                                            .regretShouldHostage
+                                                            .loungeRealizeEmphasisUid));
                                       } else {
-                                        await AppState()
-                                            .driftDB
+                                        await TrolleyIndoorState()
+                                            .combineGrassPerception
                                             .crutchBatteryPostLike
                                             .deleteWhere((f) =>
                                                 f.morselCrossSpentPost.equals(
                                                     controller.postEntity
                                                         .crownImagineDecadeId) &
                                                 f.promoteEmpireBirthUser.equals(
-                                                    AppState()
-                                                        .currentUserEntity
+                                                    TrolleyIndoorState()
+                                                        .regretShouldHostage
                                                         .loungeRealizeEmphasisUid));
                                       }
                                     },

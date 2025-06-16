@@ -2,7 +2,7 @@ import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flird/common/components/rabbit_greet_union.dart';
 import 'package:flird/pages/recovery_tribute_decay_sign/controllers/recovery_tribute_login_controller.dart';
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/routes/app_pages.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -305,8 +305,8 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                             final password =
                                 controller.passwordController.value.text;
                             await Future.delayed(613.milliseconds);
-                            final r = await AppState()
-                                .driftDB
+                            final r = await TrolleyIndoorState()
+                                .combineGrassPerception
                                 .inviteSensitiveBroccoliUserDao
                                 .getUserByEmail(email);
                             if (r == null) {
@@ -318,7 +318,7 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                             } else {
                               if (r.distortSiegeTensePassword
                                   .equals(password)) {
-                                AppState().loginIn(r);
+                                TrolleyIndoorState().straightExtentStrip(r);
                                 Get.offAllNamed(Routes.main);
                               } else {
                                 SmartDialog.showNotify(

@@ -15,7 +15,7 @@ import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:flird/db/database/tables/slope_cabinet_branch_keyword/slope_cabinet_branch_keyword.dart';
 
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 
 import 'package:sqlite3_flutter_libs/sqlite3_flutter_libs.dart';
 import 'package:path_provider/path_provider.dart';
@@ -49,7 +49,8 @@ class FlirdDriftDataBase extends $FlirdDriftDataBase {
 
   static LazyDatabase initDataBase() {
     return LazyDatabase(() async {
-      final version = AppState().version.split('.').toList().join();
+      final version =
+          TrolleyIndoorState().gravelCaptainPattern.split('.').toList().join();
       final cachedPath = path.join(
           (await getApplicationDocumentsDirectory()).path,
           'FlirdDB$version.db');

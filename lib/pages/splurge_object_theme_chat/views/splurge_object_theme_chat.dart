@@ -11,7 +11,7 @@ import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/coincide_regular_voter_message/coincide_regular_voter_message.drift.dart';
 import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
 import 'package:flird/pages/splurge_object_theme_chat/controllers/splurge_object_chat_controller.dart';
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -139,8 +139,8 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                 Expanded(
                     child: StreamBuilder<
                             List<CoincideRegularVoterMessageEntity>>(
-                        stream: (AppState()
-                                .driftDB
+                        stream: (TrolleyIndoorState()
+                                .combineGrassPerception
                                 .coincideRegularVoterMessage
                                 .select()
                               ..where((p) => p.inquirySoundSceneChat
@@ -218,8 +218,8 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                           CrossAxisAlignment.end,
                                       children: [
                                         Text(
-                                          AppState()
-                                              .currentUserEntity
+                                          TrolleyIndoorState()
+                                              .regretShouldHostage
                                               .strapLikelyLaserUsername,
                                           style: GoogleFonts.roboto(
                                             fontSize: 16.sp,
@@ -246,8 +246,8 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                     Gap(6.w),
                                     ClipOval(
                                       child: trustMusicalFruit(
-                                          AppState()
-                                              .currentUserEntity
+                                          TrolleyIndoorState()
+                                              .regretShouldHostage
                                               .paradeMutualPaintPhoto,
                                           flingWaste: 40.h,
                                           chequeGlass: 40.h,
@@ -316,11 +316,11 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                       await selectedResult![0].originBytes;
                                   final r = await activatePlaceSolution(
                                       response!, 'message.png');
-                                  await AppState()
-                                      .driftDB
+                                  await TrolleyIndoorState()
+                                      .combineGrassPerception
                                       .transaction(() async {
-                                    await AppState()
-                                        .driftDB
+                                    await TrolleyIndoorState()
+                                        .combineGrassPerception
                                         .coincideRegularVoterMessage
                                         .insertOne(
                                             CoincideRegularVoterMessageCompanion
@@ -329,8 +329,8 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                                         controller.chatID,
                                                     practicalProofSimilarImage:
                                                         d.Value(r)));
-                                    await (AppState()
-                                            .driftDB
+                                    await (TrolleyIndoorState()
+                                            .combineGrassPerception
                                             .redeemDriedBucketChat
                                             .update()
                                           ..whereSamePrimaryKey(
@@ -416,11 +416,11 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                   final text = controller.textController.text;
                                   final nowTime = DateTime.now();
                                   try {
-                                    await AppState()
-                                        .driftDB
+                                    await TrolleyIndoorState()
+                                        .combineGrassPerception
                                         .transaction(() async {
-                                      await AppState()
-                                          .driftDB
+                                      await TrolleyIndoorState()
+                                          .combineGrassPerception
                                           .coincideRegularVoterMessage
                                           .insertOne(
                                               CoincideRegularVoterMessageCompanion
@@ -430,8 +430,8 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                             compactIssueCheapContent:
                                                 d.Value(text),
                                           ));
-                                      await (AppState()
-                                              .driftDB
+                                      await (TrolleyIndoorState()
+                                              .combineGrassPerception
                                               .redeemDriedBucketChat
                                               .update()
                                             ..whereSamePrimaryKey(
@@ -621,16 +621,21 @@ class _ScramblePunishAudioBottomState extends State<ScramblePunishAudioBottom> {
                   }
                   final resp = await activatePlaceSolution(
                       await recordedFile.readAsBytes(), 'message_audio.mp3');
-                  await AppState().driftDB.transaction(() async {
-                    await (AppState().driftDB.redeemDriedBucketChat.update()
+                  await TrolleyIndoorState()
+                      .combineGrassPerception
+                      .transaction(() async {
+                    await (TrolleyIndoorState()
+                            .combineGrassPerception
+                            .redeemDriedBucketChat
+                            .update()
                           ..whereSamePrimaryKey(RedeemDriedBucketChatCompanion(
                               listenAspectBurialChatId:
                                   d.Value(widget.buffetSenseChatID))))
                         .write(RedeemDriedBucketChatCompanion(
                             matrixBudgeTrailMessage: const d.Value('[Audio]'),
                             islandCemeteryLooseTime: d.Value(DateTime.now())));
-                    await AppState()
-                        .driftDB
+                    await TrolleyIndoorState()
+                        .combineGrassPerception
                         .coincideRegularVoterMessage
                         .insertOne(CoincideRegularVoterMessageCompanion.insert(
                           inquirySoundSceneChat: widget.buffetSenseChatID,

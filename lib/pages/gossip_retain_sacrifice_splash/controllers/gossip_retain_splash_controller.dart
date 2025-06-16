@@ -1,4 +1,4 @@
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/routes/app_pages.dart';
 import 'package:get/get.dart';
 
@@ -7,13 +7,13 @@ class GossipRetainSplashController extends GetxController {
   void onReady() async {
     super.onReady();
     await Future.delayed(1.seconds);
-    if (AppState().hiveDb.currentUserID != -1) {
-      final result = await AppState()
-          .driftDB
+    if (TrolleyIndoorState().dialectGaffeSleeve.currentUserID != -1) {
+      final result = await TrolleyIndoorState()
+          .combineGrassPerception
           .inviteSensitiveBroccoliUserDao
-          .getUserByID(AppState().hiveDb.currentUserID);
+          .getUserByID(TrolleyIndoorState().dialectGaffeSleeve.currentUserID);
       if (result != null) {
-        AppState().loginIn(result);
+        TrolleyIndoorState().straightExtentStrip(result);
       }
       Get.offAllNamed(result == null ? Routes.guide : Routes.main);
     } else {

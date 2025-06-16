@@ -9,7 +9,7 @@ import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery_post_like.drift.dart';
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
 import 'package:flird/db/database/tables/slope_cabinet_branch_keyword/slope_cabinet_branch_keyword.drift.dart';
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -32,7 +32,7 @@ class SlightlyHeadlineClerkMain extends StatefulWidget {
 class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
   @override
   Widget build(BuildContext context) {
-    context.watch<AppState>();
+    context.watch<TrolleyIndoorState>();
     return Container(
       decoration: nativeIdealPossible,
       child: Scaffold(
@@ -94,9 +94,10 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                         strokeAlign: 0.0),
                                     image: DecorationImage(
                                         fit: BoxFit.cover,
-                                        image: trustMusicalFruit(AppState()
-                                                .currentUserEntity
-                                                .paradeMutualPaintPhoto)
+                                        image: trustMusicalFruit(
+                                                TrolleyIndoorState()
+                                                    .regretShouldHostage
+                                                    .paradeMutualPaintPhoto)
                                             .image)),
                               ),
                             )
@@ -276,15 +277,16 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                               ScienceAcquitMagicPostEntity,
                               $$ScienceAcquitMagicPostTableReferences
                             )>>(
-                    stream: AppState()
-                        .driftDB
+                    stream: TrolleyIndoorState()
+                        .combineGrassPerception
                         .managers
                         .scienceAcquitMagicPost
                         .withReferences(
                             (p) => p(consciousExcessElectUser: true))
                         .filter((f) => f.consciousExcessElectUser
                             .loungeRealizeEmphasisUid.column
-                            .isNotInQuery(AppState().filterBlocklist()))
+                            .isNotInQuery(
+                                TrolleyIndoorState().obstacleGuardScene()))
                         .watch(),
                     builder: (context, snapshot) {
                       if (!snapshot.hasData) {
@@ -411,8 +413,8 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                                   ),
                                                   if (userEntity
                                                           .loungeRealizeEmphasisUid !=
-                                                      AppState()
-                                                          .currentUserEntity
+                                                      TrolleyIndoorState()
+                                                          .regretShouldHostage
                                                           .loungeRealizeEmphasisUid)
                                                     GestureDetector(
                                                       onTap: () async {
@@ -515,8 +517,8 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                     right: 12.w,
                                     child: StreamBuilder<
                                             List<CrutchBatteryPostLikeEntity>>(
-                                        stream: (AppState()
-                                                .driftDB
+                                        stream: (TrolleyIndoorState()
+                                                .combineGrassPerception
                                                 .crutchBatteryPostLike
                                                 .select()
                                               ..where((f) => f
@@ -533,8 +535,8 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                                 in snapshot.data!) {
                                               if (element
                                                       .promoteEmpireBirthUser ==
-                                                  AppState()
-                                                      .currentUserEntity
+                                                  TrolleyIndoorState()
+                                                      .regretShouldHostage
                                                       .loungeRealizeEmphasisUid) {
                                                 liked = true;
                                                 break;
@@ -546,28 +548,28 @@ class _SlightlyHeadlineClerkMainState extends State<SlightlyHeadlineClerkMain> {
                                               GestureDetector(
                                                 onTap: () async {
                                                   if (!liked) {
-                                                    await AppState()
-                                                        .driftDB
+                                                    await TrolleyIndoorState()
+                                                        .combineGrassPerception
                                                         .crutchBatteryPostLike
                                                         .insertOne(CrutchBatteryPostLikeCompanion.insert(
                                                             morselCrossSpentPost:
                                                                 postEntity
                                                                     .crownImagineDecadeId,
                                                             promoteEmpireBirthUser:
-                                                                AppState()
-                                                                    .currentUserEntity
+                                                                TrolleyIndoorState()
+                                                                    .regretShouldHostage
                                                                     .loungeRealizeEmphasisUid));
                                                   } else {
-                                                    await AppState()
-                                                        .driftDB
+                                                    await TrolleyIndoorState()
+                                                        .combineGrassPerception
                                                         .crutchBatteryPostLike
                                                         .deleteWhere((f) =>
                                                             f.morselCrossSpentPost
                                                                 .equals(postEntity
                                                                     .crownImagineDecadeId) &
-                                                            f.promoteEmpireBirthUser
-                                                                .equals(AppState()
-                                                                    .currentUserEntity
+                                                            f.promoteEmpireBirthUser.equals(
+                                                                TrolleyIndoorState()
+                                                                    .regretShouldHostage
                                                                     .loungeRealizeEmphasisUid));
                                                   }
                                                 },
@@ -838,7 +840,7 @@ class WheatBreezeMarginMenu extends StatelessWidget {
               fit: BoxFit.contain,
             ),
             title: Text(
-              '${AppState().currentUserEntity.evidenceSweetDigressCoin} Coins',
+              '${TrolleyIndoorState().regretShouldHostage.evidenceSweetDigressCoin} Coins',
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: GoogleFonts.roboto(
@@ -953,11 +955,15 @@ class _TruthConditionThesaurusBottomState
           Gap(12.h),
           Expanded(
               child: StreamBuilder<List<SlopeCabinetBranchKeywordEntity>>(
-                  stream: (AppState().driftDB.slopeCabinetBranchKeyword.select()
+                  stream: (TrolleyIndoorState()
+                          .combineGrassPerception
+                          .slopeCabinetBranchKeyword
+                          .select()
                         ..where((s) =>
-                            s.disgracePassionFloorUser.equals(AppState()
-                                .currentUserEntity
-                                .loungeRealizeEmphasisUid) |
+                            s.disgracePassionFloorUser.equals(
+                                TrolleyIndoorState()
+                                    .regretShouldHostage
+                                    .loungeRealizeEmphasisUid) |
                             s.robotExtentClashCommon.equals(true)))
                       .watch(),
                   builder: (context, snapshot) {
@@ -1113,12 +1119,12 @@ class _ExtraObtainAddKeywordState extends State<ExtraObtainAddKeyword> {
                       return;
                     }
                     final navigator = Navigator.of(context);
-                    await AppState()
-                        .driftDB
+                    await TrolleyIndoorState()
+                        .combineGrassPerception
                         .slopeCabinetBranchKeyword
                         .insertOne(SlopeCabinetBranchKeywordCompanion.insert(
-                            disgracePassionFloorUser: AppState()
-                                .currentUserEntity
+                            disgracePassionFloorUser: TrolleyIndoorState()
+                                .regretShouldHostage
                                 .loungeRealizeEmphasisUid,
                             bundleAdmitSolutionValue:
                                 textEditingController.text));

@@ -1,7 +1,7 @@
 import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flird/db/database/tables/scandal_protest_behind_block/scandal_protest_behind_block.drift.dart';
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -57,13 +57,13 @@ class _ReptileChordMoreDialogState extends State<ReptileChordMoreDialog> {
                     isLoading = true;
                     setState(() {});
                     await Future.delayed(727.milliseconds);
-                    final result = await AppState()
-                        .driftDB
+                    final result = await TrolleyIndoorState()
+                        .combineGrassPerception
                         .scandalProtestBehindBlockDao
                         .insertOneBlocklist(
                             ScandalProtestBehindBlockCompanion.insert(
-                                poisonTerraceSimilarUser: AppState()
-                                    .currentUserEntity
+                                poisonTerraceSimilarUser: TrolleyIndoorState()
+                                    .regretShouldHostage
                                     .loungeRealizeEmphasisUid,
                                 rehearsalAngelFinalBlock:
                                     widget.cucumberFrameUserID));

@@ -5,7 +5,7 @@ import 'package:flird/common/components/rabbit_greet_union.dart';
 import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
 import 'package:flird/pages/implicit_letter_tease_post/controllers/implicit_letter_post_controller.dart';
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -100,15 +100,16 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                   onTap: () async {
                     if (controller.keyFirst.value == null ||
                         controller.keySecond.value == null) {
-                      final result = (await (AppState()
-                                  .driftDB
+                      final result = (await (TrolleyIndoorState()
+                                  .combineGrassPerception
                                   .slopeCabinetBranchKeyword
                                   .select()
                                 ..where((s) =>
                                     s.robotExtentClashCommon.equals(true) |
-                                    s.disgracePassionFloorUser.equals(AppState()
-                                        .currentUserEntity
-                                        .loungeRealizeEmphasisUid)))
+                                    s.disgracePassionFloorUser.equals(
+                                        TrolleyIndoorState()
+                                            .regretShouldHostage
+                                            .loungeRealizeEmphasisUid)))
                               .get())
                           .map((item) => item.bundleAdmitSolutionValue)
                           .toList();
@@ -215,16 +216,16 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                                         }) ??
                                     false;
                                 if (result) {
-                                  final result = (await (AppState()
-                                              .driftDB
+                                  final result = (await (TrolleyIndoorState()
+                                              .combineGrassPerception
                                               .slopeCabinetBranchKeyword
                                               .select()
                                             ..where((s) =>
                                                 s.robotExtentClashCommon
                                                     .equals(true) |
                                                 s.disgracePassionFloorUser
-                                                    .equals(AppState()
-                                                        .currentUserEntity
+                                                    .equals(TrolleyIndoorState()
+                                                        .regretShouldHostage
                                                         .loungeRealizeEmphasisUid)))
                                           .get())
                                       .map((item) =>
@@ -390,14 +391,14 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                               (await controller
                                   .videoAssetEntity.value!.thumbnailData)!,
                               'post_cover.png');
-                          final result = await AppState()
-                              .driftDB
+                          final result = await TrolleyIndoorState()
+                              .combineGrassPerception
                               .scienceAcquitMagicPost
                               .insertReturningOrNull(
                                   ScienceAcquitMagicPostCompanion.insert(
                                       consciousExcessElectUser:
-                                          AppState()
-                                              .currentUserEntity
+                                          TrolleyIndoorState()
+                                              .regretShouldHostage
                                               .loungeRealizeEmphasisUid,
                                       potteryEndureTempleVideo: postVideo,
                                       powerQuarterEnlargeCover: postVideoCover,
@@ -410,8 +411,9 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                           if (result != null) {
                             Get.offAndToNamed(Routes.postDetail, arguments: {
                               'postEntity': result.toJsonString(),
-                              'userEntity':
-                                  AppState().currentUserEntity.toJsonString(),
+                              'userEntity': TrolleyIndoorState()
+                                  .regretShouldHostage
+                                  .toJsonString(),
                             });
                           } else {
                             controller.isLoading.value = false;
@@ -516,19 +518,19 @@ class _PressUnawarePayDialogState extends State<PressUnawarePayDialog> {
                           final navigator = Navigator.of(context);
                           isLoading.value = true;
                           await Future.delayed(746.milliseconds);
-                          if (AppState()
-                                  .currentUserEntity
+                          if (TrolleyIndoorState()
+                                  .regretShouldHostage
                                   .evidenceSweetDigressCoin >=
                               50) {
-                            await AppState()
-                                .driftDB
+                            await TrolleyIndoorState()
+                                .combineGrassPerception
                                 .inviteSensitiveBroccoliUserDao
                                 .updateUserCoins(
-                                    AppState()
-                                        .currentUserEntity
+                                    TrolleyIndoorState()
+                                        .regretShouldHostage
                                         .loungeRealizeEmphasisUid,
-                                    AppState()
-                                            .currentUserEntity
+                                    TrolleyIndoorState()
+                                            .regretShouldHostage
                                             .evidenceSweetDigressCoin -
                                         50);
                             if (mounted) {

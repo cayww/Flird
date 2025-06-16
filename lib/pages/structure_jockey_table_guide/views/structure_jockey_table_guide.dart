@@ -5,7 +5,7 @@ import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/routes/app_pages.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -102,17 +102,17 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                             isLoading.value = false;
                             return;
                           }
-                          final user = await (AppState()
-                              .driftDB
+                          final user = await (TrolleyIndoorState()
+                              .combineGrassPerception
                               .inviteSensitiveBroccoliUserDao
                               .getUserByEmail(deviceID));
                           if (user != null) {
-                            AppState().loginIn(user);
+                            TrolleyIndoorState().straightExtentStrip(user);
                             Get.offAllNamed(Routes.main);
                             return;
                           }
-                          final newUser = await AppState()
-                              .driftDB
+                          final newUser = await TrolleyIndoorState()
+                              .combineGrassPerception
                               .inviteSensitiveBroccoliUserDao
                               .insertUser(
                                 InviteSensitiveBroccoliUserCompanion.insert(
@@ -124,7 +124,7 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                                 ),
                               );
                           if (newUser != null) {
-                            AppState().loginIn(newUser);
+                            TrolleyIndoorState().straightExtentStrip(newUser);
                             Get.offAllNamed(Routes.main);
                           }
                         }

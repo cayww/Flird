@@ -3,7 +3,7 @@ import 'package:flird/common/components/rabbit_greet_union.dart';
 import 'package:flird/common/components/pattern_beauty_learn_empty.dart';
 import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/scandal_protest_behind_block/scandal_protest_behind_block.drift.dart';
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -64,16 +64,16 @@ class _TemptSopranoIronyBlockState extends State<TemptSopranoIronyBlock> {
                                 ScandalProtestBehindBlockEntity,
                                 $$ScandalProtestBehindBlockTableReferences
                               )>>(
-                      stream: AppState()
-                          .driftDB
+                      stream: TrolleyIndoorState()
+                          .combineGrassPerception
                           .managers
                           .scandalProtestBehindBlock
                           .withReferences(
                               (p) => p(rehearsalAngelFinalBlock: true))
                           .filter((f) => f
                               .poisonTerraceSimilarUser.loungeRealizeEmphasisUid
-                              .equals(AppState()
-                                  .currentUserEntity
+                              .equals(TrolleyIndoorState()
+                                  .regretShouldHostage
                                   .loungeRealizeEmphasisUid))
                           .watch(),
                       builder: (context, snapshot) {
@@ -192,8 +192,8 @@ class _ResortSlumpBlockIconState extends State<ResortSlumpBlockIcon> {
           isLoading = true;
         });
         await Future.delayed(855.milliseconds);
-        await AppState()
-            .driftDB
+        await TrolleyIndoorState()
+            .combineGrassPerception
             .scandalProtestBehindBlock
             .deleteOne(widget.blockEntity);
       },

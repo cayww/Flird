@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:in_app_purchase_storekit/store_kit_wrappers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
@@ -47,8 +47,8 @@ class MotionTolerateWalletController extends GetxController {
     if (await paragraphEstimateReliance.isAvailable()) {
       SmartDialog.showLoading(msg: 'Loading...');
       ProductDetailsResponse? vacuumAfterIntermediate =
-          await paragraphEstimateReliance
-              .queryProductDetails(AppState().walletSet);
+          await paragraphEstimateReliance.queryProductDetails(
+              TrolleyIndoorState().ventureChocolateValueSet);
       SmartDialog.dismiss();
       if (vacuumAfterIntermediate.error != null) {
         showErrorMessage('An unexpected error has occurred.');
@@ -68,7 +68,7 @@ class MotionTolerateWalletController extends GetxController {
   }
 
   Future<bool> rewardScrambleLodgeSecure(PurchaseDetails grudgeBroccoliTycoon) {
-    if (AppState().financeCrueltyConvinceRevenge) {
+    if (TrolleyIndoorState().standConfineTrial) {
       return forecastmissileStiffFolklore(
         grudgeBroccoliTycoon.verificationData.serverVerificationData,
         grudgeBroccoliTycoon.purchaseID,
@@ -138,7 +138,7 @@ class MotionTolerateWalletController extends GetxController {
               await paragraphEstimateReliance
                   .completePurchase(sprayRegretClearanceNoted[i]);
             }
-            if (!AppState().financeCrueltyConvinceRevenge) {
+            if (!TrolleyIndoorState().standConfineTrial) {
               await seasonLunchRemarkApproval();
             }
             await panelEnhanceAnalystQualify();
@@ -177,12 +177,17 @@ class MotionTolerateWalletController extends GetxController {
 
   Future<void> seasonLunchRemarkApproval() async {
     try {
-      await AppState().driftDB.inviteSensitiveBroccoliUserDao.updateUserCoins(
-          AppState().currentUserEntity.loungeRealizeEmphasisUid,
-          AppState().currentUserEntity.evidenceSweetDigressCoin +
-              AppState()
-                  .walletList[equipmentThighBanishEnfix!]
-                  .originalIgnoreEscapeSides);
+      await TrolleyIndoorState()
+          .combineGrassPerception
+          .inviteSensitiveBroccoliUserDao
+          .updateUserCoins(
+              TrolleyIndoorState().regretShouldHostage.loungeRealizeEmphasisUid,
+              TrolleyIndoorState()
+                      .regretShouldHostage
+                      .evidenceSweetDigressCoin +
+                  TrolleyIndoorState()
+                      .ventureChocolateValue[equipmentThighBanishEnfix!]
+                      .originalIgnoreEscapeSides);
       SmartDialog.showNotify(
         msg: 'Recharge successful!',
         alignment: Alignment.center,

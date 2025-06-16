@@ -5,7 +5,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/routes/app_pages.dart';
 import 'package:flird/routes/initial_binding.dart';
 
@@ -17,7 +17,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final dir = await getApplicationDocumentsDirectory();
   Hive.init(dir.path);
-  await AppState().initAppState();
+  await TrolleyIndoorState().aluminiumProvincialSpirit();
   runApp(const MyApp());
   SystemUiOverlayStyle systemUiOverlayStyle = const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
@@ -48,7 +48,9 @@ class _MyAppState extends State<MyApp> {
       splitScreenMode: true,
       minTextAdapt: true,
       child: MultiProvider(
-        providers: [ChangeNotifierProvider(create: (_) => AppState())],
+        providers: [
+          ChangeNotifierProvider(create: (_) => TrolleyIndoorState())
+        ],
         child: GetMaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Flird',

@@ -7,7 +7,7 @@ import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
 import 'package:flird/db/database/tables/slope_cabinet_branch_keyword/slope_cabinet_branch_keyword.drift.dart';
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -62,7 +62,7 @@ class _StrapAbundantEntireProfileState
   ];
   @override
   Widget build(BuildContext context) {
-    context.watch<AppState>();
+    context.watch<TrolleyIndoorState>();
     return Container(
       decoration: nativeIdealPossible,
       child: Scaffold(
@@ -144,11 +144,12 @@ class _StrapAbundantEntireProfileState
                     final result = await activatePlaceSolution(
                         (await selectedResult![0].originBytes)!, 'photo.png');
                     try {
-                      await (AppState()
-                              .driftDB
+                      await (TrolleyIndoorState()
+                              .combineGrassPerception
                               .inviteSensitiveBroccoliUser
                               .update()
-                            ..whereSamePrimaryKey(AppState().currentUserEntity))
+                            ..whereSamePrimaryKey(
+                                TrolleyIndoorState().regretShouldHostage))
                           .write(InviteSensitiveBroccoliUserCompanion(
                               paradeMutualPaintPhoto: d.Value(result)));
                       SmartDialog.showNotify(
@@ -164,7 +165,9 @@ class _StrapAbundantEntireProfileState
                   children: [
                     ClipOval(
                       child: trustMusicalFruit(
-                          AppState().currentUserEntity.paradeMutualPaintPhoto,
+                          TrolleyIndoorState()
+                              .regretShouldHostage
+                              .paradeMutualPaintPhoto,
                           flingWaste: 115.h,
                           chequeGlass: 115.h,
                           beheadSurvey: BoxFit.cover),
@@ -204,7 +207,9 @@ class _StrapAbundantEntireProfileState
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      AppState().currentUserEntity.strapLikelyLaserUsername,
+                      TrolleyIndoorState()
+                          .regretShouldHostage
+                          .strapLikelyLaserUsername,
                       style: GoogleFonts.roboto(
                           fontSize: 24.sp,
                           height: 1.h,
@@ -238,14 +243,17 @@ class _StrapAbundantEntireProfileState
               SizedBox(
                 height: 30.h,
                 child: StreamBuilder<List<SlopeCabinetBranchKeywordEntity>>(
-                    stream:
-                        (AppState().driftDB.slopeCabinetBranchKeyword.select()
-                              ..where((s) =>
-                                  s.disgracePassionFloorUser.equals(AppState()
-                                      .currentUserEntity
+                    stream: (TrolleyIndoorState()
+                            .combineGrassPerception
+                            .slopeCabinetBranchKeyword
+                            .select()
+                          ..where((s) =>
+                              s.disgracePassionFloorUser.equals(
+                                  TrolleyIndoorState()
+                                      .regretShouldHostage
                                       .loungeRealizeEmphasisUid) |
-                                  s.robotExtentClashCommon.equals(true)))
-                            .watch(),
+                              s.robotExtentClashCommon.equals(true)))
+                        .watch(),
                     builder: (context, snapshot) {
                       if (!snapshot.hasData) {
                         return const SizedBox.shrink();
@@ -295,13 +303,15 @@ class _StrapAbundantEntireProfileState
               Gap(16.h),
               Expanded(
                   child: FutureBuilder<List<ScienceAcquitMagicPostEntity>>(
-                      future:
-                          (AppState().driftDB.scienceAcquitMagicPost.select()
-                                ..where((f) => f.consciousExcessElectUser
-                                    .equals(AppState()
-                                        .currentUserEntity
-                                        .loungeRealizeEmphasisUid)))
-                              .get(),
+                      future: (TrolleyIndoorState()
+                              .combineGrassPerception
+                              .scienceAcquitMagicPost
+                              .select()
+                            ..where((f) => f.consciousExcessElectUser.equals(
+                                TrolleyIndoorState()
+                                    .regretShouldHostage
+                                    .loungeRealizeEmphasisUid)))
+                          .get(),
                       builder: (context, snapshot) {
                         if (!snapshot.hasData) {
                           return Center(
@@ -327,8 +337,8 @@ class _StrapAbundantEntireProfileState
                                 onTap: () {
                                   Get.toNamed(Routes.postDetail, arguments: {
                                     'postEntity': postEntity.toJsonString(),
-                                    'userEntity': AppState()
-                                        .currentUserEntity
+                                    'userEntity': TrolleyIndoorState()
+                                        .regretShouldHostage
                                         .toJsonString(),
                                   });
                                 },
@@ -430,7 +440,7 @@ class _BreezeStoveEditNameBottomState extends State<BreezeStoveEditNameBottom> {
     borderRadius: BorderRadius.circular(16.r),
   );
   late TextEditingController textEditingController = TextEditingController(
-      text: AppState().currentUserEntity.strapLikelyLaserUsername);
+      text: TrolleyIndoorState().regretShouldHostage.strapLikelyLaserUsername);
   FocusNode focusNode = FocusNode();
 
   @override
@@ -548,8 +558,12 @@ class _BreezeStoveEditNameBottomState extends State<BreezeStoveEditNameBottom> {
                     isLoading = true;
                   });
                   await Future.delayed(846.milliseconds);
-                  await (AppState().driftDB.inviteSensitiveBroccoliUser.update()
-                        ..whereSamePrimaryKey(AppState().currentUserEntity))
+                  await (TrolleyIndoorState()
+                          .combineGrassPerception
+                          .inviteSensitiveBroccoliUser
+                          .update()
+                        ..whereSamePrimaryKey(
+                            TrolleyIndoorState().regretShouldHostage))
                       .write(InviteSensitiveBroccoliUserCompanion(
                           strapLikelyLaserUsername:
                               d.Value(textEditingController.text)));
@@ -815,7 +829,7 @@ class _LooseCasualtySettingBottomState
                       }
                       isLoading.value = true;
                       await Future.delayed(823.milliseconds);
-                      AppState().logOut();
+                      TrolleyIndoorState().dramaticTrainingPpluck();
                       Get.offAllNamed(Routes.guide);
                     },
                     style: TextButton.styleFrom(fixedSize: Size(315.w, 48.h)),
@@ -896,10 +910,11 @@ class _VeteranCourtDeleteDialogState extends State<VeteranCourtDeleteDialog> {
                         onPressed: () async {
                           isLoading.value = true;
                           await Future.delayed(817.milliseconds);
-                          final currentUser = AppState().currentUserEntity;
-                          AppState().logOut();
-                          await AppState()
-                              .driftDB
+                          final currentUser =
+                              TrolleyIndoorState().regretShouldHostage;
+                          TrolleyIndoorState().dramaticTrainingPpluck();
+                          await TrolleyIndoorState()
+                              .combineGrassPerception
                               .inviteSensitiveBroccoliUser
                               .deleteOne(currentUser);
                           Get.offAllNamed(Routes.guide);

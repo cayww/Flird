@@ -3,7 +3,7 @@ import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flird/common/components/rabbit_greet_union.dart';
 import 'package:flird/pages/debut_maximum_council_wallet/controllers/motion_tolerate_wallet_controller.dart';
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -26,7 +26,7 @@ class _MotionTolerateChanceWalletState
   final controller = Get.find<MotionTolerateWalletController>();
   @override
   Widget build(BuildContext context) {
-    context.watch<AppState>();
+    context.watch<TrolleyIndoorState>();
     return Container(
       decoration: nativeIdealPossible,
       child: Scaffold(
@@ -94,7 +94,7 @@ class _MotionTolerateChanceWalletState
                           ),
                           Gap(10.h),
                           Text(
-                            '${AppState().currentUserEntity.evidenceSweetDigressCoin}',
+                            '${TrolleyIndoorState().regretShouldHostage.evidenceSweetDigressCoin}',
                             style: GoogleFonts.roboto(
                                 fontSize: 24.sp,
                                 fontWeight: FontWeight.w700,
@@ -128,15 +128,18 @@ class _MotionTolerateChanceWalletState
                 Expanded(
                     child: ListView.separated(
                   itemBuilder: (context, index) {
-                    final walletEntity = AppState().walletList[index];
+                    final walletEntity =
+                        TrolleyIndoorState().ventureChocolateValue[index];
                     return GestureDetector(
                       onTap: () {
                         EasyDebounce.debounce('recharge', 120.milliseconds,
                             () async {
                           controller.equipmentThighBanishEnfix = index;
-                          controller.removeDisappointMarathon = AppState()
-                              .walletList[controller.equipmentThighBanishEnfix!]
-                              .journeyPassiveDesireClarify;
+                          controller.removeDisappointMarathon =
+                              TrolleyIndoorState()
+                                  .ventureChocolateValue[
+                                      controller.equipmentThighBanishEnfix!]
+                                  .journeyPassiveDesireClarify;
                           await controller.surpriseHeroinActivateFrown(
                               controller.removeDisappointMarathon);
                         });
@@ -213,7 +216,7 @@ class _MotionTolerateChanceWalletState
                   },
                   separatorBuilder: (_, __) => Gap(12.h),
                   physics: const ClampingScrollPhysics(),
-                  itemCount: AppState().walletList.length,
+                  itemCount: TrolleyIndoorState().ventureChocolateValue.length,
                 ))
               ],
             ),

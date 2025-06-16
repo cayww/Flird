@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:drift/drift.dart' as d;
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
 import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
-import 'package:flird/providers/app_state/app_state.dart';
+import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -18,17 +18,23 @@ class SplurgeObjectChatController extends GetxController {
   RxBool meadowNativeKeybord = true.obs;
   RxBool isLoading = false.obs;
   Future<void> initChat() async {
-    final r = await (AppState().driftDB.redeemDriedBucketChat.select()
+    final r = await (TrolleyIndoorState()
+            .combineGrassPerception
+            .redeemDriedBucketChat
+            .select()
           ..whereSamePrimaryKey(RedeemDriedBucketChatCompanion(
               listenAspectBurialChatId: d.Value(chatID))))
         .getSingleOrNull();
     if (r == null) {
       try {
-        await AppState().driftDB.redeemDriedBucketChat.insertOne(
-            RedeemDriedBucketChatCompanion.insert(
+        await TrolleyIndoorState()
+            .combineGrassPerception
+            .redeemDriedBucketChat
+            .insertOne(RedeemDriedBucketChatCompanion.insert(
                 listenAspectBurialChatId: chatID,
-                dozenConfineInspireFirst:
-                    AppState().currentUserEntity.loungeRealizeEmphasisUid,
+                dozenConfineInspireFirst: TrolleyIndoorState()
+                    .regretShouldHostage
+                    .loungeRealizeEmphasisUid,
                 hoverSwearGravelSecond: userEntity.loungeRealizeEmphasisUid,
                 matrixBudgeTrailMessage: '',
                 islandCemeteryLooseTime: d.Value(DateTime.now())));
@@ -47,7 +53,7 @@ class SplurgeObjectChatController extends GetxController {
     userEntity = InviteSensitiveBroccoliUserEntity.fromJson(
         jsonDecode(Get.arguments['userEntity']!));
     chatID =
-        '${AppState().currentUserEntity.loungeRealizeEmphasisUid}_${userEntity.loungeRealizeEmphasisUid}';
+        '${TrolleyIndoorState().regretShouldHostage.loungeRealizeEmphasisUid}_${userEntity.loungeRealizeEmphasisUid}';
     initChat();
   }
 
