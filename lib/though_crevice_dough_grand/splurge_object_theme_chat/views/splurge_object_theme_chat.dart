@@ -147,7 +147,7 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                 .coincideRegularVoterMessage
                                 .select()
                               ..where((p) => p.inquirySoundSceneChat
-                                  .equals(controller.chatID)))
+                                  .equals(controller.elephantInterfaceEndorse)))
                             .watch(),
                         builder: (context, snapshot) {
                           if (!snapshot.hasData) {
@@ -275,8 +275,8 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                           switch (value) {
                             case 0:
                               final navigator = Navigator.of(context);
-                              await controller.checkAndRequestRecorder();
-                              if (!controller.hasPermisson.value) {
+                              await controller.crossPrintMosquitoOccur();
+                              if (!controller.seriesScholarChosen.value) {
                                 return;
                               }
                               if (!mounted) {
@@ -297,7 +297,8 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                     child: Padding(
                                       padding: MediaQuery.viewInsetsOf(context),
                                       child: ScramblePunishAudioBottom(
-                                        buffetSenseChatID: controller.chatID,
+                                        buffetSenseChatID:
+                                            controller.elephantInterfaceEndorse,
                                       ),
                                     ),
                                   );
@@ -329,7 +330,8 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                             CoincideRegularVoterMessageCompanion
                                                 .insert(
                                                     inquirySoundSceneChat:
-                                                        controller.chatID,
+                                                        controller
+                                                            .elephantInterfaceEndorse,
                                                     practicalProofSimilarImage:
                                                         d.Value(r)));
                                     await (TrolleyIndoorState()
@@ -339,8 +341,8 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                           ..whereSamePrimaryKey(
                                               RedeemDriedBucketChatCompanion(
                                                   listenAspectBurialChatId:
-                                                      d.Value(
-                                                          controller.chatID))))
+                                                      d.Value(controller
+                                                          .elephantInterfaceEndorse))))
                                         .write(
                                             const RedeemDriedBucketChatCompanion(
                                                 matrixBudgeTrailMessage:
@@ -382,8 +384,8 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                       Gap(16.w),
                       Expanded(
                         child: TextField(
-                          controller: controller.textController,
-                          focusNode: controller.textFieldFocusNode,
+                          controller: controller.deficitThinkerGraze,
+                          focusNode: controller.discussionOrderArchitect,
                           textInputAction: TextInputAction.done,
                           keyboardType: TextInputType.text,
                           style: GoogleFonts.roboto(
@@ -410,13 +412,15 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                               padding: EdgeInsets.only(right: 4.w),
                               child: GestureDetector(
                                 onTap: () async {
-                                  if (controller.textController.text.isEmpty) {
-                                    controller.textFieldFocusNode
+                                  if (controller
+                                      .deficitThinkerGraze.text.isEmpty) {
+                                    controller.discussionOrderArchitect
                                         .requestFocus();
                                     return;
                                   }
-                                  controller.textFieldFocusNode.unfocus();
-                                  final text = controller.textController.text;
+                                  controller.discussionOrderArchitect.unfocus();
+                                  final text =
+                                      controller.deficitThinkerGraze.text;
                                   final nowTime = DateTime.now();
                                   try {
                                     await TrolleyIndoorState()
@@ -428,8 +432,8 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                           .insertOne(
                                               CoincideRegularVoterMessageCompanion
                                                   .insert(
-                                            inquirySoundSceneChat:
-                                                controller.chatID,
+                                            inquirySoundSceneChat: controller
+                                                .elephantInterfaceEndorse,
                                             compactIssueCheapContent:
                                                 d.Value(text),
                                           ));
@@ -441,7 +445,7 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                                 RedeemDriedBucketChatCompanion(
                                                     listenAspectBurialChatId:
                                                         d.Value(controller
-                                                            .chatID))))
+                                                            .elephantInterfaceEndorse))))
                                           .write(
                                         RedeemDriedBucketChatCompanion(
                                           islandCemeteryLooseTime:
@@ -451,7 +455,7 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                         ),
                                       );
                                     });
-                                    controller.textController.clear();
+                                    controller.deficitThinkerGraze.clear();
                                   } catch (_) {}
                                 },
                                 child: SvgPicture.asset(

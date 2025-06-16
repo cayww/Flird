@@ -10,20 +10,19 @@ import 'package:permission_handler/permission_handler.dart';
 
 class SplurgeObjectChatController extends GetxController {
   late InviteSensitiveBroccoliUserEntity userEntity;
-
-  String chatID = '';
-  TextEditingController textController = TextEditingController();
-  FocusNode textFieldFocusNode = FocusNode();
-  RxBool hasPermisson = false.obs;
-  RxBool meadowNativeKeybord = true.obs;
-  RxBool isLoading = false.obs;
-  Future<void> initChat() async {
+  String elephantInterfaceEndorse = '';
+  TextEditingController deficitThinkerGraze = TextEditingController();
+  FocusNode discussionOrderArchitect = FocusNode();
+  RxBool seriesScholarChosen = false.obs;
+  RxBool queueShineAffair = true.obs;
+  RxBool originPlaceExcess = false.obs;
+  Future<void> pursuitEquinoxForget() async {
     final r = await (TrolleyIndoorState()
             .combineGrassPerception
             .redeemDriedBucketChat
             .select()
           ..whereSamePrimaryKey(RedeemDriedBucketChatCompanion(
-              listenAspectBurialChatId: d.Value(chatID))))
+              listenAspectBurialChatId: d.Value(elephantInterfaceEndorse))))
         .getSingleOrNull();
     if (r == null) {
       try {
@@ -31,7 +30,7 @@ class SplurgeObjectChatController extends GetxController {
             .combineGrassPerception
             .redeemDriedBucketChat
             .insertOne(RedeemDriedBucketChatCompanion.insert(
-                listenAspectBurialChatId: chatID,
+                listenAspectBurialChatId: elephantInterfaceEndorse,
                 dozenConfineInspireFirst: TrolleyIndoorState()
                     .regretShouldHostage
                     .loungeRealizeEmphasisUid,
@@ -45,34 +44,34 @@ class SplurgeObjectChatController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    textFieldFocusNode.addListener(() {
-      if (textFieldFocusNode.hasFocus && !meadowNativeKeybord.value) {
-        meadowNativeKeybord.value = true;
+    discussionOrderArchitect.addListener(() {
+      if (discussionOrderArchitect.hasFocus && !queueShineAffair.value) {
+        queueShineAffair.value = true;
       }
     });
     userEntity = InviteSensitiveBroccoliUserEntity.fromJson(
         jsonDecode(Get.arguments['userEntity']!));
-    chatID =
+    elephantInterfaceEndorse =
         '${TrolleyIndoorState().regretShouldHostage.loungeRealizeEmphasisUid}_${userEntity.loungeRealizeEmphasisUid}';
-    initChat();
+    pursuitEquinoxForget();
   }
 
-  Future<void> checkAndRequestRecorder() async {
+  Future<void> crossPrintMosquitoOccur() async {
     final status = await Permission.microphone.request();
     if (!status.isGranted) {
       Get.snackbar("Permission request",
           "Recording permissions are required to continue",
           colorText: Colors.white);
-      hasPermisson.value = false;
+      seriesScholarChosen.value = false;
     } else {
-      hasPermisson.value = true;
+      seriesScholarChosen.value = true;
     }
   }
 
   @override
   void onClose() {
-    textFieldFocusNode.dispose();
-    textController.dispose();
+    discussionOrderArchitect.dispose();
+    deficitThinkerGraze.dispose();
     super.onClose();
   }
 }
