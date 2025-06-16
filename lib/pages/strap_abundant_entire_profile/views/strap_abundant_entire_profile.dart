@@ -1,6 +1,6 @@
 import 'package:drift/drift.dart' as d;
-import 'package:flird/common/reduce_heaven_carve/animation_maps.dart';
-import 'package:flird/common/reduce_heaven_carve/animations.dart';
+import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
+import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flird/common/components/common.dart';
 import 'package:flird/common/components/pattern_beauty_learn_empty.dart';
 import 'package:flird/common/utils/common.dart';

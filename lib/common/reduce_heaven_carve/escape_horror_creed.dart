@@ -4,14 +4,10 @@ import 'package:flutter_animate/flutter_animate.dart';
 class AnimationInfo {
   AnimationInfo({
     required this.effectsBuilder,
-    this.loop = false,
-    this.reverse = false,
     this.applyInitialState = true,
   });
   final List<Effect> Function()? effectsBuilder;
   final bool applyInitialState;
-  final bool loop;
-  final bool reverse;
   late AnimationController controller;
 
   List<Effect>? _effects;
@@ -33,12 +29,6 @@ extension AnimatedWidgetExtension on Widget {
     return Animate(
       effects: animationMaps.effects,
       child: this,
-      onPlay: (controller) => animationMaps.loop
-          ? controller.repeat(reverse: animationMaps.reverse)
-          : null,
-      onComplete: (controller) => !animationMaps.loop && animationMaps.reverse
-          ? controller.reverse()
-          : null,
     );
   }
 }
