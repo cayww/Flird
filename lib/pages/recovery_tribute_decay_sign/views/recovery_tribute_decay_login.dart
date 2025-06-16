@@ -1,6 +1,6 @@
 import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
-import 'package:flird/dialogue_satellite_after/components/rabbit_greet_union.dart';
+import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_greet_union.dart';
 import 'package:flird/pages/recovery_tribute_decay_sign/controllers/recovery_tribute_login_controller.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/routes/app_pages.dart';

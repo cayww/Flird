@@ -1,8 +1,8 @@
 import 'package:drift/drift.dart' as d;
 import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
-import 'package:flird/dialogue_satellite_after/components/rabbit_greet_union.dart';
-import 'package:flird/dialogue_satellite_after/components/pattern_beauty_learn_empty.dart';
+import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_greet_union.dart';
+import 'package:flird/dialogue_satellite_after/jealous_bless_practical/pattern_beauty_learn_empty.dart';
 import 'package:flird/dialogue_satellite_after/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';

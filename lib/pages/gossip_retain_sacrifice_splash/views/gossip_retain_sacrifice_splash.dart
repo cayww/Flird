@@ -1,4 +1,4 @@
-import 'package:flird/dialogue_satellite_after/components/rabbit_greet_union.dart';
+import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_greet_union.dart';
 import 'package:flird/pages/gossip_retain_sacrifice_splash/controllers/gossip_retain_splash_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

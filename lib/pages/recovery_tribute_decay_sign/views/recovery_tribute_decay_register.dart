@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:flird/dialogue_satellite_after/components/rabbit_greet_union.dart';
+import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_greet_union.dart';
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
 import 'package:flird/pages/recovery_tribute_decay_sign/controllers/recovery_tribute_register_controller.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';

@@ -4,9 +4,9 @@ import 'dart:io';
 import 'package:drift/drift.dart' as d;
 import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
-import 'package:flird/dialogue_satellite_after/components/rabbit_greet_union.dart';
-import 'package:flird/dialogue_satellite_after/components/reptile_chord_more_dialog.dart';
-import 'package:flird/dialogue_satellite_after/controllers/voice_recorder_controller.dart';
+import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_greet_union.dart';
+import 'package:flird/dialogue_satellite_after/jealous_bless_practical/reptile_chord_more_dialog.dart';
+import 'package:flird/dialogue_satellite_after/swallow_assume_nuclear/swallow_assume_nuclear.dart';
 import 'package:flird/dialogue_satellite_after/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/coincide_regular_voter_message/coincide_regular_voter_message.drift.dart';
 import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
@@ -575,7 +575,7 @@ class ScramblePunishAudioBottom extends StatefulWidget {
 }
 
 class _ScramblePunishAudioBottomState extends State<ScramblePunishAudioBottom> {
-  final controller = Get.put(VoiceRecorderController());
+  final controller = Get.put(SwallowAssumeNuclear());
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -605,14 +605,15 @@ class _ScramblePunishAudioBottomState extends State<ScramblePunishAudioBottom> {
               onLongPressStart: (_) async {
                 Get.snackbar('Notice', 'Start recording',
                     colorText: Colors.white);
-                await controller.startRecording();
+                await controller.fractionStorageChoice();
               },
               onLongPressEnd: (_) async {
-                await controller.stopRecording();
+                await controller.spellMountainTraffic();
                 try {
                   SmartDialog.showLoading();
                   await Future.delayed(523.milliseconds);
-                  final recordedFile = File(controller.filePath.value);
+                  final recordedFile =
+                      File(controller.sprayRepresentInstall.value);
                   if (!await recordedFile.exists()) {
                     Get.snackbar('Error', 'Recording failed',
                         colorText: Colors.white);
@@ -641,7 +642,7 @@ class _ScramblePunishAudioBottomState extends State<ScramblePunishAudioBottom> {
                           inquirySoundSceneChat: widget.buffetSenseChatID,
                           implicitPublishFunnyAudio: d.Value(resp),
                           helplessElbowFreshDuration:
-                              d.Value(controller.audioDuration),
+                              d.Value(controller.prioritySausage),
                         ));
                   });
                 } finally {
