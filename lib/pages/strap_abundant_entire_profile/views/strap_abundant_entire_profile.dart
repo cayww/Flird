@@ -3,7 +3,7 @@ import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flird/common/components/common.dart';
 import 'package:flird/common/components/pattern_beauty_learn_empty.dart';
-import 'package:flird/common/utils/common.dart';
+import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
 import 'package:flird/db/database/tables/slope_cabinet_branch_keyword/slope_cabinet_branch_keyword.drift.dart';
@@ -141,7 +141,7 @@ class _StrapAbundantEntireProfileState
                   );
                   if (selectedResult?.isNotEmpty ?? false) {
                     await Future.delayed(945.milliseconds);
-                    final result = await saveBytesToFile(
+                    final result = await activatePlaceSolution(
                         (await selectedResult![0].originBytes)!, 'photo.png');
                     try {
                       await (AppState()
@@ -163,11 +163,11 @@ class _StrapAbundantEntireProfileState
                   alignment: Alignment.bottomRight,
                   children: [
                     ClipOval(
-                      child: imageFromPath(
+                      child: trustMusicalFruit(
                           AppState().currentUserEntity.paradeMutualPaintPhoto,
-                          width: 115.h,
-                          height: 115.h,
-                          fit: BoxFit.cover),
+                          flingWaste: 115.h,
+                          chequeGlass: 115.h,
+                          beheadSurvey: BoxFit.cover),
                     ),
                     SvgPicture.asset(
                       'assets/images/flird_profile_photo_edit.svg',
@@ -338,7 +338,7 @@ class _StrapAbundantEntireProfileState
                                       borderRadius: BorderRadius.circular(16.r),
                                       image: DecorationImage(
                                           fit: BoxFit.cover,
-                                          image: imageFromPath(postEntity
+                                          image: trustMusicalFruit(postEntity
                                                   .powerQuarterEnlargeCover)
                                               .image)),
                                   child: Column(

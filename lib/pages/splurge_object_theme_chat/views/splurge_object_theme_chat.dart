@@ -7,7 +7,7 @@ import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flird/common/components/common.dart';
 import 'package:flird/common/components/reptile_chord_more_dialog.dart';
 import 'package:flird/common/controllers/voice_recorder_controller.dart';
-import 'package:flird/common/utils/common.dart';
+import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/coincide_regular_voter_message/coincide_regular_voter_message.drift.dart';
 import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
 import 'package:flird/pages/splurge_object_theme_chat/controllers/splurge_object_chat_controller.dart';
@@ -76,11 +76,11 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
             title: Row(
               children: [
                 ClipOval(
-                  child: imageFromPath(
+                  child: trustMusicalFruit(
                       controller.userEntity.paradeMutualPaintPhoto,
-                      width: 40.h,
-                      height: 40.h,
-                      fit: BoxFit.cover),
+                      flingWaste: 40.h,
+                      chequeGlass: 40.h,
+                      beheadSurvey: BoxFit.cover),
                 ),
                 Gap(12.w),
                 Text(
@@ -198,8 +198,8 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                           bottomLeft: Radius.circular(16.r),
                                           bottomRight: Radius.circular(16.r)),
                                     ),
-                                    child: imageFromPath(
-                                      fit: BoxFit.cover,
+                                    child: trustMusicalFruit(
+                                      beheadSurvey: BoxFit.cover,
                                       messageEntity.practicalProofSimilarImage!,
                                     ),
                                   );
@@ -245,13 +245,13 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                     ),
                                     Gap(6.w),
                                     ClipOval(
-                                      child: imageFromPath(
+                                      child: trustMusicalFruit(
                                           AppState()
                                               .currentUserEntity
                                               .paradeMutualPaintPhoto,
-                                          width: 40.h,
-                                          height: 40.h,
-                                          fit: BoxFit.cover),
+                                          flingWaste: 40.h,
+                                          chequeGlass: 40.h,
+                                          beheadSurvey: BoxFit.cover),
                                     ),
                                   ],
                                 );
@@ -314,7 +314,7 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                                 try {
                                   final response =
                                       await selectedResult![0].originBytes;
-                                  final r = await saveBytesToFile(
+                                  final r = await activatePlaceSolution(
                                       response!, 'message.png');
                                   await AppState()
                                       .driftDB
@@ -619,7 +619,7 @@ class _ScramblePunishAudioBottomState extends State<ScramblePunishAudioBottom> {
                     SmartDialog.dismiss();
                     return;
                   }
-                  final resp = await saveBytesToFile(
+                  final resp = await activatePlaceSolution(
                       await recordedFile.readAsBytes(), 'message_audio.mp3');
                   await AppState().driftDB.transaction(() async {
                     await (AppState().driftDB.redeemDriedBucketChat.update()

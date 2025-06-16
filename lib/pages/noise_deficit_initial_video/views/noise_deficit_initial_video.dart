@@ -3,7 +3,7 @@ import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flird/common/components/common.dart';
 import 'package:flird/common/components/reptile_chord_more_dialog.dart';
-import 'package:flird/common/utils/common.dart';
+import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/crutch_battery_post_like/crutch_battery_post_like.drift.dart';
 import 'package:flird/pages/noise_deficit_initial_video/controllers/noise_deficit_video_controller.dart';
 import 'package:flird/providers/app_state/app_state.dart';
@@ -132,11 +132,11 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
             GetBuilder<NoiseDeficitVideoController>(builder: (controller) {
               return Stack(
                 children: [
-                  imageFromPath(
-                    width: double.infinity,
-                    height: double.infinity,
+                  trustMusicalFruit(
+                    flingWaste: double.infinity,
+                    chequeGlass: double.infinity,
                     controller.postEntity.powerQuarterEnlargeCover,
-                    fit: BoxFit.cover,
+                    beheadSurvey: BoxFit.cover,
                   ),
                   if (!controller.videoPlayerController.value.isInitialized)
                     Center(
@@ -295,7 +295,7 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                               shape: BoxShape.circle,
                               image: DecorationImage(
                                   fit: BoxFit.cover,
-                                  image: imageFromPath(controller
+                                  image: trustMusicalFruit(controller
                                           .userEntity.paradeMutualPaintPhoto)
                                       .image),
                               border: Border.all(

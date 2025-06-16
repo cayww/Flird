@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:flird/common/utils/common.dart';
+import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
 import 'package:get/get.dart';
@@ -18,7 +18,7 @@ class NoiseDeficitVideoController extends GetxController {
         jsonDecode(Get.arguments['postEntity']!));
     userEntity = InviteSensitiveBroccoliUserEntity.fromJson(
         jsonDecode(Get.arguments['userEntity']!));
-    if (isAssetPath(postEntity.potteryEndureTempleVideo)) {
+    if (embarkExpressPrince(postEntity.potteryEndureTempleVideo)) {
       videoPlayerController =
           VideoPlayerController.asset(postEntity.potteryEndureTempleVideo)
             ..initialize().then((_) {

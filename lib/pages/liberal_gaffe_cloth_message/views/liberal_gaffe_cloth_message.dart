@@ -1,7 +1,7 @@
 import 'package:drift/drift.dart' as d;
 import 'package:flird/common/components/common.dart';
 import 'package:flird/common/components/pattern_beauty_learn_empty.dart';
-import 'package:flird/common/utils/common.dart';
+import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart';
 import 'package:flird/providers/app_state/app_state.dart';
 import 'package:flird/routes/app_pages.dart';
@@ -125,7 +125,7 @@ class _LiberalGaffeClothMessageState extends State<LiberalGaffeClothMessage> {
                                             shape: BoxShape.circle,
                                             image: DecorationImage(
                                                 fit: BoxFit.cover,
-                                                image: imageFromPath(userEntity
+                                                image: trustMusicalFruit(userEntity
                                                         .paradeMutualPaintPhoto)
                                                     .image),
                                             border: Border.all(

@@ -2,7 +2,7 @@ import 'package:drift/drift.dart' as d;
 import 'package:flird/common/reduce_heaven_carve/density_growth_defeat.dart';
 import 'package:flird/common/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flird/common/components/common.dart';
-import 'package:flird/common/utils/common.dart';
+import 'package:flird/common/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/db/database/tables/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
 import 'package:flird/pages/implicit_letter_tease_post/controllers/implicit_letter_post_controller.dart';
 import 'package:flird/providers/app_state/app_state.dart';
@@ -382,11 +382,11 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                           }
                           controller.isLoading.value = true;
                           await Future.delayed(854.milliseconds);
-                          final postVideo = await saveBytesToFile(
+                          final postVideo = await activatePlaceSolution(
                               (await controller
                                   .videoAssetEntity.value!.originBytes)!,
                               'post.mp4');
-                          final postVideoCover = await saveBytesToFile(
+                          final postVideoCover = await activatePlaceSolution(
                               (await controller
                                   .videoAssetEntity.value!.thumbnailData)!,
                               'post_cover.png');
