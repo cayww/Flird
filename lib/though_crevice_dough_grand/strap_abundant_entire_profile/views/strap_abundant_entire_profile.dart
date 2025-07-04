@@ -140,7 +140,6 @@ class _StrapAbundantEntireProfileState
                     ),
                   );
                   if (selectedResult?.isNotEmpty ?? false) {
-                    await Future.delayed(945.milliseconds);
                     final result = await activatePlaceSolution(
                         (await selectedResult![0].originBytes)!, 'photo.png');
                     try {
