@@ -91,7 +91,7 @@ class _DebutMaximumCouncilWalletState extends State<DebutMaximumCouncilWallet> {
                               color: Colors.white,
                             ),
                           ),
-                          Gap(10.h),
+                          Flexible(child: Gap(10.h)),
                           Text(
                             '${TrolleyIndoorState().regretShouldHostage.evidenceSweetDigressCoin}',
                             style: GoogleFonts.roboto(

@@ -9,11 +9,13 @@ import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indo
 import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:wechat_assets_picker/wechat_assets_picker.dart';
 
 class ImplicitLetterTeasePost extends StatefulWidget {
@@ -300,6 +302,15 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                       Gap(16.h),
                       GestureDetector(
                         onTap: () async {
+                          final status = await Permission.photos.request();
+                          if (!status.isGranted) {
+                            SmartDialog.showNotify(
+                              msg: 'Permission denied',
+                              notifyType: NotifyType.alert,
+                              alignment: Alignment.center,
+                            );
+                            return;
+                          }
                           final selectedResult = await AssetPicker.pickAssets(
                             context,
                             pickerConfig: const AssetPickerConfig(

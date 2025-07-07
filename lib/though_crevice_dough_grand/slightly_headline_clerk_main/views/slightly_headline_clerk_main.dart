@@ -794,7 +794,7 @@ class WheatBreezeMarginMenu extends StatelessWidget {
               image: AssetImage('assets/images/flird_menu_bg.png'))),
       child: Column(
         children: [
-          Gap(18.h),
+          Flexible(child: Gap(18.h)),
           ListTile(
             onTap: () {
               Navigator.pop(context);

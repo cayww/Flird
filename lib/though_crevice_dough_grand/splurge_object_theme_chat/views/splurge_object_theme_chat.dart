@@ -22,6 +22,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:just_audio/just_audio.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:wechat_assets_picker/wechat_assets_picker.dart';
 
 class SplurgeObjectThemeChat extends StatefulWidget {
@@ -306,6 +307,15 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                               );
                               break;
                             case 1:
+                              final status = await Permission.photos.request();
+                              if (!status.isGranted) {
+                                SmartDialog.showNotify(
+                                  msg: 'Permission denied',
+                                  notifyType: NotifyType.alert,
+                                  alignment: Alignment.center,
+                                );
+                                return;
+                              }
                               final selectedResult =
                                   await AssetPicker.pickAssets(
                                 context,

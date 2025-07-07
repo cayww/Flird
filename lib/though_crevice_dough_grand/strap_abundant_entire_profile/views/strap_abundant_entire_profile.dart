@@ -17,6 +17,7 @@ import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
 import 'package:wechat_assets_picker/wechat_assets_picker.dart';
 
@@ -132,6 +133,15 @@ class _StrapAbundantEntireProfileState
               Gap(35.h),
               GestureDetector(
                 onTap: () async {
+                  final status = await Permission.photos.request();
+                  if (!status.isGranted) {
+                    SmartDialog.showNotify(
+                      msg: 'Permission denied',
+                      notifyType: NotifyType.alert,
+                      alignment: Alignment.center,
+                    );
+                    return;
+                  }
                   final selectedResult = await AssetPicker.pickAssets(
                     context,
                     pickerConfig: const AssetPickerConfig(
