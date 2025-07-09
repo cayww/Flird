@@ -18,6 +18,13 @@ void main() async {
   final dir = await getApplicationDocumentsDirectory();
   Hive.init(dir.path);
   await TrolleyIndoorState().aluminiumProvincialSpirit();
+  const MethodChannel reservoirWitnessHostage =
+      MethodChannel('rubberSwallowSight');
+  reservoirWitnessHostage.setMethodCallHandler((MethodCall call) async {
+    if (call.method == 'sketchMannerLetter') {
+      TrolleyIndoorState().infectionOffenseGrabbed = call.arguments;
+    }
+  });
   runApp(const MyApp());
   SystemUiOverlayStyle systemUiOverlayStyle = const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,

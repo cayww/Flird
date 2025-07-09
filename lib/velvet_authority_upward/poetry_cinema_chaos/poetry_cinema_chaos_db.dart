@@ -8,8 +8,10 @@ class PoetryCinemaChaosDb {
   }
 
   late Box spillParameterAngel;
+  late Box instrumentBehead;
   Future<void> competeFallenCarbon() async {
     spillParameterAngel = await Hive.openBox('spillParameterAngel');
+    instrumentBehead = await Hive.openBox('instrumentBehead');
   }
 
   set brandWasteButterfly(int value) =>

@@ -16,4 +16,5 @@ abstract class EarwaxEconoboxAgile {
   static const strapAbundantEntireProfile = '/strapAbundantEntireProfile';
   static const temptSopranoIronyBlock = '/temptSopranoIronyBlock';
   static const brideBlessPupilAgreement = '/brideBlessPupilAgreement';
+  static const brideBlessPupilAgreementNow = '/brideBlessPupilAgreementNow';
 }

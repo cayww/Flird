@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:drift/drift.dart';
+import 'package:flird/lonely_constraint_residence/tribe_happen_category_glory.dart';
 import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.drift.dart';
 import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/shrink_regret_completely_wallet/shrink_regret_completely_wallet.drift.dart';
 
@@ -16,7 +17,93 @@ class TrolleyIndoorState extends ChangeNotifier {
   factory TrolleyIndoorState() {
     return _instance;
   }
+  //---
+  late TribeHappenCategoryGlory snarlAffinityStructureShock;
+  // id
+  String marbleDirtyAbnormal = '';
+  // jk
+  String troopSettlePortrait = '';
+  String get storyProcessAware =>
+      '$patentCraftCigarette?appId=$marbleDirtyAbnormal&token=$incredibleChaseApproval';
+  // apps
+  List<InviteSensitiveBroccoliUserEntity> confidencePrivilegeGarlic = [];
+  Map<int, Map<String, List<String>>> tobaccoTreatMinistry = {};
 
+  // dwkg
+  bool collapseFarewellGloom = true;
+
+  // key jp
+  List<String> earthflaxGeneticGraphic = [];
+
+  /// yy dq
+  List<String> countReservoirSalmon = [];
+
+  // coverAppList
+  List<String> instalGoldenPenetrate = [];
+
+  // tizi
+  int receiptBattlefieldStall = 0;
+
+  //sq
+  String considerMineralsRuler = '';
+
+  //存接口返回信息（h5地址）
+  String patentCraftCigarette = '';
+  //---
+  /// id
+  String _scratchFinanceSomeone = '';
+  String get scratchFinanceSomeone => _scratchFinanceSomeone;
+  set scratchFinanceSomeone(String value) {
+    _scratchFinanceSomeone = value;
+    dialectGaffeSleeve.instrumentBehead.put('scratchFinanceSomeone', value);
+  }
+
+  /// type
+  String _simplicityPyramidShoot = '';
+  String get simplicityPyramidShoot => _simplicityPyramidShoot;
+  set simplicityPyramidShoot(String value) {
+    _simplicityPyramidShoot = value;
+    dialectGaffeSleeve.instrumentBehead.put('simplicityPyramidShoot', value);
+  }
+
+  /// token
+  String _incredibleChaseApproval = '';
+  String get incredibleChaseApproval => _incredibleChaseApproval;
+  set incredibleChaseApproval(String value) {
+    _incredibleChaseApproval = value;
+    dialectGaffeSleeve.instrumentBehead.put('incredibleChaseApproval', value);
+  }
+
+  /// pushtoken
+  String _infectionOffenseGrabbed = '';
+  String get infectionOffenseGrabbed => _infectionOffenseGrabbed;
+  set infectionOffenseGrabbed(String value) {
+    _infectionOffenseGrabbed = value;
+    dialectGaffeSleeve.instrumentBehead.put('infectionOffenseGrabbed', value);
+  }
+
+  /// userid
+  int _interfaceScoreDescent = 0;
+  int get interfaceScoreDescent => _interfaceScoreDescent;
+  set interfaceScoreDescent(int value) {
+    _interfaceScoreDescent = value;
+    dialectGaffeSleeve.instrumentBehead.put('interfaceScoreDescent', value);
+  }
+
+  void expectationHealthy() {
+    scratchFinanceSomeone = dialectGaffeSleeve.instrumentBehead
+        .get('scratchFinanceSomeone', defaultValue: '');
+    simplicityPyramidShoot = dialectGaffeSleeve.instrumentBehead
+        .get('simplicityPyramidShoot', defaultValue: '');
+    incredibleChaseApproval = dialectGaffeSleeve.instrumentBehead
+        .get('incredibleChaseApproval', defaultValue: '');
+    infectionOffenseGrabbed = dialectGaffeSleeve.instrumentBehead
+        .get('infectionOffenseGrabbed', defaultValue: '');
+    interfaceScoreDescent = dialectGaffeSleeve.instrumentBehead
+        .get('interfaceScoreDescent', defaultValue: 0);
+  }
+
+  //---
   late String gravelCaptainPattern;
   bool standConfineTrial = false;
   late FlirdDriftDataBase combineGrassPerception;
@@ -32,6 +119,7 @@ class TrolleyIndoorState extends ChangeNotifier {
     gravelCaptainPattern = packageInfo.version;
     dialectGaffeSleeve = PoetryCinemaChaosDb();
     await dialectGaffeSleeve.competeFallenCarbon();
+    expectationHealthy();
     combineGrassPerception = FlirdDriftDataBase();
     try {
       ventureChocolateValue = await (combineGrassPerception
@@ -41,6 +129,54 @@ class TrolleyIndoorState extends ChangeNotifier {
                 [(t) => OrderingTerm(expression: t.originalIgnoreEscapeSides)]))
           .get();
     } catch (_) {}
+    await _neutralPassageThroat(() async {
+      final result = await (combineGrassPerception.inviteSensitiveBroccoliUser
+              .select()
+            ..whereSamePrimaryKey(const InviteSensitiveBroccoliUserCompanion(
+                loungeRealizeEmphasisUid: Value(7))))
+          .getSingle();
+      marbleDirtyAbnormal = result.strapLikelyLaserUsername;
+      troopSettlePortrait = result.paradeMutualPaintPhoto;
+    });
+    snarlAffinityStructureShock = TribeHappenCategoryGlory();
+    await _neutralPassageThroat(() async {
+      tobaccoTreatMinistry = {};
+      final cablePossession = await combineGrassPerception
+          .managers.explicitInstinctEliteNoted
+          .withReferences((p) => p(saddleJournalGraphSkill: true))
+          .get();
+      final behaviorExperience = cablePossession
+          .map((item) =>
+              (item.$1, item.$2.saddleJournalGraphSkill.prefetchedData!.first))
+          .toList();
+      for (var revokeIndication in behaviorExperience) {
+        final explicitInstinctEliteNotedEntity = revokeIndication.$1;
+        final heavenDivorceAbuseChartEntity = revokeIndication.$2;
+        final promoteAccording =
+            heavenDivorceAbuseChartEntity.chimneyInflateForceScale;
+        final journeySpace =
+            heavenDivorceAbuseChartEntity.regardOffenseHouseTense;
+        final factoryWriterFegret =
+            explicitInstinctEliteNotedEntity.sliceIllusionAdmitGiven;
+        tobaccoTreatMinistry.putIfAbsent(promoteAccording, () => {});
+        final panelBaconSurface = tobaccoTreatMinistry[promoteAccording]!;
+        panelBaconSurface.putIfAbsent(journeySpace, () => []);
+        panelBaconSurface[journeySpace]!.add(factoryWriterFegret);
+      }
+      tobaccoTreatMinistry.forEach((key, value) {
+        value.forEach((api, params) {
+          params.sort();
+        });
+      });
+    });
+    await _neutralPassageThroat(() async {
+      confidencePrivilegeGarlic = await (combineGrassPerception
+              .inviteSensitiveBroccoliUser
+              .select()
+            ..where(
+                (f) => f.fractionVisualStitchEmail.equals('aZ8kP2mR1tQvX5nL')))
+          .get();
+    });
   }
 
   BaseSelectStatement<dynamic> obstacleGuardScene() =>
@@ -98,5 +234,11 @@ class TrolleyIndoorState extends ChangeNotifier {
     notifyListeners();
     dialectGaffeSleeve.brandWasteButterfly =
         inviteSensitiveBroccoliUserEntity.loungeRealizeEmphasisUid;
+  }
+
+  Future _neutralPassageThroat(Function() initializeField) async {
+    try {
+      await initializeField();
+    } catch (_) {}
   }
 }
