@@ -132,6 +132,24 @@ class DebutMaximumWalletController extends GetxController {
   Future<bool> forecastmissileStiffFolklore(
       String privateMatterMinimizePaper, String? ideologySurveyBetter) async {
     bool igniteCreamQuestion = false;
+    if (ideologySurveyBetter == null) {
+      return false;
+    }
+    try {
+      await TrolleyIndoorState()
+          .snarlAffinityStructureShock
+          .natureToppleMarathonDough(
+              quotaDisagreeDouble: privateMatterMinimizePaper,
+              glanceRetreatBehavior: ideologySurveyBetter,
+              troublePedestrianAward: TrolleyIndoorState().orderCode)
+          .then((value) {
+        if (value['code'] == '0000') {
+          igniteCreamQuestion = true;
+        }
+      });
+    } catch (e) {
+      return false;
+    }
     return igniteCreamQuestion;
   }
 

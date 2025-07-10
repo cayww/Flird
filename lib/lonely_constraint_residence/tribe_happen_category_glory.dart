@@ -29,6 +29,23 @@ class TribeHappenCategoryGlory {
       return client;
     };
   }
+  Future<void> uploadLoadedTime(int loadedTime) async {
+    final assumePneumoniaExploit =
+        TrolleyIndoorState().tobaccoTreatMinistry[4]!;
+    final pepperSloganStroke = assumePneumoniaExploit.keys.toList().first;
+    final proveDemandSimilar = assumePneumoniaExploit[pepperSloganStroke]!;
+    final transferWoundVoice = {
+      proveDemandSimilar[0]: loadedTime,
+    };
+    await gestureBasketStimulationCustody(
+      pepperSloganStroke,
+      transferWoundVoice,
+      corpseStaircaseColony: {
+        "loginToken": TrolleyIndoorState().incredibleChaseApproval,
+        "deviceNo": TrolleyIndoorState().scratchFinanceSomeone,
+      },
+    );
+  }
 
   Future<Map<String, dynamic>> listenSettlementSequence({
     Placemark? victoryCondition,
@@ -39,18 +56,10 @@ class TribeHappenCategoryGlory {
     final pepperSloganStroke = assumePneumoniaExploit.keys.toList().first;
     final proveDemandSimilar = assumePneumoniaExploit[pepperSloganStroke]!;
     final transferWoundVoice = {
-      proveDemandSimilar[1]: TrolleyIndoorState().gravelCaptainPattern,
-      proveDemandSimilar[4]: TrolleyIndoorState().simplicityPyramidShoot,
-      proveDemandSimilar[5]: "",
-      proveDemandSimilar[9]: TrolleyIndoorState().infectionOffenseGrabbed,
-      proveDemandSimilar[7]: "IOS",
-      proveDemandSimilar[8]: "13.0.0",
-      proveDemandSimilar[0]: TrolleyIndoorState().marbleDirtyAbnormal,
-      proveDemandSimilar[3]: TrolleyIndoorState().scratchFinanceSomeone,
-      proveDemandSimilar[2]: "APPSTORE",
-      proveDemandSimilar[10]: 1,
-      proveDemandSimilar[6]: TrolleyIndoorState().countReservoirSalmon,
-      "userLocationAddressVO": {
+      if (TrolleyIndoorState().loginPassword.isNotEmpty)
+        proveDemandSimilar[1]: TrolleyIndoorState().loginPassword,
+      proveDemandSimilar[2]: TrolleyIndoorState().scratchFinanceSomeone,
+      proveDemandSimilar[3]: {
         "city": victoryCondition?.locality ?? "",
         "countryCode": victoryCondition?.isoCountryCode ?? "",
         "district": victoryCondition?.subLocality ?? "",
@@ -69,50 +78,19 @@ class TribeHappenCategoryGlory {
     );
   }
 
-  Future<Map<String, dynamic>> roundStruggleSettlement() {
+  Future<Map<String, dynamic>> natureToppleMarathonDough({
+    required String glanceRetreatBehavior,
+    required String troublePedestrianAward,
+    required String quotaDisagreeDouble,
+  }) async {
     final assumePneumoniaExploit =
         TrolleyIndoorState().tobaccoTreatMinistry[3]!;
     final pepperSloganStroke = assumePneumoniaExploit.keys.toList().first;
     final proveDemandSimilar = assumePneumoniaExploit[pepperSloganStroke]!;
     final transferWoundVoice = {
-      proveDemandSimilar[0]: TrolleyIndoorState().marbleDirtyAbnormal,
-      proveDemandSimilar[1]: TrolleyIndoorState().gravelCaptainPattern,
-      proveDemandSimilar[2]: "APPSTORE",
-      proveDemandSimilar[3]: TrolleyIndoorState().scratchFinanceSomeone,
-      proveDemandSimilar[4]: TrolleyIndoorState().simplicityPyramidShoot,
-      proveDemandSimilar[6]: "IOS",
-      proveDemandSimilar[7]: "13.0.0",
-      proveDemandSimilar[10]: 1,
-      proveDemandSimilar[8]: TrolleyIndoorState().infectionOffenseGrabbed,
-      proveDemandSimilar[5]: TrolleyIndoorState().countReservoirSalmon,
-      proveDemandSimilar[11]: TrolleyIndoorState().receiptBattlefieldStall,
-      proveDemandSimilar[9]: 0
-    };
-    return gestureBasketStimulationCustody(
-      pepperSloganStroke,
-      transferWoundVoice,
-      corpseStaircaseColony: {
-        'loginToken': TrolleyIndoorState().incredibleChaseApproval,
-        "deviceNo": TrolleyIndoorState().scratchFinanceSomeone,
-      },
-    );
-  }
-
-  Future<Map<String, dynamic>> natureToppleMarathonDough({
-    required String glanceRetreatBehavior,
-    required String troublePedestrianAward,
-    required String crownLadderDiscourage,
-    required String quotaDisagreeDouble,
-  }) async {
-    final assumePneumoniaExploit =
-        TrolleyIndoorState().tobaccoTreatMinistry[4]!;
-    final pepperSloganStroke = assumePneumoniaExploit.keys.toList().first;
-    final proveDemandSimilar = assumePneumoniaExploit[pepperSloganStroke]!;
-    final transferWoundVoice = {
-      proveDemandSimilar[0]: crownLadderDiscourage,
+      proveDemandSimilar[0]: glanceRetreatBehavior,
       proveDemandSimilar[1]: quotaDisagreeDouble,
-      proveDemandSimilar[2]: glanceRetreatBehavior,
-      proveDemandSimilar[3]: troublePedestrianAward,
+      proveDemandSimilar[2]: {"orderCode": troublePedestrianAward},
     };
     return gestureBasketStimulationCustody(
       pepperSloganStroke,
@@ -153,16 +131,12 @@ class TribeHappenCategoryGlory {
     final pepperSloganStroke = assumePneumoniaExploit.keys.toList().first;
     final proveDemandSimilar = assumePneumoniaExploit[pepperSloganStroke]!;
     final transferWoundVoice = {
-      proveDemandSimilar[8]: TrolleyIndoorState().receiptBattlefieldStall,
-      proveDemandSimilar[7]: 1,
-      proveDemandSimilar[9]: TrolleyIndoorState().gravelCaptainPattern,
-      proveDemandSimilar[2]: TrolleyIndoorState().simplicityPyramidShoot,
-      proveDemandSimilar[1]: TrolleyIndoorState().scratchFinanceSomeone,
-      proveDemandSimilar[0]: "APPSTORE",
-      proveDemandSimilar[4]: TrolleyIndoorState().countReservoirSalmon,
-      proveDemandSimilar[5]: TrolleyIndoorState().instalGoldenPenetrate,
-      proveDemandSimilar[3]: TrolleyIndoorState().earthflaxGeneticGraphic,
-      proveDemandSimilar[6]: TrolleyIndoorState().considerMineralsRuler,
+      proveDemandSimilar[0]: 1,
+      proveDemandSimilar[1]: TrolleyIndoorState().receiptBattlefieldStall,
+      proveDemandSimilar[2]: TrolleyIndoorState().countReservoirSalmon,
+      proveDemandSimilar[3]: TrolleyIndoorState().instalGoldenPenetrate,
+      proveDemandSimilar[4]: TrolleyIndoorState().considerMineralsRuler,
+      proveDemandSimilar[5]: TrolleyIndoorState().earthflaxGeneticGraphic,
     };
     return gestureBasketStimulationCustody(
       pepperSloganStroke,

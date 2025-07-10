@@ -15,15 +15,20 @@ import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_h
     as i6;
 import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/crutch_battery_post_like/crutch_battery_post_like.drift.dart'
     as i7;
-import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart'
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/digital_oppose_fibre_charm/digital_oppose_fibre_charm.drift.dart'
     as i8;
-import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/coincide_regular_voter_message/coincide_regular_voter_message.drift.dart'
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/redeem_dried_bucket_chat/redeem_dried_bucket_chat.drift.dart'
     as i9;
-import 'package:flird/velvet_authority_upward/double_grace_chorus/passion_default_moral/invite_sensitive_broccoli_user_dao/invite_sensitive_broccoli_user_dao.dart'
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/coincide_regular_voter_message/coincide_regular_voter_message.drift.dart'
     as i10;
-import 'package:flird/velvet_authority_upward/double_grace_chorus/database.dart' as i11;
-import 'package:flird/velvet_authority_upward/double_grace_chorus/passion_default_moral/scandal_protest_behind_block/scandal_protest_behind_block_dao.dart'
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/queue_rehearsal_picture_cheque/queue_rehearsal_picture_cheque.drift.dart'
+    as i11;
+import 'package:flird/velvet_authority_upward/double_grace_chorus/passion_default_moral/invite_sensitive_broccoli_user_dao/invite_sensitive_broccoli_user_dao.dart'
     as i12;
+import 'package:flird/velvet_authority_upward/double_grace_chorus/database.dart'
+    as i13;
+import 'package:flird/velvet_authority_upward/double_grace_chorus/passion_default_moral/scandal_protest_behind_block/scandal_protest_behind_block_dao.dart'
+    as i14;
 
 abstract class $FlirdDriftDataBase extends i0.GeneratedDatabase {
   $FlirdDriftDataBase(i0.QueryExecutor e) : super(e);
@@ -44,14 +49,18 @@ abstract class $FlirdDriftDataBase extends i0.GeneratedDatabase {
       i6.$SlopeCabinetBranchKeywordTable(this);
   late final i7.$CrutchBatteryPostLikeTable crutchBatteryPostLike =
       i7.$CrutchBatteryPostLikeTable(this);
-  late final i8.$RedeemDriedBucketChatTable redeemDriedBucketChat =
-      i8.$RedeemDriedBucketChatTable(this);
-  late final i9.$CoincideRegularVoterMessageTable coincideRegularVoterMessage =
-      i9.$CoincideRegularVoterMessageTable(this);
-  late final i10.InviteSensitiveBroccoliUserDao inviteSensitiveBroccoliUserDao =
-      i10.InviteSensitiveBroccoliUserDao(this as i11.FlirdDriftDataBase);
-  late final i12.ScandalProtestBehindBlockDao scandalProtestBehindBlockDao =
-      i12.ScandalProtestBehindBlockDao(this as i11.FlirdDriftDataBase);
+  late final i8.$DigitalOpposeFibreCharmTable digitalOpposeFibreCharm =
+      i8.$DigitalOpposeFibreCharmTable(this);
+  late final i9.$RedeemDriedBucketChatTable redeemDriedBucketChat =
+      i9.$RedeemDriedBucketChatTable(this);
+  late final i10.$CoincideRegularVoterMessageTable coincideRegularVoterMessage =
+      i10.$CoincideRegularVoterMessageTable(this);
+  late final i11.$QueueRehearsalPictureChequeTable queueRehearsalPictureCheque =
+      i11.$QueueRehearsalPictureChequeTable(this);
+  late final i12.InviteSensitiveBroccoliUserDao inviteSensitiveBroccoliUserDao =
+      i12.InviteSensitiveBroccoliUserDao(this as i13.FlirdDriftDataBase);
+  late final i14.ScandalProtestBehindBlockDao scandalProtestBehindBlockDao =
+      i14.ScandalProtestBehindBlockDao(this as i13.FlirdDriftDataBase);
   @override
   Iterable<i0.TableInfo<i0.Table, Object?>> get allTables =>
       allSchemaEntities.whereType<i0.TableInfo<i0.Table, Object?>>();
@@ -64,8 +73,10 @@ abstract class $FlirdDriftDataBase extends i0.GeneratedDatabase {
         scienceAcquitMagicPost,
         slopeCabinetBranchKeyword,
         crutchBatteryPostLike,
+        digitalOpposeFibreCharm,
         redeemDriedBucketChat,
-        coincideRegularVoterMessage
+        coincideRegularVoterMessage,
+        queueRehearsalPictureCheque
       ];
   @override
   i0.DriftDatabaseOptions get options =>
@@ -100,10 +111,17 @@ class $FlirdDriftDataBaseManager {
               _db, _db.slopeCabinetBranchKeyword);
   i7.$$CrutchBatteryPostLikeTableTableManager get crutchBatteryPostLike => i7
       .$$CrutchBatteryPostLikeTableTableManager(_db, _db.crutchBatteryPostLike);
-  i8.$$RedeemDriedBucketChatTableTableManager get redeemDriedBucketChat => i8
+  i8.$$DigitalOpposeFibreCharmTableTableManager get digitalOpposeFibreCharm =>
+      i8.$$DigitalOpposeFibreCharmTableTableManager(
+          _db, _db.digitalOpposeFibreCharm);
+  i9.$$RedeemDriedBucketChatTableTableManager get redeemDriedBucketChat => i9
       .$$RedeemDriedBucketChatTableTableManager(_db, _db.redeemDriedBucketChat);
-  i9.$$CoincideRegularVoterMessageTableTableManager
+  i10.$$CoincideRegularVoterMessageTableTableManager
       get coincideRegularVoterMessage =>
-          i9.$$CoincideRegularVoterMessageTableTableManager(
+          i10.$$CoincideRegularVoterMessageTableTableManager(
               _db, _db.coincideRegularVoterMessage);
+  i11.$$QueueRehearsalPictureChequeTableTableManager
+      get queueRehearsalPictureCheque =>
+          i11.$$QueueRehearsalPictureChequeTableTableManager(
+              _db, _db.queueRehearsalPictureCheque);
 }

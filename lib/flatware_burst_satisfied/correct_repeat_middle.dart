@@ -111,5 +111,10 @@ class CorrectRepeatMiddle {
         page: () => const BrideBlessPupilAgreement(),
         transition: Transition.rightToLeft,
         transitionDuration: transitionDuraiton),
+    GetPage(
+        name: EarwaxEconoboxAgile.brideBlessPupilAgreementNow,
+        binding: BrideBlessAgreementBinding(),
+        page: () => const BrideBlessPupilAgreement(),
+        transition: Transition.noTransition),
   ];
 }

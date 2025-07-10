@@ -5,8 +5,10 @@ import 'package:flird/velvet_authority_upward/double_grace_chorus/passion_defaul
 import 'package:flird/velvet_authority_upward/double_grace_chorus/database.drift.dart';
 import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/coincide_regular_voter_message/coincide_regular_voter_message.dart';
 import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/crutch_battery_post_like/crutch_battery_post_like.dart';
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/digital_oppose_fibre_charm/digital_oppose_fibre_charm.dart';
 import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/endorse_provincial_sight_follow/endorse_provincial_sight_follow.dart';
 import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/invite_sensitive_broccoli_user/invite_sensitive_broccoli_user.dart';
+import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/queue_rehearsal_picture_cheque/queue_rehearsal_picture_cheque.dart';
 import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/redeem_dried_bucket_chat/redeem_dried_bucket_chat.dart';
 import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/scandal_protest_behind_block/scandal_protest_behind_block.dart';
 import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/science_acquit_magic_post/science_acquit_magic_post.dart';
@@ -31,8 +33,10 @@ import 'package:path/path.dart' as path;
   ScienceAcquitMagicPost,
   SlopeCabinetBranchKeyword,
   CrutchBatteryPostLike,
+  DigitalOpposeFibreCharm,
   RedeemDriedBucketChat,
   CoincideRegularVoterMessage,
+  QueueRehearsalPictureCheque,
 ], daos: [
   InviteSensitiveBroccoliUserDao,
   ScandalProtestBehindBlockDao,
