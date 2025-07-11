@@ -3,8 +3,8 @@ import 'package:encrypt/encrypt.dart' as encrypt;
 import 'package:convert/convert.dart';
 
 extension ManagerString on String {
-  static final key = encrypt.Key.fromUtf8('0cprgqe4anmsqtc4');
-  static final iv = encrypt.IV.fromUtf8('jqocejstmmk6wm8v');
+  static final key = encrypt.Key.fromUtf8('518486he8pzgbjsk');
+  static final iv = encrypt.IV.fromUtf8('614436p28qzhkjsl');
   static final encrypter =
       encrypt.Encrypter(encrypt.AES(key, mode: encrypt.AESMode.cbc));
   //加密

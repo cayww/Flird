@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
+import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 class GossipRetainSacrificeSplash extends StatefulWidget {
   const GossipRetainSacrificeSplash({super.key});
@@ -43,7 +44,11 @@ class _GossipRetainSacrificeSplashState
                 height: 1.2.h,
                 color: Colors.white,
               ),
-            )
+            ),
+            const Spacer(),
+            LoadingAnimationWidget.twoRotatingArc(
+                color: Colors.white, size: 20.h),
+            const Spacer()
           ],
         ),
       ),

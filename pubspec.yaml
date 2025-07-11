@@ -13,6 +13,7 @@ dependencies:
   auto_size_text: ^3.0.0
   board_datetime_picker: ^2.5.0
   collection: ^1.19.0
+  convert: ^3.1.2
   device_info_plus: 11.3.0
   devicelocale: ^0.8.1
   dio: ^5.7.0

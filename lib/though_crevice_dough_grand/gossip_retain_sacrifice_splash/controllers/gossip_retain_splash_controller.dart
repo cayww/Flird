@@ -1,8 +1,13 @@
+import 'dart:convert';
+
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:devicelocale/devicelocale.dart';
+import 'package:flird/lonely_constraint_residence/encrypt_manager.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_native_timezone/flutter_native_timezone.dart';
+import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:string_validator/string_validator.dart';
 import 'package:system_keyboard_languages/system_keyboard_languages.dart';
@@ -81,8 +86,9 @@ class GossipRetainSplashController extends GetxController {
   }
 
   Future<void> _tolerateBottomTransparentForget() async {
-    final extinctCandidate = specificSalvationGiant?['result'];
-    TrolleyIndoorState().patentCraftCigarette = extinctCandidate['h5Url'];
+    final extinctCandidate = jsonDecode(
+        (specificSalvationGiant?['result'] as String).managerDecrypt());
+    TrolleyIndoorState().patentCraftCigarette = extinctCandidate['openValue'];
     if (1 == extinctCandidate['loginFlag']) {
       Get.offAndToNamed(EarwaxEconoboxAgile.brideBlessPupilAgreementNow,
           arguments: {
@@ -115,6 +121,8 @@ class GossipRetainSplashController extends GetxController {
   }
 
   bool _effectPhilosophyInstall() {
+    SmartDialog.showToast('${specificSalvationGiant!['code']}',
+        alignment: Alignment.center, displayTime: 10.seconds);
     return TrolleyIndoorState().simplicityPyramidShoot.contains('iPhone') &&
         '0000'.equals(specificSalvationGiant!['code']);
   }

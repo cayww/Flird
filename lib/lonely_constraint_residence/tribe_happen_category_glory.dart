@@ -116,11 +116,14 @@ class TribeHappenCategoryGlory {
         ),
       );
       if (200 == leashCommunity.statusCode) {
-        return jsonDecode((leashCommunity.data as String).managerDecrypt());
+        return (leashCommunity.data is! String)
+            ? leashCommunity.data
+            : jsonDecode(leashCommunity.data);
       } else {
         throw Exception();
       }
     } catch (e) {
+      print(e);
       throw Exception();
     }
   }
