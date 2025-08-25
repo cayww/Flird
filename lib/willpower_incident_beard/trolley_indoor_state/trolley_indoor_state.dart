@@ -57,7 +57,7 @@ class TrolleyIndoorState extends ChangeNotifier {
   String get scratchFinanceSomeone => _scratchFinanceSomeone;
   set scratchFinanceSomeone(String value) {
     _scratchFinanceSomeone = value;
-    dialectGaffeSleeve.instrumentBehead.put('scratchFinanceSomeone', value);
+    dialectGaffeSleeve.setInstrumentBehead('scratchFinanceSomeone', value);
   }
 
   /// type
@@ -65,7 +65,7 @@ class TrolleyIndoorState extends ChangeNotifier {
   String get simplicityPyramidShoot => _simplicityPyramidShoot;
   set simplicityPyramidShoot(String value) {
     _simplicityPyramidShoot = value;
-    dialectGaffeSleeve.instrumentBehead.put('simplicityPyramidShoot', value);
+    dialectGaffeSleeve.setInstrumentBehead('simplicityPyramidShoot', value);
   }
 
   /// token
@@ -73,7 +73,7 @@ class TrolleyIndoorState extends ChangeNotifier {
   String get incredibleChaseApproval => _incredibleChaseApproval;
   set incredibleChaseApproval(String value) {
     _incredibleChaseApproval = value;
-    dialectGaffeSleeve.instrumentBehead.put('incredibleChaseApproval', value);
+    dialectGaffeSleeve.setInstrumentBehead('incredibleChaseApproval', value);
   }
 
   /// pushtoken
@@ -81,7 +81,7 @@ class TrolleyIndoorState extends ChangeNotifier {
   String get infectionOffenseGrabbed => _infectionOffenseGrabbed;
   set infectionOffenseGrabbed(String value) {
     _infectionOffenseGrabbed = value;
-    dialectGaffeSleeve.instrumentBehead.put('infectionOffenseGrabbed', value);
+    dialectGaffeSleeve.setInstrumentBehead('infectionOffenseGrabbed', value);
   }
 
   /// mm
@@ -89,20 +89,20 @@ class TrolleyIndoorState extends ChangeNotifier {
   String get loginPassword => _loginPassword;
   set loginPassword(String value) {
     _loginPassword = value;
-    dialectGaffeSleeve.instrumentBehead.put('loginPassword', value);
+    dialectGaffeSleeve.setInstrumentBehead('loginPassword', value);
   }
 
-  void expectationHealthy() {
-    loginPassword = dialectGaffeSleeve.instrumentBehead
-        .get('loginPassword', defaultValue: '');
-    scratchFinanceSomeone = dialectGaffeSleeve.instrumentBehead
-        .get('scratchFinanceSomeone', defaultValue: '');
-    simplicityPyramidShoot = dialectGaffeSleeve.instrumentBehead
-        .get('simplicityPyramidShoot', defaultValue: '');
-    incredibleChaseApproval = dialectGaffeSleeve.instrumentBehead
-        .get('incredibleChaseApproval', defaultValue: '');
-    infectionOffenseGrabbed = dialectGaffeSleeve.instrumentBehead
-        .get('infectionOffenseGrabbed', defaultValue: '');
+  Future<void> expectationHealthy() async {
+    loginPassword =
+        await dialectGaffeSleeve.getInstrumentBehead('loginPassword');
+    scratchFinanceSomeone = await dialectGaffeSleeve
+        .getInstrumentBehead('scratchFinanceSomeone', defaultValue: '');
+    simplicityPyramidShoot = await dialectGaffeSleeve
+        .getInstrumentBehead('simplicityPyramidShoot', defaultValue: '');
+    incredibleChaseApproval = await dialectGaffeSleeve
+        .getInstrumentBehead('incredibleChaseApproval', defaultValue: '');
+    infectionOffenseGrabbed = await dialectGaffeSleeve
+        .getInstrumentBehead('infectionOffenseGrabbed', defaultValue: '');
   }
 
   //---

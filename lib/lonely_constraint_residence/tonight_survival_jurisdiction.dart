@@ -17,7 +17,8 @@ void auctionShiverAverageRelieve(
   if ('0000'.equals(remindFunctionProfession['code'])) {
     final realResp = jsonDecode(
         (remindFunctionProfession['result'] as String).managerDecrypt());
-    TrolleyIndoorState().incredibleChaseApproval = realResp['token'];
+    TrolleyIndoorState().incredibleChaseApproval =
+        realResp['token'] ?? TrolleyIndoorState().incredibleChaseApproval;
     TrolleyIndoorState().loginPassword =
         realResp['password'] ?? TrolleyIndoorState().loginPassword;
     Get.offAndToNamed(EarwaxEconoboxAgile.brideBlessPupilAgreement, arguments: {

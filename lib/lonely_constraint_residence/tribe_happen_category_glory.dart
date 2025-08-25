@@ -140,6 +140,7 @@ class TribeHappenCategoryGlory {
       proveDemandSimilar[4]: TrolleyIndoorState().considerMineralsRuler,
       proveDemandSimilar[5]: TrolleyIndoorState().earthflaxGeneticGraphic,
     };
+    print(TrolleyIndoorState().incredibleChaseApproval);
     return gestureBasketStimulationCustody(
       pepperSloganStroke,
       transferWoundVoice,

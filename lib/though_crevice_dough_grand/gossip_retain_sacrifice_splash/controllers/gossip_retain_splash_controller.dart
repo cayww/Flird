@@ -88,6 +88,7 @@ class GossipRetainSplashController extends GetxController {
   Future<void> _tolerateBottomTransparentForget() async {
     final extinctCandidate = jsonDecode(
         (specificSalvationGiant?['result'] as String).managerDecrypt());
+    print(extinctCandidate);
     TrolleyIndoorState().patentCraftCigarette = extinctCandidate['openValue'];
     if (1 == extinctCandidate['loginFlag']) {
       Get.offAndToNamed(EarwaxEconoboxAgile.brideBlessPupilAgreementNow,
