@@ -96,6 +96,25 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
             ).liberalPowerBlame(clothesTeachCalendar['pQ1uVd84Km']!),
             actions: [
               GestureDetector(
+                onTap: () {
+                  Get.to(
+                      SplurgeObjectThemeCall(
+                        userPhoto: controller.userEntity.paradeMutualPaintPhoto,
+                        userName:
+                            controller.userEntity.strapLikelyLaserUsername,
+                      ),
+                      transition: Transition.upToDown,
+                      duration: const Duration(milliseconds: 300));
+                },
+                child: SvgPicture.asset(
+                  'assets/images/flird_call_icon.svg',
+                  width: 30.r,
+                  height: 30.r,
+                  fit: BoxFit.contain,
+                ),
+              ),
+              Gap(16.w),
+              GestureDetector(
                 onTap: () async {
                   final result = await showDialog<bool?>(
                         context: context,
@@ -691,6 +710,116 @@ class _ScramblePunishAudioBottomState extends State<ScramblePunishAudioBottom> {
               ),
             ))
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class SplurgeObjectThemeCall extends StatefulWidget {
+  const SplurgeObjectThemeCall(
+      {super.key, required this.userPhoto, required this.userName});
+  final String userPhoto;
+  final String userName;
+  @override
+  State<SplurgeObjectThemeCall> createState() => _SplurgeObjectThemeCallState();
+}
+
+class _SplurgeObjectThemeCallState extends State<SplurgeObjectThemeCall> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      await Future.delayed(15.seconds);
+      if (mounted) {
+        SmartDialog.showNotify(
+          msg: 'The current user is not online',
+          notifyType: NotifyType.alert,
+          alignment: Alignment.center,
+        );
+        Get.back();
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return PopScope(
+      canPop: false,
+      child: Container(
+        decoration: nativeIdealPossible,
+        child: Scaffold(
+          backgroundColor: Colors.transparent,
+          appBar: AppBar(
+            toolbarHeight: 0.0,
+            backgroundColor: Colors.black.withAlpha(0),
+          ),
+          body: Column(
+            children: [
+              Gap(
+                166.h,
+                crossAxisExtent: double.infinity,
+              ),
+              Container(
+                width: 210.r,
+                height: 210.r,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Color.fromRGBO(255, 255, 255, 0.25),
+                ),
+                child: Center(
+                  child: Container(
+                    width: 154.r,
+                    height: 154.r,
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Color.fromRGBO(255, 255, 255, 0.25),
+                    ),
+                    child: Center(
+                      child: ClipOval(
+                        child: trustMusicalFruit(widget.userPhoto,
+                            flingWaste: 128.r,
+                            chequeGlass: 128.r,
+                            beheadSurvey: BoxFit.cover),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Flexible(child: Gap(195.h)),
+              Text(
+                widget.userName,
+                style: GoogleFonts.roboto(
+                  fontSize: 24.sp,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.white,
+                  height: 1.h,
+                ),
+              ),
+              Gap(8.h),
+              Text(
+                'Calling...',
+                style: GoogleFonts.roboto(
+                  fontSize: 14.sp,
+                  fontWeight: FontWeight.w400,
+                  color: const Color.fromRGBO(255, 255, 255, 0.5),
+                  height: 1.h,
+                ),
+              ),
+              Gap(45.h),
+              GestureDetector(
+                onTap: () {
+                  Get.back();
+                },
+                child: Image.asset(
+                  'assets/images/flird_call_close.png',
+                  width: 66.r,
+                  height: 66.r,
+                  fit: BoxFit.contain,
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
