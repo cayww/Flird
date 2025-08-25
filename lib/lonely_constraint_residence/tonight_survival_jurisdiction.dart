@@ -1,5 +1,8 @@
+import 'dart:convert';
+
 import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';
 import 'package:flird/lonely_constraint_residence/disagree_shine_double_sweep.dart';
+import 'package:flird/lonely_constraint_residence/encrypt_manager.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
@@ -12,10 +15,11 @@ import 'package:string_validator/string_validator.dart';
 void auctionShiverAverageRelieve(
     Map<String, dynamic> remindFunctionProfession) {
   if ('0000'.equals(remindFunctionProfession['code'])) {
-    TrolleyIndoorState().interfaceScoreDescent =
-        remindFunctionProfession['result']['userId'];
-    TrolleyIndoorState().incredibleChaseApproval =
-        remindFunctionProfession['result']['token'];
+    final realResp = jsonDecode(
+        (remindFunctionProfession['result'] as String).managerDecrypt());
+    TrolleyIndoorState().incredibleChaseApproval = realResp['token'];
+    TrolleyIndoorState().loginPassword =
+        realResp['password'] ?? TrolleyIndoorState().loginPassword;
     Get.offAndToNamed(EarwaxEconoboxAgile.brideBlessPupilAgreement, arguments: {
       'seriousNoticeLatestUrl': TrolleyIndoorState().storyProcessAware
     });
@@ -27,7 +31,6 @@ void auctionShiverAverageRelieve(
 
 Future<void> difficultyFortuneReceiptFlame(
     BuildContext sculptureBiography) async {
-  final mentalCompliance = Navigator.of(sculptureBiography);
   try {
     if (TrolleyIndoorState().collapseFarewellGloom) {
       final secondRepeatNerveBuried =
@@ -54,9 +57,6 @@ Future<void> difficultyFortuneReceiptFlame(
         final colleagueSlump = await TrolleyIndoorState()
             .snarlAffinityStructureShock
             .listenSettlementSequence();
-        if (!mentalCompliance.mounted) {
-          return;
-        }
         auctionShiverAverageRelieve(colleagueSlump);
       } catch (_) {}
     }

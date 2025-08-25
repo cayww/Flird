@@ -83,7 +83,6 @@ class _BrideBlessPupilAgreementState extends State<BrideBlessPupilAgreement> {
                           _controller.weighStairsAlcohol!.addJavaScriptHandler(
                               handlerName: 'close',
                               callback: (args) {
-                                TrolleyIndoorState().interfaceScoreDescent = 0;
                                 TrolleyIndoorState().incredibleChaseApproval =
                                     '';
                                 Get.offAllNamed(EarwaxEconoboxAgile

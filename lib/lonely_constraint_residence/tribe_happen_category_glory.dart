@@ -122,8 +122,7 @@ class TribeHappenCategoryGlory {
       } else {
         throw Exception();
       }
-    } catch (e) {
-      print(e);
+    } catch (_) {
       throw Exception();
     }
   }

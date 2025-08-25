@@ -95,40 +95,29 @@ class _DisagreeShineDoubleSweepState extends State<DisagreeShineDoubleSweep>
 
   @override
   Widget build(BuildContext context) {
-    
     return Stack(
       alignment: Alignment.topCenter,
       clipBehavior: Clip.none,
       children: [
         Container(
           width: 315.w,
-          height: 317.h,
+          height: 275.h,
           decoration: const BoxDecoration(
               image: DecorationImage(
                   fit: BoxFit.fill,
-                  image: AssetImage('assets/images/groome_dw_bg.png'))),
+                  image: AssetImage('assets/images/flird_location_bg.png'))),
           child: Column(
             children: [
-              Gap(74.h),
-              Text(
-                'Location Permission',
-                style: GoogleFonts.roboto(
-                  fontSize: 25.sp,
-                  height: 1.17.h,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.black,
-                ),
-              ),
-              Gap(16.h),
+              Gap(90.h),
               Padding(
-                padding: EdgeInsets.only(left: 20.w, right: 20.w),
+                padding: EdgeInsets.only(left: 10.w, right: 10.w),
                 child: Text(
-                  'This app needs access to your location information to enhance your experience by customizing services based on your region. If you agree, your location data will be used exclusively for this purpose and not for any other activities',
+                  'This app needs location access for sharing, discovering events, and using location-based features. Location data is used responsibly with your consent. Privacy and security are our priorities.',
                   textAlign: TextAlign.center,
                   style: GoogleFonts.roboto(
-                    color: const Color.fromRGBO(166, 166, 166, 1),
-                    fontSize: 15.sp,
-                    height: 1.17.h,
+                    color: const Color.fromRGBO(128, 128, 128, 1),
+                    fontSize: 16.sp,
+                    height: 1.h,
                   ),
                 ),
               ),
@@ -136,37 +125,34 @@ class _DisagreeShineDoubleSweepState extends State<DisagreeShineDoubleSweep>
               Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100.r),
-                    gradient: const LinearGradient(colors: [
-                      Color.fromRGBO(255, 97, 92, 1),
-                      Color.fromRGBO(255, 97, 252, 1)
-                    ])),
+                    gradient: const LinearGradient(
+                        begin: Alignment.bottomCenter,
+                        end: Alignment.topCenter,
+                        colors: [
+                          Color.fromRGBO(166, 77, 255, 1),
+                          Color.fromRGBO(125, 153, 255, 1)
+                        ])),
                 child: TextButton(
-                    onPressed: () async {
-                      await Geolocator.openLocationSettings();
-                    },
-                    style: TextButton.styleFrom(
-                        backgroundColor: Colors.transparent,
-                        fixedSize: Size(275.w, 48.h),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(100.r))),
+                    onPressed: Geolocator.openLocationSettings,
+                    style: TextButton.styleFrom(fixedSize: Size(255.w, 48.h)),
                     child: Text(
-                      'Go to Settings',
+                      'Set Now',
                       style: GoogleFonts.roboto(
-                        fontSize: 17.sp,
+                        fontSize: 16.sp,
                         fontWeight: FontWeight.w700,
                         color: Colors.white,
                       ),
                     )),
-              ),
+              )
             ],
           ),
         ),
         Positioned(
-          top: -50.h,
+          top: -43.h,
           child: Image.asset(
-            'assets/images/groome_dw_icon.png',
-            width: 100.h,
-            height: 100.h,
+            'assets/images/flird_location_icon.png',
+            width: 123.w,
+            height: 127.h,
             fit: BoxFit.contain,
           ),
         )

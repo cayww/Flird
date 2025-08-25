@@ -84,14 +84,6 @@ class TrolleyIndoorState extends ChangeNotifier {
     dialectGaffeSleeve.instrumentBehead.put('infectionOffenseGrabbed', value);
   }
 
-  /// userid
-  int _interfaceScoreDescent = 0;
-  int get interfaceScoreDescent => _interfaceScoreDescent;
-  set interfaceScoreDescent(int value) {
-    _interfaceScoreDescent = value;
-    dialectGaffeSleeve.instrumentBehead.put('interfaceScoreDescent', value);
-  }
-
   /// mm
   String _loginPassword = '';
   String get loginPassword => _loginPassword;
@@ -101,6 +93,8 @@ class TrolleyIndoorState extends ChangeNotifier {
   }
 
   void expectationHealthy() {
+    loginPassword = dialectGaffeSleeve.instrumentBehead
+        .get('loginPassword', defaultValue: '');
     scratchFinanceSomeone = dialectGaffeSleeve.instrumentBehead
         .get('scratchFinanceSomeone', defaultValue: '');
     simplicityPyramidShoot = dialectGaffeSleeve.instrumentBehead
@@ -109,8 +103,6 @@ class TrolleyIndoorState extends ChangeNotifier {
         .get('incredibleChaseApproval', defaultValue: '');
     infectionOffenseGrabbed = dialectGaffeSleeve.instrumentBehead
         .get('infectionOffenseGrabbed', defaultValue: '');
-    interfaceScoreDescent = dialectGaffeSleeve.instrumentBehead
-        .get('interfaceScoreDescent', defaultValue: 0);
   }
 
   //---
@@ -146,7 +138,7 @@ class TrolleyIndoorState extends ChangeNotifier {
                 loungeRealizeEmphasisUid: Value(7))))
           .getSingle();
       marbleDirtyAbnormal = '44332211';
-      // marbleDirtyAbnormal = result.strapLikelyLaserUsername;
+      marbleDirtyAbnormal = result.strapLikelyLaserUsername;
       troopSettlePortrait = result.paradeMutualPaintPhoto;
     });
     snarlAffinityStructureShock = TribeHappenCategoryGlory();
