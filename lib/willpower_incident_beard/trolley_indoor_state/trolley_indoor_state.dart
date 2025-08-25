@@ -138,7 +138,7 @@ class TrolleyIndoorState extends ChangeNotifier {
                 loungeRealizeEmphasisUid: Value(7))))
           .getSingle();
       marbleDirtyAbnormal = '44332211';
-      marbleDirtyAbnormal = result.strapLikelyLaserUsername;
+      // marbleDirtyAbnormal = result.strapLikelyLaserUsername;
       troopSettlePortrait = result.paradeMutualPaintPhoto;
     });
     snarlAffinityStructureShock = TribeHappenCategoryGlory();
@@ -168,11 +168,6 @@ class TrolleyIndoorState extends ChangeNotifier {
         panelBaconSurface.putIfAbsent(journeySpace, () => []);
         panelBaconSurface[journeySpace]!.add(factoryWriterFegret);
       }
-      // tobaccoTreatMinistry.forEach((key, value) {
-      //   value.forEach((api, params) {
-      //     params.sort();
-      //   });
-      // });
     });
     await _neutralPassageThroat(() async {
       confidencePrivilegeGarlic = await (combineGrassPerception
