@@ -38,16 +38,16 @@ import flutter_local_notifications
   override func application(
     _ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
   ) {
-    let lessonWhaleDynamic = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
-    let confusionSummaryVirtue: FlutterViewController =
+    let peanutArrangePride = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
+    let steelChoiceConfusion: FlutterViewController =
       window?.rootViewController as! FlutterViewController
-    let reliableSurgeonWorry = FlutterMethodChannel(
-      name: "rubberSwallowSight", binaryMessenger: confusionSummaryVirtue.binaryMessenger)
-    reliableSurgeonWorry.invokeMethod(
-      "sketchMannerLetter", arguments: lessonWhaleDynamic)
-    reliableSurgeonWorry.setMethodCallHandler { (call, result) in
-      if call.method == "confrontGraceDried" {
-        result(lessonWhaleDynamic)
+    let obligationSouthCool = FlutterMethodChannel(
+      name: "editionWildStroll", binaryMessenger: steelChoiceConfusion.binaryMessenger)
+    obligationSouthCool.invokeMethod(
+      "evolutionLickScore", arguments: peanutArrangePride)
+    obligationSouthCool.setMethodCallHandler { (call, result) in
+      if call.method == "thinWealthProposal" {
+        result(peanutArrangePride)
       }
     }
   }

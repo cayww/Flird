@@ -19,9 +19,9 @@ void main() async {
   Hive.init(dir.path);
   await TrolleyIndoorState().aluminiumProvincialSpirit();
   const MethodChannel reservoirWitnessHostage =
-      MethodChannel('rubberSwallowSight');
+      MethodChannel('editionWildStroll');
   reservoirWitnessHostage.setMethodCallHandler((MethodCall call) async {
-    if (call.method == 'sketchMannerLetter') {
+    if (call.method == 'evolutionLickScore') {
       TrolleyIndoorState().instanceGallerySlipRitual = call.arguments;
     }
   });
