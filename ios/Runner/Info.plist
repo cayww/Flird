@@ -37,20 +37,20 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb1220995773158362</string>
+				<string>fb1825289525034788</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>FacebookAppID</key>
-	<string>1220995773158362</string>
+	<string>1825289525034788</string>
 	<key>FacebookAutoLogAppEventsEnabled</key>
 	<true/>
 	<key>FacebookClientToken</key>
-	<string>98088be76de2ecd87a251a71dc4ae546</string>
+	<string>89f8faf88c4d56bf521f71cbaf96ae12</string>
 	<key>FacebookDisplayName</key>
-	<string>Groome</string>
+	<string>Flird</string>
 	<key>FlutterDeepLinkingEnabled</key>
 	<true/>
 	<key>LSApplicationQueriesSchemes</key>
