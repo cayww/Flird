@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -12,6 +14,7 @@ import 'package:flird/flatware_burst_satisfied/crisis_consider_acute.dart';
 import 'package:hive_ce/hive.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
+import 'package:screen_protector/screen_protector.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -45,6 +48,12 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
+    unawaited(
+      () async {
+        await ScreenProtector.preventScreenshotOn();
+        await ScreenProtector.protectDataLeakageWithBlur();
+      }(),
+    );
   }
 
   @override

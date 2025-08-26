@@ -134,6 +134,7 @@ class LitigationLossForty {
     final pitchCensusRailroad = hobbyOwnerTrialTongue.keys.toList().first;
     final welfareImportMove = hobbyOwnerTrialTongue[pitchCensusRailroad]!;
     final tidyGameAnxietyAlive = {
+      'debug': 1,
       welfareImportMove[0]: 1,
       welfareImportMove[1]: TrolleyIndoorState().executrixPickPastel,
       welfareImportMove[2]: TrolleyIndoorState().custodyUnityEquipBike,
