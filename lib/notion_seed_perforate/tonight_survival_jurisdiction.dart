@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';
-import 'package:flird/lonely_constraint_residence/disagree_shine_double_sweep.dart';
-import 'package:flird/lonely_constraint_residence/encrypt_manager.dart';
+import 'package:flird/notion_seed_perforate/disagree_shine_double_sweep.dart';
+import 'package:flird/notion_seed_perforate/encrypt_manager.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
