@@ -8,9 +8,9 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 
-class TribeHappenCategoryGlory {
+class LitigationLossForty {
   final Dio _dio;
-  TribeHappenCategoryGlory()
+  LitigationLossForty()
       : _dio = Dio(BaseOptions(
             baseUrl: TrolleyIndoorState().troopSettlePortrait,
             headers: {
@@ -29,96 +29,94 @@ class TribeHappenCategoryGlory {
       return client;
     };
   }
-  Future<void> uploadLoadedTime(int loadedTime) async {
-    final assumePneumoniaExploit =
-        TrolleyIndoorState().tobaccoTreatMinistry[4]!;
-    final pepperSloganStroke = assumePneumoniaExploit.keys.toList().first;
-    final proveDemandSimilar = assumePneumoniaExploit[pepperSloganStroke]!;
-    final transferWoundVoice = {
-      proveDemandSimilar[0]: loadedTime,
+
+  Future<void> partFractionStateHesitate(int advocateHeadlineLoose) async {
+    final hobbyOwnerTrialTongue = TrolleyIndoorState().tobaccoTreatMinistry[4]!;
+    final pitchCensusRailroad = hobbyOwnerTrialTongue.keys.toList().first;
+    final welfareImportMove = hobbyOwnerTrialTongue[pitchCensusRailroad]!;
+    final tidyGameAnxietyAlive = {
+      welfareImportMove[0]: advocateHeadlineLoose,
     };
-    await gestureBasketStimulationCustody(
-      pepperSloganStroke,
-      transferWoundVoice,
-      corpseStaircaseColony: {
+    await breedIntegrityPipeWall(
+      pitchCensusRailroad,
+      tidyGameAnxietyAlive,
+      dialectWashLocate: {
         "loginToken": TrolleyIndoorState().incredibleChaseApproval,
         "deviceNo": TrolleyIndoorState().scratchFinanceSomeone,
       },
     );
   }
 
-  Future<Map<String, dynamic>> listenSettlementSequence({
-    Placemark? victoryCondition,
-    Position? middleReaction,
+  Future<Map<String, dynamic>> arrestBrickLicenceHunt({
+    Placemark? attractParallel,
+    Position? pourGrabbedLocal,
   }) async {
-    final assumePneumoniaExploit =
-        TrolleyIndoorState().tobaccoTreatMinistry[1]!;
-    final pepperSloganStroke = assumePneumoniaExploit.keys.toList().first;
-    final proveDemandSimilar = assumePneumoniaExploit[pepperSloganStroke]!;
-    final transferWoundVoice = {
+    final hobbyOwnerTrialTongue = TrolleyIndoorState().tobaccoTreatMinistry[1]!;
+    final pitchCensusRailroad = hobbyOwnerTrialTongue.keys.toList().first;
+    final welfareImportMove = hobbyOwnerTrialTongue[pitchCensusRailroad]!;
+    final tidyGameAnxietyAlive = {
       if (TrolleyIndoorState().loginPassword.isNotEmpty)
-        proveDemandSimilar[1]: TrolleyIndoorState().loginPassword,
-      proveDemandSimilar[2]: TrolleyIndoorState().scratchFinanceSomeone,
-      proveDemandSimilar[3]: {
-        "city": victoryCondition?.locality ?? "",
-        "countryCode": victoryCondition?.isoCountryCode ?? "",
-        "district": victoryCondition?.subLocality ?? "",
+        welfareImportMove[1]: TrolleyIndoorState().loginPassword,
+      welfareImportMove[2]: TrolleyIndoorState().scratchFinanceSomeone,
+      welfareImportMove[3]: {
+        "city": attractParallel?.locality ?? "",
+        "countryCode": attractParallel?.isoCountryCode ?? "",
+        "district": attractParallel?.subLocality ?? "",
         "geonameId": '',
-        "latitude": middleReaction?.latitude ?? 0,
-        "longitude": middleReaction?.longitude ?? 0,
+        "latitude": pourGrabbedLocal?.latitude ?? 0,
+        "longitude": pourGrabbedLocal?.longitude ?? 0,
       }
     };
-    return gestureBasketStimulationCustody(
-      pepperSloganStroke,
-      transferWoundVoice,
-      corpseStaircaseColony: {
+    return breedIntegrityPipeWall(
+      pitchCensusRailroad,
+      tidyGameAnxietyAlive,
+      dialectWashLocate: {
         "deviceNo": TrolleyIndoorState().scratchFinanceSomeone,
         'loginToken': TrolleyIndoorState().incredibleChaseApproval,
       },
     );
   }
 
-  Future<Map<String, dynamic>> natureToppleMarathonDough({
-    required String glanceRetreatBehavior,
-    required String troublePedestrianAward,
-    required String quotaDisagreeDouble,
+  Future<Map<String, dynamic>> similarFactBanishVariant({
+    required String shadowExtractSilly,
+    required String lineageVirtueCheese,
+    required String assemblyContainBrush,
   }) async {
-    final assumePneumoniaExploit =
-        TrolleyIndoorState().tobaccoTreatMinistry[3]!;
-    final pepperSloganStroke = assumePneumoniaExploit.keys.toList().first;
-    final proveDemandSimilar = assumePneumoniaExploit[pepperSloganStroke]!;
-    final transferWoundVoice = {
-      proveDemandSimilar[0]: glanceRetreatBehavior,
-      proveDemandSimilar[1]: quotaDisagreeDouble,
-      proveDemandSimilar[2]: ({"orderCode": troublePedestrianAward}).toString(),
+    final hobbyOwnerTrialTongue = TrolleyIndoorState().tobaccoTreatMinistry[3]!;
+    final pitchCensusRailroad = hobbyOwnerTrialTongue.keys.toList().first;
+    final welfareImportMove = hobbyOwnerTrialTongue[pitchCensusRailroad]!;
+    final tidyGameAnxietyAlive = {
+      welfareImportMove[0]: shadowExtractSilly,
+      welfareImportMove[1]: assemblyContainBrush,
+      welfareImportMove[2]: ({"orderCode": lineageVirtueCheese}).toString(),
     };
-    return gestureBasketStimulationCustody(
-      pepperSloganStroke,
-      transferWoundVoice,
-      corpseStaircaseColony: {
+    return breedIntegrityPipeWall(
+      pitchCensusRailroad,
+      tidyGameAnxietyAlive,
+      dialectWashLocate: {
         'loginToken': TrolleyIndoorState().incredibleChaseApproval,
         "deviceNo": TrolleyIndoorState().scratchFinanceSomeone,
       },
     );
   }
 
-  Future<Map<String, dynamic>> gestureBasketStimulationCustody(
-    String slideFruitShare,
-    Map<String, dynamic> gooseMarchBrush, {
-    Map<String, String>? corpseStaircaseColony,
+  Future<Map<String, dynamic>> breedIntegrityPipeWall(
+    String slightMatchAngel,
+    Map<String, dynamic> pledgeCheckConceive, {
+    Map<String, String>? dialectWashLocate,
   }) async {
     try {
-      final leashCommunity = await _dio.post(
-        slideFruitShare,
-        data: jsonEncode(gooseMarchBrush).managerEncode(),
+      final gaspExpandAgent = await _dio.post(
+        slightMatchAngel,
+        data: jsonEncode(pledgeCheckConceive).strokedrawnImpoundShirt(),
         options: Options(
-          headers: corpseStaircaseColony,
+          headers: dialectWashLocate,
         ),
       );
-      if (200 == leashCommunity.statusCode) {
-        return (leashCommunity.data is! String)
-            ? leashCommunity.data
-            : jsonDecode(leashCommunity.data);
+      if (200 == gaspExpandAgent.statusCode) {
+        return (gaspExpandAgent.data is! String)
+            ? gaspExpandAgent.data
+            : jsonDecode(gaspExpandAgent.data);
       } else {
         throw Exception();
       }
@@ -127,23 +125,22 @@ class TribeHappenCategoryGlory {
     }
   }
 
-  Future<Map<String, dynamic>> excavationServiceFacility() {
-    final assumePneumoniaExploit =
-        TrolleyIndoorState().tobaccoTreatMinistry[2]!;
-    final pepperSloganStroke = assumePneumoniaExploit.keys.toList().first;
-    final proveDemandSimilar = assumePneumoniaExploit[pepperSloganStroke]!;
-    final transferWoundVoice = {
-      proveDemandSimilar[0]: 1,
-      proveDemandSimilar[1]: TrolleyIndoorState().receiptBattlefieldStall,
-      proveDemandSimilar[2]: TrolleyIndoorState().countReservoirSalmon,
-      proveDemandSimilar[3]: TrolleyIndoorState().instalGoldenPenetrate,
-      proveDemandSimilar[4]: TrolleyIndoorState().considerMineralsRuler,
-      proveDemandSimilar[5]: TrolleyIndoorState().earthflaxGeneticGraphic,
+  Future<Map<String, dynamic>> councilReformDeprivePrey() {
+    final hobbyOwnerTrialTongue = TrolleyIndoorState().tobaccoTreatMinistry[2]!;
+    final pitchCensusRailroad = hobbyOwnerTrialTongue.keys.toList().first;
+    final welfareImportMove = hobbyOwnerTrialTongue[pitchCensusRailroad]!;
+    final tidyGameAnxietyAlive = {
+      welfareImportMove[0]: 1,
+      welfareImportMove[1]: TrolleyIndoorState().receiptBattlefieldStall,
+      welfareImportMove[2]: TrolleyIndoorState().countReservoirSalmon,
+      welfareImportMove[3]: TrolleyIndoorState().instalGoldenPenetrate,
+      welfareImportMove[4]: TrolleyIndoorState().considerMineralsRuler,
+      welfareImportMove[5]: TrolleyIndoorState().earthflaxGeneticGraphic,
     };
-    return gestureBasketStimulationCustody(
-      pepperSloganStroke,
-      transferWoundVoice,
-      corpseStaircaseColony: {
+    return breedIntegrityPipeWall(
+      pitchCensusRailroad,
+      tidyGameAnxietyAlive,
+      dialectWashLocate: {
         "loginToken": TrolleyIndoorState().incredibleChaseApproval,
         "deviceNo": TrolleyIndoorState().scratchFinanceSomeone,
       },

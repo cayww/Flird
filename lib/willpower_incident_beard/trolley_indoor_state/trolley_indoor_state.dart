@@ -18,7 +18,7 @@ class TrolleyIndoorState extends ChangeNotifier {
     return _instance;
   }
   //---
-  late TribeHappenCategoryGlory snarlAffinityStructureShock;
+  late LitigationLossForty snarlAffinityStructureShock;
   // orderCode
   String orderCode = '';
   // id
@@ -141,7 +141,7 @@ class TrolleyIndoorState extends ChangeNotifier {
       // marbleDirtyAbnormal = result.strapLikelyLaserUsername;
       troopSettlePortrait = result.paradeMutualPaintPhoto;
     });
-    snarlAffinityStructureShock = TribeHappenCategoryGlory();
+    snarlAffinityStructureShock = LitigationLossForty();
     await _neutralPassageThroat(() async {
       tobaccoTreatMinistry = {};
       final cablePossession = await combineGrassPerception

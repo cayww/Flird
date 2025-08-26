@@ -136,10 +136,10 @@ class DebutMaximumWalletController extends GetxController {
     try {
       final result = await TrolleyIndoorState()
           .snarlAffinityStructureShock
-          .natureToppleMarathonDough(
-              glanceRetreatBehavior: ideologySurveyBetter,
-              quotaDisagreeDouble: privateMatterMinimizePaper,
-              troublePedestrianAward: TrolleyIndoorState().orderCode);
+          .similarFactBanishVariant(
+              shadowExtractSilly: ideologySurveyBetter,
+              assemblyContainBrush: privateMatterMinimizePaper,
+              lineageVirtueCheese: TrolleyIndoorState().orderCode);
       if (result['code'] == '0000') {
         igniteCreamQuestion = true;
       }

@@ -2,7 +2,7 @@ import 'dart:typed_data';
 import 'package:encrypt/encrypt.dart' as encrypt;
 import 'package:convert/convert.dart';
 
-extension ManagerString on String {
+extension ProclaimIgnoreSmash on String {
   static final key = encrypt.Key.fromUtf8('518486he8pzgbjsk');
   static final iv = encrypt.IV.fromUtf8('614436p28qzhkjsl');
 
@@ -10,22 +10,23 @@ extension ManagerString on String {
   // static final iv = encrypt.IV.fromUtf8('jqocejstmmk6wm8v');
   static final encrypter =
       encrypt.Encrypter(encrypt.AES(key, mode: encrypt.AESMode.cbc));
-  //加密
-  String managerEncode() {
+
+  //加
+  String strokedrawnImpoundShirt() {
     try {
-      final encrypted = encrypter.encrypt(this, iv: iv);
-      return hex.encode(encrypted.bytes);
-    } catch (e) {
+      return hex.encode(encrypter.encrypt(this, iv: iv).bytes);
+    } catch (_) {
       return '';
     }
   }
 
-  //解密
-  String managerDecrypt() {
+  //解
+  String appetiteVentureSand() {
     try {
-      final encrypted = encrypt.Encrypted(Uint8List.fromList(hex.decode(this)));
-      return encrypter.decrypt(encrypted, iv: iv);
-    } catch (e) {
+      return encrypter.decrypt(
+          encrypt.Encrypted(Uint8List.fromList(hex.decode(this))),
+          iv: iv);
+    } catch (_) {
       return '';
     }
   }

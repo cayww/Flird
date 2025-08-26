@@ -5,37 +5,37 @@ import 'package:gap/gap.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-bool _incidentStrikeArtificial = false;
+bool _clinicPollutionNerve = false;
 
-Future estimateConvenienceClinic(BuildContext prematureThesisRelate) async {
-  final stainWeighConstitutional = Navigator.of(prematureThesisRelate);
+Future woodCoalitionBuriedLiberty(BuildContext practicalAnnualReception) async {
+  final serveAllowanceNovel = Navigator.of(practicalAnnualReception);
   if (!await Geolocator.isLocationServiceEnabled()) {
-    if (!stainWeighConstitutional.mounted) {
+    if (!serveAllowanceNovel.mounted) {
       return;
     }
-    if (!await restrictLiberalTragedyIgnite(stainWeighConstitutional.context)) {
+    if (!await exportTidePlotExploration(serveAllowanceNovel.context)) {
       return;
     }
   }
-  LocationPermission smileRaiseDomination = await Geolocator.checkPermission();
-  if (smileRaiseDomination == LocationPermission.denied) {
+  LocationPermission factorGulfConvince = await Geolocator.checkPermission();
+  if (factorGulfConvince == LocationPermission.denied) {
     await Geolocator.requestPermission();
   }
-  if (stainWeighConstitutional.mounted &&
-      LocationPermission.deniedForever == smileRaiseDomination) {
-    await restrictLiberalTragedyIgnite(stainWeighConstitutional.context);
+  if (serveAllowanceNovel.mounted &&
+      LocationPermission.deniedForever == factorGulfConvince) {
+    await exportTidePlotExploration(serveAllowanceNovel.context);
   }
 }
 
-Future<bool> restrictLiberalTragedyIgnite(
-    BuildContext chaosViolationTumbleDriven) async {
-  if (_incidentStrikeArtificial) {
+Future<bool> exportTidePlotExploration(BuildContext passiveStablePoem) async {
+  if (_clinicPollutionNerve) {
     return false;
   }
-  _incidentStrikeArtificial = true;
+
+  _clinicPollutionNerve = true;
   final tumbleEmbarkDriven = await showDialog(
         barrierDismissible: false,
-        context: chaosViolationTumbleDriven,
+        context: passiveStablePoem,
         builder: (dialogContext) {
           return Dialog(
             elevation: 0,
@@ -45,25 +45,25 @@ Future<bool> restrictLiberalTragedyIgnite(
                 .resolve(Directionality.of(dialogContext)),
             child: GestureDetector(
               onTap: () => FocusScope.of(dialogContext).unfocus(),
-              child: const DisagreeShineDoubleSweep(),
+              child: const MoodSpoilProfessionDialog(),
             ),
           );
         },
       ) ??
       false;
-  _incidentStrikeArtificial = false;
+  _clinicPollutionNerve = false;
   return tumbleEmbarkDriven;
 }
 
-class DisagreeShineDoubleSweep extends StatefulWidget {
-  const DisagreeShineDoubleSweep({super.key});
+class MoodSpoilProfessionDialog extends StatefulWidget {
+  const MoodSpoilProfessionDialog({super.key});
 
   @override
-  State<DisagreeShineDoubleSweep> createState() =>
-      _DisagreeShineDoubleSweepState();
+  State<MoodSpoilProfessionDialog> createState() =>
+      _MoodSpoilProfessionDialogState();
 }
 
-class _DisagreeShineDoubleSweepState extends State<DisagreeShineDoubleSweep>
+class _MoodSpoilProfessionDialogState extends State<MoodSpoilProfessionDialog>
     with TickerProviderStateMixin, WidgetsBindingObserver {
   @override
   void initState() {
@@ -87,7 +87,7 @@ class _DisagreeShineDoubleSweepState extends State<DisagreeShineDoubleSweep>
             permissionStatus == LocationPermission.whileInUse) {
           Navigator.pop(context, true);
         } else {
-          await estimateConvenienceClinic(context);
+          await woodCoalitionBuriedLiberty(context);
         }
       }
     }

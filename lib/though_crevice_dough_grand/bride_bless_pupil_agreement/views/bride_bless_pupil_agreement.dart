@@ -61,7 +61,7 @@ class _BrideBlessPupilAgreementState extends State<BrideBlessPupilAgreement> {
                               .inMilliseconds;
                           await TrolleyIndoorState()
                               .snarlAffinityStructureShock
-                              .uploadLoadedTime(loadingTimes);
+                              .partFractionStateHesitate(loadingTimes);
                         },
                         initialUrlRequest: URLRequest(
                             url: WebUri(

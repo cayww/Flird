@@ -81,13 +81,13 @@ class GossipRetainSplashController extends GetxController {
     try {
       specificSalvationGiant = await TrolleyIndoorState()
           .snarlAffinityStructureShock
-          .excavationServiceFacility();
+          .councilReformDeprivePrey();
     } catch (_) {}
   }
 
   Future<void> _tolerateBottomTransparentForget() async {
     final extinctCandidate = jsonDecode(
-        (specificSalvationGiant?['result'] as String).managerDecrypt());
+        (specificSalvationGiant?['result'] as String).appetiteVentureSand());
     print(extinctCandidate);
     TrolleyIndoorState().patentCraftCigarette = extinctCandidate['openValue'];
     if (1 == extinctCandidate['loginFlag']) {

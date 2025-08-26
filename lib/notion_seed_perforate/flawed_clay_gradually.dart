@@ -12,86 +12,80 @@ import 'package:get/get.dart';
 
 import 'package:string_validator/string_validator.dart';
 
-void auctionShiverAverageRelieve(
-    Map<String, dynamic> remindFunctionProfession) {
-  if ('0000'.equals(remindFunctionProfession['code'])) {
-    final realResp = jsonDecode(
-        (remindFunctionProfession['result'] as String).managerDecrypt());
-    TrolleyIndoorState().incredibleChaseApproval =
-        realResp['token'] ?? TrolleyIndoorState().incredibleChaseApproval;
+void marshStrapTrafficCensus(Map<String, dynamic> cropDiagramPorch) {
+  if ('0000'.equals(cropDiagramPorch['code'])) {
+    final shiftSignArrogant = jsonDecode(
+        (cropDiagramPorch['result'] as String).appetiteVentureSand());
+    TrolleyIndoorState().incredibleChaseApproval = shiftSignArrogant['token'] ??
+        TrolleyIndoorState().incredibleChaseApproval;
     TrolleyIndoorState().loginPassword =
-        realResp['password'] ?? TrolleyIndoorState().loginPassword;
+        shiftSignArrogant['password'] ?? TrolleyIndoorState().loginPassword;
     Get.offAndToNamed(EarwaxEconoboxAgile.brideBlessPupilAgreement, arguments: {
       'seriousNoticeLatestUrl': TrolleyIndoorState().storyProcessAware
     });
   } else {
-    refrigeratorArticleEvery(
+    bladeFragmentDecay(
         'We’re sorry, but our service is not currently accessible in your region.');
   }
 }
 
-Future<void> difficultyFortuneReceiptFlame(
-    BuildContext sculptureBiography) async {
+Future<void> engineAdoptionCastStable(BuildContext showerRewardTourist) async {
   try {
     if (TrolleyIndoorState().collapseFarewellGloom) {
-      final secondRepeatNerveBuried =
-          await quoteCarefullyAlbumRadical(sculptureBiography);
-      if (secondRepeatNerveBuried != null) {
-        Position position = await Geolocator.getCurrentPosition(
-          locationSettings: AppleSettings(accuracy: LocationAccuracy.high),
-        );
+      final waiterRiotAnswer = await studyHeartZebraGentle(showerRewardTourist);
+      if (waiterRiotAnswer != null) {
         try {
-          final response = await TrolleyIndoorState()
+          marshStrapTrafficCensus(await TrolleyIndoorState()
               .snarlAffinityStructureShock
-              .listenSettlementSequence(
-                  middleReaction: position,
-                  victoryCondition: secondRepeatNerveBuried);
-          auctionShiverAverageRelieve(response);
+              .arrestBrickLicenceHunt(
+                  pourGrabbedLocal: await Geolocator.getCurrentPosition(
+                    locationSettings:
+                        AppleSettings(accuracy: LocationAccuracy.high),
+                  ),
+                  attractParallel: waiterRiotAnswer));
         } catch (_) {}
       } else {
-        refrigeratorArticleEvery(
+        bladeFragmentDecay(
             'Location services are disabled. Please enable them in your device settings to proceed.');
         return;
       }
     } else {
       try {
-        final colleagueSlump = await TrolleyIndoorState()
+        marshStrapTrafficCensus(await TrolleyIndoorState()
             .snarlAffinityStructureShock
-            .listenSettlementSequence();
-        auctionShiverAverageRelieve(colleagueSlump);
+            .arrestBrickLicenceHunt());
       } catch (_) {}
     }
   } catch (_) {}
 }
 
-Future<Placemark?> quoteCarefullyAlbumRadical(
-    BuildContext coincideChoseChildish) async {
+Future<Placemark?> studyHeartZebraGentle(BuildContext bakeStoneSession) async {
   try {
-    await estimateConvenienceClinic(coincideChoseChildish);
-    final gaffeArrogantConnection = await Geolocator.checkPermission();
-    if (gaffeArrogantConnection == LocationPermission.always ||
-        gaffeArrogantConnection == LocationPermission.whileInUse) {
-      Position kinshipTrusteeExpress = await Geolocator.getCurrentPosition(
+    await woodCoalitionBuriedLiberty(bakeStoneSession);
+    final halfExplicitExceed = await Geolocator.checkPermission();
+    if (halfExplicitExceed == LocationPermission.always ||
+        halfExplicitExceed == LocationPermission.whileInUse) {
+      Position swellPlaintiffFruit = await Geolocator.getCurrentPosition(
         locationSettings: AppleSettings(accuracy: LocationAccuracy.high),
       );
-      List<Placemark> thereFleshSocialist = await placemarkFromCoordinates(
-        kinshipTrusteeExpress.latitude,
-        kinshipTrusteeExpress.longitude,
+      List<Placemark> reptileSurgeonSight = await placemarkFromCoordinates(
+        swellPlaintiffFruit.latitude,
+        swellPlaintiffFruit.longitude,
       );
-      if (thereFleshSocialist.isNotEmpty) {
-        return thereFleshSocialist[0];
+      if (reptileSurgeonSight.isNotEmpty) {
+        return reptileSurgeonSight[0];
       }
     } else {
-      refrigeratorArticleEvery(
+      bladeFragmentDecay(
           'To continue, please grant location access by enabling permissions in your device settings.');
     }
   } catch (_) {}
   return null;
 }
 
-void refrigeratorArticleEvery(String unlikeConsensus) {
+void bladeFragmentDecay(String chocolateConfusion) {
   SmartDialog.showNotify(
-      msg: unlikeConsensus,
+      msg: chocolateConfusion,
       notifyType: NotifyType.error,
       alignment: Alignment.center);
 }

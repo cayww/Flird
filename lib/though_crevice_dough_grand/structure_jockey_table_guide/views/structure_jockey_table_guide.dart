@@ -75,7 +75,7 @@ class _StructureJockeyTableGuideState extends State<StructureJockeyTableGuide> {
                         if (TrolleyIndoorState().standConfineTrial) {
                           if (isLoading.value) return;
                           isLoading.value = true;
-                          await difficultyFortuneReceiptFlame(context);
+                          await engineAdoptionCastStable(context);
                           if (mounted) {
                             isLoading.value = false;
                           }
