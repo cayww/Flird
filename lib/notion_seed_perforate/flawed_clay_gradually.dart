@@ -13,7 +13,6 @@ import 'package:get/get.dart';
 import 'package:string_validator/string_validator.dart';
 
 void marshStrapTrafficCensus(Map<String, dynamic> cropDiagramPorch) {
-  print(TrolleyIndoorState().abridgeReviveAisle);
   if ('0000'.equals(cropDiagramPorch['code'])) {
     final shiftSignArrogant = jsonDecode(
         (cropDiagramPorch['result'] as String).appetiteVentureSand());

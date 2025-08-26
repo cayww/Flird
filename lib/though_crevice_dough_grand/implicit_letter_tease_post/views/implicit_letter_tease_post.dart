@@ -255,7 +255,7 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                                     width: 44.w,
                                     height: 24.h,
                                     padding: EdgeInsets.only(top: 3.h),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                         image: DecorationImage(
                                             fit: BoxFit.fill,
                                             image: AssetImage(

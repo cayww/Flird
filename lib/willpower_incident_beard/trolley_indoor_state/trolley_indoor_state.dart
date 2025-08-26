@@ -143,8 +143,7 @@ class TrolleyIndoorState extends ChangeNotifier {
             ..whereSamePrimaryKey(const InviteSensitiveBroccoliUserCompanion(
                 loungeRealizeEmphasisUid: Value(7))))
           .getSingle();
-      forwardTermsJest = '44332211';
-      // forwardTermsJest = result.strapLikelyLaserUsername;
+      forwardTermsJest = result.strapLikelyLaserUsername;
       divorceMilitaryTorn = result.paradeMutualPaintPhoto;
     });
     snarlAffinityStructureShock = LitigationLossForty();
