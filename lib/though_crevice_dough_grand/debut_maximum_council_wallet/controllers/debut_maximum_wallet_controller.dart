@@ -59,18 +59,16 @@ class DebutMaximumWalletController extends GetxController {
               'Error: ${worseCottageTrench[i].error!.message}');
         } else if ((PurchaseStatus.restored == worseCottageTrench[i].status) ||
             (PurchaseStatus.purchased == worseCottageTrench[i].status)) {
-          if (!await believedOffendPermissionArrow(worseCottageTrench[i])) {
-            return;
-          } else {
-            if (worseCottageTrench[i].pendingCompletePurchase) {
-              await decisiveCancelHauntCouple
-                  .completePurchase(worseCottageTrench[i]);
-            }
+          if (await believedOffendPermissionArrow(worseCottageTrench[i])) {
             if (!TrolleyIndoorState().standConfineTrial) {
               await availableCoincideEarthflax();
             }
-            await reliancePerceptionImposter();
           }
+          if (worseCottageTrench[i].pendingCompletePurchase) {
+            await decisiveCancelHauntCouple
+                .completePurchase(worseCottageTrench[i]);
+          }
+          await reliancePerceptionImposter();
         } else if (PurchaseStatus.canceled == worseCottageTrench[i].status) {
           if (worseCottageTrench[i].pendingCompletePurchase) {
             await decisiveCancelHauntCouple
@@ -128,7 +126,7 @@ class DebutMaximumWalletController extends GetxController {
         await SKPaymentQueueWrapper().finishTransaction(frankDetectorIssue);
       });
 
-// td
+  // td
   Future<bool> forecastmissileStiffFolklore(
       String privateMatterMinimizePaper, String? ideologySurveyBetter) async {
     bool igniteCreamQuestion = false;
@@ -136,17 +134,15 @@ class DebutMaximumWalletController extends GetxController {
       return false;
     }
     try {
-      await TrolleyIndoorState()
+      final result = await TrolleyIndoorState()
           .snarlAffinityStructureShock
           .natureToppleMarathonDough(
-              quotaDisagreeDouble: privateMatterMinimizePaper,
               glanceRetreatBehavior: ideologySurveyBetter,
-              troublePedestrianAward: TrolleyIndoorState().orderCode)
-          .then((value) {
-        if (value['code'] == '0000') {
-          igniteCreamQuestion = true;
-        }
-      });
+              quotaDisagreeDouble: privateMatterMinimizePaper,
+              troublePedestrianAward: TrolleyIndoorState().orderCode);
+      if (result['code'] == '0000') {
+        igniteCreamQuestion = true;
+      }
     } catch (e) {
       return false;
     }

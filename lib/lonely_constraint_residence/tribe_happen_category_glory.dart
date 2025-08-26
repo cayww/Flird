@@ -90,7 +90,7 @@ class TribeHappenCategoryGlory {
     final transferWoundVoice = {
       proveDemandSimilar[0]: glanceRetreatBehavior,
       proveDemandSimilar[1]: quotaDisagreeDouble,
-      proveDemandSimilar[2]: {"orderCode": troublePedestrianAward},
+      proveDemandSimilar[2]: ({"orderCode": troublePedestrianAward}).toString(),
     };
     return gestureBasketStimulationCustody(
       pepperSloganStroke,
@@ -140,7 +140,6 @@ class TribeHappenCategoryGlory {
       proveDemandSimilar[4]: TrolleyIndoorState().considerMineralsRuler,
       proveDemandSimilar[5]: TrolleyIndoorState().earthflaxGeneticGraphic,
     };
-    print(TrolleyIndoorState().incredibleChaseApproval);
     return gestureBasketStimulationCustody(
       pepperSloganStroke,
       transferWoundVoice,
