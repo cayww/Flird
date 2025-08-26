@@ -120,7 +120,8 @@ class GossipRetainSplashController extends GetxController {
 
   Future<void> _gloomDependHeelGolf() async {
     final sunriseBendFeastStuff = await VpnDetector().isVpnActive();
-    TrolleyIndoorState().executrixPickPastel = sunriseBendFeastStuff ? 1 : 0;
+    TrolleyIndoorState().executrixPickPastel =
+        sunriseBendFeastStuff == VpnStatus.active ? 1 : 0;
   }
 
   bool _deserveHeroWeaveFault() {
