@@ -5,9 +5,7 @@ import 'package:devicelocale/devicelocale.dart';
 import 'package:flird/notion_seed_perforate/proclaim_ignore_smash.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:flird/flatware_burst_satisfied/correct_repeat_middle.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_native_timezone/flutter_native_timezone.dart';
-import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:string_validator/string_validator.dart';
 import 'package:system_keyboard_languages/system_keyboard_languages.dart';
@@ -125,9 +123,6 @@ class GossipRetainSplashController extends GetxController {
   }
 
   bool _deserveHeroWeaveFault() {
-    SmartDialog.showToast('''${wasteDesertQualifySeven!['code']}
-${wasteDesertQualifySeven!['message']}''',
-        alignment: Alignment.center, displayTime: 10.seconds);
     return TrolleyIndoorState().rainHardlyPineHabit.contains('iPhone') &&
         '0000'.equals(wasteDesertQualifySeven!['code']);
   }
