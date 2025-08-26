@@ -12,9 +12,9 @@ class LitigationLossForty {
   final Dio _dio;
   LitigationLossForty()
       : _dio = Dio(BaseOptions(
-            baseUrl: TrolleyIndoorState().troopSettlePortrait,
+            baseUrl: TrolleyIndoorState().divorceMilitaryTorn,
             headers: {
-              'appId': TrolleyIndoorState().marbleDirtyAbnormal,
+              'appId': TrolleyIndoorState().forwardTermsJest,
               'Connection': 'keep-alive',
               "appVersion": TrolleyIndoorState().gravelCaptainPattern,
               'content-type': Headers.jsonContentType
@@ -31,7 +31,8 @@ class LitigationLossForty {
   }
 
   Future<void> partFractionStateHesitate(int advocateHeadlineLoose) async {
-    final hobbyOwnerTrialTongue = TrolleyIndoorState().tobaccoTreatMinistry[4]!;
+    final hobbyOwnerTrialTongue =
+        TrolleyIndoorState().trivialHalfwayOutline[4]!;
     final pitchCensusRailroad = hobbyOwnerTrialTongue.keys.toList().first;
     final welfareImportMove = hobbyOwnerTrialTongue[pitchCensusRailroad]!;
     final tidyGameAnxietyAlive = {
@@ -41,8 +42,8 @@ class LitigationLossForty {
       pitchCensusRailroad,
       tidyGameAnxietyAlive,
       dialectWashLocate: {
-        "loginToken": TrolleyIndoorState().incredibleChaseApproval,
-        "deviceNo": TrolleyIndoorState().scratchFinanceSomeone,
+        "loginToken": TrolleyIndoorState().temptImportantCopper,
+        "deviceNo": TrolleyIndoorState().quietSighHereFussFilm,
       },
     );
   }
@@ -51,13 +52,14 @@ class LitigationLossForty {
     Placemark? attractParallel,
     Position? pourGrabbedLocal,
   }) async {
-    final hobbyOwnerTrialTongue = TrolleyIndoorState().tobaccoTreatMinistry[1]!;
+    final hobbyOwnerTrialTongue =
+        TrolleyIndoorState().trivialHalfwayOutline[1]!;
     final pitchCensusRailroad = hobbyOwnerTrialTongue.keys.toList().first;
     final welfareImportMove = hobbyOwnerTrialTongue[pitchCensusRailroad]!;
     final tidyGameAnxietyAlive = {
-      if (TrolleyIndoorState().loginPassword.isNotEmpty)
-        welfareImportMove[1]: TrolleyIndoorState().loginPassword,
-      welfareImportMove[2]: TrolleyIndoorState().scratchFinanceSomeone,
+      if (TrolleyIndoorState().abridgeReviveAisle.isNotEmpty)
+        welfareImportMove[1]: TrolleyIndoorState().abridgeReviveAisle,
+      welfareImportMove[2]: TrolleyIndoorState().quietSighHereFussFilm,
       welfareImportMove[3]: {
         "city": attractParallel?.locality ?? "",
         "countryCode": attractParallel?.isoCountryCode ?? "",
@@ -71,8 +73,8 @@ class LitigationLossForty {
       pitchCensusRailroad,
       tidyGameAnxietyAlive,
       dialectWashLocate: {
-        "deviceNo": TrolleyIndoorState().scratchFinanceSomeone,
-        'loginToken': TrolleyIndoorState().incredibleChaseApproval,
+        "deviceNo": TrolleyIndoorState().quietSighHereFussFilm,
+        'loginToken': TrolleyIndoorState().temptImportantCopper,
       },
     );
   }
@@ -82,7 +84,8 @@ class LitigationLossForty {
     required String lineageVirtueCheese,
     required String assemblyContainBrush,
   }) async {
-    final hobbyOwnerTrialTongue = TrolleyIndoorState().tobaccoTreatMinistry[3]!;
+    final hobbyOwnerTrialTongue =
+        TrolleyIndoorState().trivialHalfwayOutline[3]!;
     final pitchCensusRailroad = hobbyOwnerTrialTongue.keys.toList().first;
     final welfareImportMove = hobbyOwnerTrialTongue[pitchCensusRailroad]!;
     final tidyGameAnxietyAlive = {
@@ -94,8 +97,8 @@ class LitigationLossForty {
       pitchCensusRailroad,
       tidyGameAnxietyAlive,
       dialectWashLocate: {
-        'loginToken': TrolleyIndoorState().incredibleChaseApproval,
-        "deviceNo": TrolleyIndoorState().scratchFinanceSomeone,
+        'loginToken': TrolleyIndoorState().temptImportantCopper,
+        "deviceNo": TrolleyIndoorState().quietSighHereFussFilm,
       },
     );
   }
@@ -126,23 +129,25 @@ class LitigationLossForty {
   }
 
   Future<Map<String, dynamic>> councilReformDeprivePrey() {
-    final hobbyOwnerTrialTongue = TrolleyIndoorState().tobaccoTreatMinistry[2]!;
+    final hobbyOwnerTrialTongue =
+        TrolleyIndoorState().trivialHalfwayOutline[2]!;
     final pitchCensusRailroad = hobbyOwnerTrialTongue.keys.toList().first;
     final welfareImportMove = hobbyOwnerTrialTongue[pitchCensusRailroad]!;
     final tidyGameAnxietyAlive = {
+      'debug': 1,
       welfareImportMove[0]: 1,
-      welfareImportMove[1]: TrolleyIndoorState().receiptBattlefieldStall,
-      welfareImportMove[2]: TrolleyIndoorState().countReservoirSalmon,
-      welfareImportMove[3]: TrolleyIndoorState().instalGoldenPenetrate,
-      welfareImportMove[4]: TrolleyIndoorState().considerMineralsRuler,
-      welfareImportMove[5]: TrolleyIndoorState().earthflaxGeneticGraphic,
+      welfareImportMove[1]: TrolleyIndoorState().executrixPickPastel,
+      welfareImportMove[2]: TrolleyIndoorState().custodyUnityEquipBike,
+      welfareImportMove[3]: TrolleyIndoorState().appointVolcanoCriminal,
+      welfareImportMove[4]: TrolleyIndoorState().tasteParticlesBarrel,
+      welfareImportMove[5]: TrolleyIndoorState().absoluteAwareZone,
     };
     return breedIntegrityPipeWall(
       pitchCensusRailroad,
       tidyGameAnxietyAlive,
       dialectWashLocate: {
-        "loginToken": TrolleyIndoorState().incredibleChaseApproval,
-        "deviceNo": TrolleyIndoorState().scratchFinanceSomeone,
+        "loginToken": TrolleyIndoorState().temptImportantCopper,
+        "deviceNo": TrolleyIndoorState().quietSighHereFussFilm,
       },
     );
   }

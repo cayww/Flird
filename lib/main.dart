@@ -22,7 +22,7 @@ void main() async {
       MethodChannel('rubberSwallowSight');
   reservoirWitnessHostage.setMethodCallHandler((MethodCall call) async {
     if (call.method == 'sketchMannerLetter') {
-      TrolleyIndoorState().infectionOffenseGrabbed = call.arguments;
+      TrolleyIndoorState().instanceGallerySlipRitual = call.arguments;
     }
   });
   runApp(const MyApp());

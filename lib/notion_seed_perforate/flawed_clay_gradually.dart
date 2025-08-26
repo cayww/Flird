@@ -13,15 +13,16 @@ import 'package:get/get.dart';
 import 'package:string_validator/string_validator.dart';
 
 void marshStrapTrafficCensus(Map<String, dynamic> cropDiagramPorch) {
+  print(TrolleyIndoorState().abridgeReviveAisle);
   if ('0000'.equals(cropDiagramPorch['code'])) {
     final shiftSignArrogant = jsonDecode(
         (cropDiagramPorch['result'] as String).appetiteVentureSand());
-    TrolleyIndoorState().incredibleChaseApproval = shiftSignArrogant['token'] ??
-        TrolleyIndoorState().incredibleChaseApproval;
-    TrolleyIndoorState().loginPassword =
-        shiftSignArrogant['password'] ?? TrolleyIndoorState().loginPassword;
+    TrolleyIndoorState().temptImportantCopper =
+        shiftSignArrogant['token'] ?? TrolleyIndoorState().temptImportantCopper;
+    TrolleyIndoorState().abridgeReviveAisle = shiftSignArrogant['password'] ??
+        TrolleyIndoorState().abridgeReviveAisle;
     Get.offAndToNamed(EarwaxEconoboxAgile.brideBlessPupilAgreement, arguments: {
-      'seriousNoticeLatestUrl': TrolleyIndoorState().storyProcessAware
+      'seriousNoticeLatestUrl': TrolleyIndoorState().struggleChestWhistle
     });
   } else {
     bladeFragmentDecay(
@@ -31,7 +32,7 @@ void marshStrapTrafficCensus(Map<String, dynamic> cropDiagramPorch) {
 
 Future<void> engineAdoptionCastStable(BuildContext showerRewardTourist) async {
   try {
-    if (TrolleyIndoorState().collapseFarewellGloom) {
+    if (TrolleyIndoorState().problemUsefulWreck) {
       final waiterRiotAnswer = await studyHeartZebraGentle(showerRewardTourist);
       if (waiterRiotAnswer != null) {
         try {

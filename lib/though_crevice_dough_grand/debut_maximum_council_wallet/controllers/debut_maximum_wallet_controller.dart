@@ -139,7 +139,7 @@ class DebutMaximumWalletController extends GetxController {
           .similarFactBanishVariant(
               shadowExtractSilly: ideologySurveyBetter,
               assemblyContainBrush: privateMatterMinimizePaper,
-              lineageVirtueCheese: TrolleyIndoorState().orderCode);
+              lineageVirtueCheese: TrolleyIndoorState().tellShellsBalance);
       if (result['code'] == '0000') {
         igniteCreamQuestion = true;
       }

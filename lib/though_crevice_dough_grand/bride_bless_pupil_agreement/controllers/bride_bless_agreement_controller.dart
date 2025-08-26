@@ -9,9 +9,9 @@ class BrideBlessAgreementController extends GetxController {
     seriousNoticeLatestUrl = Get.arguments['seriousNoticeLatestUrl']!;
   }
 
-  double biscuitSimilarRehearsal = 0;
-  InAppWebViewController? weighStairsAlcohol;
-  InAppWebViewSettings shelterImposterExplicit = InAppWebViewSettings(
+  double expertiseStallUrgePity = 0;
+  InAppWebViewController? perfectAnalystAloud;
+  InAppWebViewSettings mindRepeatBand = InAppWebViewSettings(
       mediaPlaybackRequiresUserGesture: false,
       transparentBackground: true,
       iframeAllowFullscreen: true,
@@ -23,6 +23,6 @@ class BrideBlessAgreementController extends GetxController {
   @override
   void onClose() {
     super.onClose();
-    weighStairsAlcohol?.dispose();
+    perfectAnalystAloud?.dispose();
   }
 }

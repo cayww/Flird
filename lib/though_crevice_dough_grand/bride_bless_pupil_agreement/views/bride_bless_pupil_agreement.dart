@@ -41,7 +41,7 @@ class _BrideBlessPupilAgreementState extends State<BrideBlessPupilAgreement> {
             ),
             body: Stack(
               children: [
-                if (_controller.biscuitSimilarRehearsal < 1.0)
+                if (_controller.expertiseStallUrgePity < 1.0)
                   Center(
                     child: LoadingAnimationWidget.twoRotatingArc(
                         color: Colors.white, size: 50.h),
@@ -55,36 +55,33 @@ class _BrideBlessPupilAgreementState extends State<BrideBlessPupilAgreement> {
                           loadingStartTime = DateTime.now();
                         },
                         onLoadStop: (controller, url) async {
-                          loadingEndTime = DateTime.now();
-                          int loadingTimes = loadingEndTime
-                              .difference(loadingStartTime)
-                              .inMilliseconds;
                           await TrolleyIndoorState()
                               .snarlAffinityStructureShock
-                              .partFractionStateHesitate(loadingTimes);
+                              .partFractionStateHesitate(DateTime.now()
+                                  .difference(loadingStartTime)
+                                  .inMilliseconds);
                         },
                         initialUrlRequest: URLRequest(
                             url: WebUri(
                                 _controller.seriousNoticeLatestUrl.trim())),
-                        initialSettings: _controller.shelterImposterExplicit,
+                        initialSettings: _controller.mindRepeatBand,
                         onWebViewCreated: (controller) {
-                          _controller.weighStairsAlcohol = controller;
-                          _controller.weighStairsAlcohol!.addJavaScriptHandler(
+                          _controller.perfectAnalystAloud = controller;
+                          _controller.perfectAnalystAloud!.addJavaScriptHandler(
                               handlerName: 'rechargePay',
                               callback: (args) async {
                                 final message = args[0];
-                                TrolleyIndoorState().orderCode =
+                                TrolleyIndoorState().tellShellsBalance =
                                     message['orderCode'];
                                 await _walletController
                                     .sleeveInvestigationFeathers(
                                         message['batchNo']);
                                 return null;
                               });
-                          _controller.weighStairsAlcohol!.addJavaScriptHandler(
+                          _controller.perfectAnalystAloud!.addJavaScriptHandler(
                               handlerName: 'close',
                               callback: (args) {
-                                TrolleyIndoorState().incredibleChaseApproval =
-                                    '';
+                                TrolleyIndoorState().temptImportantCopper = '';
                                 Get.offAllNamed(EarwaxEconoboxAgile
                                     .structureJockeyTableGuide);
                                 return null;
@@ -97,8 +94,7 @@ class _BrideBlessPupilAgreementState extends State<BrideBlessPupilAgreement> {
                         },
                         onProgressChanged: (controller, progress) {
                           setState(() {
-                            _controller.biscuitSimilarRehearsal =
-                                progress / 100;
+                            _controller.expertiseStallUrgePity = progress / 100;
                           });
                         },
                         shouldOverrideUrlLoading:
