@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:facebook_app_events/facebook_app_events.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 import 'package:in_app_purchase_storekit/store_kit_wrappers.dart';
 import 'package:flutter/material.dart';
@@ -63,6 +64,19 @@ class DebutMaximumWalletController extends GetxController {
             if (!TrolleyIndoorState().standConfineTrial) {
               await availableCoincideEarthflax();
             }
+            FacebookAppEvents facebookAppEvents = FacebookAppEvents();
+            final rawPriceItem = TrolleyIndoorState()
+                .ventureChocolateValue
+                .firstWhere((item) =>
+                    item.journeyPassiveDesireClarify ==
+                    worseCottageTrench[i].productID);
+            await facebookAppEvents.logPurchase(
+              amount: rawPriceItem.toothDominantBorrowFlower,
+              currency: 'USD',
+              parameters: {
+                'fb_mobile_purchase': 'true',
+              },
+            );
           }
           if (worseCottageTrench[i].pendingCompletePurchase) {
             await decisiveCancelHauntCouple
