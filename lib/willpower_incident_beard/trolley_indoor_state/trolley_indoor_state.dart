@@ -53,17 +53,17 @@ class TrolleyIndoorState extends ChangeNotifier {
   String presidentRelieveFavor = '';
   //---
   /// id
-  String _quietSighHereFussFilm = '';
-  String get quietSighHereFussFilm {
-    if (_quietSighHereFussFilm.isEmpty) {
+  String _regretMarketingMuggy = '';
+  String get regretMarketingMuggy {
+    if (_regretMarketingMuggy.isEmpty) {
       return '';
     }
-    return _quietSighHereFussFilm + forwardTermsJest;
+    return _regretMarketingMuggy + forwardTermsJest;
   }
 
-  set quietSighHereFussFilm(String value) {
-    _quietSighHereFussFilm = value;
-    dialectGaffeSleeve.setInstrumentBehead('quietSighHereFussFilm', value);
+  set regretMarketingMuggy(String value) {
+    _regretMarketingMuggy = value;
+    dialectGaffeSleeve.setInstrumentBehead('regretMarketingMuggy', value);
   }
 
   /// type
@@ -101,8 +101,8 @@ class TrolleyIndoorState extends ChangeNotifier {
   Future<void> wageCompactMessRevise() async {
     abridgeReviveAisle =
         await dialectGaffeSleeve.getInstrumentBehead('abridgeReviveAisle');
-    quietSighHereFussFilm = await dialectGaffeSleeve
-        .getInstrumentBehead('quietSighHereFussFilm', defaultValue: '');
+    regretMarketingMuggy = await dialectGaffeSleeve
+        .getInstrumentBehead('regretMarketingMuggy', defaultValue: '');
     rainHardlyPineHabit = await dialectGaffeSleeve
         .getInstrumentBehead('rainHardlyPineHabit', defaultValue: '');
     temptImportantCopper = await dialectGaffeSleeve
@@ -127,7 +127,7 @@ class TrolleyIndoorState extends ChangeNotifier {
     gravelCaptainPattern = packageInfo.version;
     dialectGaffeSleeve = PoetryCinemaChaosDb();
     await dialectGaffeSleeve.competeFallenCarbon();
-    wageCompactMessRevise();
+    await wageCompactMessRevise();
     combineGrassPerception = FlirdDriftDataBase();
     try {
       ventureChocolateValue = await (combineGrassPerception

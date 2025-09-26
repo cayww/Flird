@@ -43,7 +43,7 @@ class LitigationLossForty {
       tidyGameAnxietyAlive,
       dialectWashLocate: {
         "loginToken": TrolleyIndoorState().temptImportantCopper,
-        "deviceNo": TrolleyIndoorState().quietSighHereFussFilm,
+        "deviceNo": TrolleyIndoorState().regretMarketingMuggy,
       },
     );
   }
@@ -59,7 +59,7 @@ class LitigationLossForty {
     final tidyGameAnxietyAlive = {
       if (TrolleyIndoorState().abridgeReviveAisle.isNotEmpty)
         welfareImportMove[1]: TrolleyIndoorState().abridgeReviveAisle,
-      welfareImportMove[2]: TrolleyIndoorState().quietSighHereFussFilm,
+      welfareImportMove[2]: TrolleyIndoorState().regretMarketingMuggy,
       welfareImportMove[3]: {
         "city": attractParallel?.locality ?? "",
         "countryCode": attractParallel?.isoCountryCode ?? "",
@@ -73,7 +73,7 @@ class LitigationLossForty {
       pitchCensusRailroad,
       tidyGameAnxietyAlive,
       dialectWashLocate: {
-        "deviceNo": TrolleyIndoorState().quietSighHereFussFilm,
+        "deviceNo": TrolleyIndoorState().regretMarketingMuggy,
         'loginToken': TrolleyIndoorState().temptImportantCopper,
       },
     );
@@ -98,7 +98,7 @@ class LitigationLossForty {
       tidyGameAnxietyAlive,
       dialectWashLocate: {
         'loginToken': TrolleyIndoorState().temptImportantCopper,
-        "deviceNo": TrolleyIndoorState().quietSighHereFussFilm,
+        "deviceNo": TrolleyIndoorState().regretMarketingMuggy,
       },
     );
   }
@@ -146,7 +146,7 @@ class LitigationLossForty {
       tidyGameAnxietyAlive,
       dialectWashLocate: {
         "loginToken": TrolleyIndoorState().temptImportantCopper,
-        "deviceNo": TrolleyIndoorState().quietSighHereFussFilm,
+        "deviceNo": TrolleyIndoorState().regretMarketingMuggy,
       },
     );
   }

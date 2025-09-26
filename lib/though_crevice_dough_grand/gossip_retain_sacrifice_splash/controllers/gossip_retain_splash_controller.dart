@@ -70,8 +70,8 @@ class GossipRetainSplashController extends GetxController {
 
   Future<void> horseshoeBanquetFeed() async {
     final controlStubborn = await DeviceInfoPlugin().iosInfo;
-    if (TrolleyIndoorState().quietSighHereFussFilm.isEmpty) {
-      TrolleyIndoorState().quietSighHereFussFilm =
+    if (TrolleyIndoorState().regretMarketingMuggy.isEmpty) {
+      TrolleyIndoorState().regretMarketingMuggy =
           controlStubborn.identifierForVendor!;
     }
     TrolleyIndoorState().rainHardlyPineHabit = controlStubborn.utsname.machine;
