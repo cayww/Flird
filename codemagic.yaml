@@ -10,27 +10,36 @@ workflows:
         distribution_type: app_store
         bundle_identifier: com.effortirony.flirdclean
       vars:
-        APP_ID: 6747338396 # <-- Put your APP ID here
+        APP_ID: 6747338396
       flutter: "3.32.4"
-      xcode: "16.1" # <-- set to specific version e.g. 14.3, 15.0 to avoid unexpected updates.
+      xcode: "16.1"
       cocoapods: 1.16.1
     scripts:
       - name: Set up code signing settings on Xcode project
         script: |
           xcode-project use-profiles
+
+      - name: Update iOS deployment target to 14.0
+        script: |
+          echo "🧩 Updating iOS deployment target to 14.0 ..."
+          sed -i.bak "s/platform :ios, '13.0'/platform :ios, '14.0'/" ios/Podfile || true
+          cd ios
+          pod deintegrate
+          pod repo update
+          pod install
+          cd ..
+
       - name: Get Flutter packages
         script: |
           flutter packages pub get
+
       - name: Install pods
         script: |
           find . -name "Podfile" -execdir pod install \;
-      # - name: Flutter analyze
-      #   script: |
-      #     flutter analyze
+
       - name: Flutter build ipa and automatic versioning
         script: |
-          # See the following link about getting the latest App Store or TestFlight version - https://docs.codemagic.io/knowledge-codemagic/build-versioning/#app-store-or-testflight-latest-build-number
-          flutter build ipa --release --verbose --obfuscate --split-debug-info=/Users/builder/debug-info\
+          flutter build ipa --release --obfuscate --split-debug-info=/Users/builder/debug-info \
             --build-name=1.4.0 \
             --build-number=$(($(app-store-connect get-latest-testflight-build-number "$APP_ID") + 1)) \
             --export-options-plist=/Users/builder/export_options.plist
@@ -38,32 +47,3 @@ workflows:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
       - flutter_drive.log
-    # publishing:
-    #   # See the following link for details about email publishing - https://docs.codemagic.io/publishing-yaml/distribution/#email
-    #   email:
-    #     recipients:
-    #       - user_1@example.com
-    #       - user_2@example.com
-    #     notify:
-    #       success: true # To receive a notification when a build succeeds
-    #       failure: false # To not receive a notification when a build fails
-    #   slack:
-    #     # See the following link about how to connect your Slack account - https://docs.codemagic.io/publishing-yaml/distribution/#slack
-    #     channel: "#builds"
-    #     notify_on_build_start: true # To receive a notification when a build starts
-    #     notify:
-    #       success: true # To receive a notification when a build succeeds
-    #       failure: false # To not receive a notification when a build fails
-    #   app_store_connect:
-    #     auth: integration
-
-    #     # Configuration related to TestFlight (optional)
-    #     # Note: This action is performed during post-processing.
-    #     submit_to_testflight: true
-    #     beta_groups: # Specify the names of beta tester groups that will get access to the build once it has passed beta review.
-    #       - group name 1
-    #       - group name 2
-
-    #     # Configuration related to App Store (optional)
-    #     # Note: This action is performed during post-processing.
-    #     submit_to_app_store: false
