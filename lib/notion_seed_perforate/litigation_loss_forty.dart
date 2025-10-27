@@ -42,6 +42,7 @@ class LitigationLossForty {
       pitchCensusRailroad,
       tidyGameAnxietyAlive,
       dialectWashLocate: {
+        "pushToken": TrolleyIndoorState().instanceGallerySlipRitual,
         "loginToken": TrolleyIndoorState().temptImportantCopper,
         "deviceNo": TrolleyIndoorState().regretMarketingMuggy,
       },
@@ -73,6 +74,7 @@ class LitigationLossForty {
       pitchCensusRailroad,
       tidyGameAnxietyAlive,
       dialectWashLocate: {
+        "pushToken": TrolleyIndoorState().instanceGallerySlipRitual,
         "deviceNo": TrolleyIndoorState().regretMarketingMuggy,
         'loginToken': TrolleyIndoorState().temptImportantCopper,
       },
@@ -97,6 +99,7 @@ class LitigationLossForty {
       pitchCensusRailroad,
       tidyGameAnxietyAlive,
       dialectWashLocate: {
+        "pushToken": TrolleyIndoorState().instanceGallerySlipRitual,
         'loginToken': TrolleyIndoorState().temptImportantCopper,
         "deviceNo": TrolleyIndoorState().regretMarketingMuggy,
       },
@@ -145,6 +148,7 @@ class LitigationLossForty {
       pitchCensusRailroad,
       tidyGameAnxietyAlive,
       dialectWashLocate: {
+        "pushToken": TrolleyIndoorState().instanceGallerySlipRitual,
         "loginToken": TrolleyIndoorState().temptImportantCopper,
         "deviceNo": TrolleyIndoorState().regretMarketingMuggy,
       },
