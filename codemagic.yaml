@@ -8,7 +8,7 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.routedeep.bexila
+        bundle_identifier: com.effortirony.flirdclean
       vars:
         APP_ID: 6747338396 # <-- Put your APP ID here
       flutter: "3.32.4"
