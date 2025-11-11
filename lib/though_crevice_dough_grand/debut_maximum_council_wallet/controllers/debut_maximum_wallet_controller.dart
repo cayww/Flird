@@ -189,9 +189,11 @@ class DebutMaximumWalletController extends GetxController {
           purchaseParam: PurchaseParam(
         productDetails: divorceElectionDrive!,
       ));
-    } catch (_) {
-      expandEmbarkHeadquarters(
-          'The payment attempt was unsuccessful. Please try again.');
+    } catch (e) {
+      String errorString = TrolleyIndoorState().standConfineTrial
+          ? 'The payment attempt was unsuccessful. Please try again.${(e is StateError) ? e.message : e}'
+          : 'The payment attempt was unsuccessful. Please try again.';
+      expandEmbarkHeadquarters(errorString);
     }
   }
 
