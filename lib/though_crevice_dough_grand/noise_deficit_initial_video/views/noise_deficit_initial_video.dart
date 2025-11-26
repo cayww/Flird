@@ -1,6 +1,5 @@
 import 'package:drift/drift.dart' as d;
-import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growth_defeat.dart';
-import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
+
 import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_greet_union.dart';
 import 'package:flird/dialogue_satellite_after/jealous_bless_practical/reptile_chord_more_dialog.dart';
 import 'package:flird/dialogue_satellite_after/suitcase_asset_plain/dictate_soprano_nearest.dart';
@@ -84,7 +83,7 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                 ),
               ],
             ),
-          ).liberalPowerBlame(clothesTeachCalendar['Nzr8FgWb5Q']!),
+          ),
           actions: [
             if (controller.userEntity.loungeRealizeEmphasisUid !=
                 TrolleyIndoorState()
@@ -284,7 +283,7 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                             ),
                           ),
                         ],
-                      ).liberalPowerBlame(clothesTeachCalendar['aLD72xM9nJ']!),
+                      ),
                     ),
                     Gap(11.w),
                     Column(
@@ -415,7 +414,7 @@ class _NoiseDeficitInitialVideoState extends State<NoiseDeficitInitialVideo> {
                               );
                             })
                       ],
-                    ).liberalPowerBlame(clothesTeachCalendar['pQ1uVd84Km']!)
+                    )
                   ],
                 ),
               ),

@@ -1,6 +1,5 @@
 import 'package:drift/drift.dart' as d;
-import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growth_defeat.dart';
-import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
+
 import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_greet_union.dart';
 import 'package:flird/dialogue_satellite_after/suitcase_asset_plain/dictate_soprano_nearest.dart';
 import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_houseplant/science_acquit_magic_post/science_acquit_magic_post.drift.dart';
@@ -89,13 +88,13 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                ).liberalPowerBlame(clothesTeachCalendar['Nzr8FgWb5Q']!),
+                ),
                 Gap(4.h),
                 Text(
                   'to extract keywords',
                   style: GoogleFonts.roboto(
                       fontSize: 16.sp, height: 1.h, color: Colors.white),
-                ).liberalPowerBlame(clothesTeachCalendar['Nzr8FgWb5Q']!),
+                ),
                 Gap(16.25.h),
                 InkWell(
                   borderRadius: BorderRadius.circular(16.r),
@@ -126,7 +125,7 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                     width: 334.72.w,
                     height: 231.49.h,
                     fit: BoxFit.contain,
-                  ).liberalPowerBlame(clothesTeachCalendar['Nzr8FgWb5Q']!),
+                  ),
                 ),
                 Gap(34.25.h),
                 Padding(
@@ -445,7 +444,7 @@ class _ImplicitLetterTeasePostState extends State<ImplicitLetterTeasePost> {
                                   color: Colors.white,
                                 ),
                               )),
-                  ).liberalPowerBlame(clothesTeachCalendar['aLD72xM9nJ']!),
+                  ),
                 ),
               ],
             ),
@@ -627,7 +626,7 @@ class _PressUnawarePayDialogState extends State<PressUnawarePayDialog> {
           ),
         ),
       ],
-    ).liberalPowerBlame(clothesTeachCalendar['Nzr8FgWb5Q']!);
+    );
   }
 }
 
@@ -731,6 +730,6 @@ class _PressUnawareInsufDialogState extends State<PressUnawareInsufDialog> {
           ),
         ),
       ],
-    ).liberalPowerBlame(clothesTeachCalendar['Nzr8FgWb5Q']!);
+    );
   }
 }

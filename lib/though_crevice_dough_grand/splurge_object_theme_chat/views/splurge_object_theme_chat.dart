@@ -2,8 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:drift/drift.dart' as d;
-import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growth_defeat.dart';
-import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
+
 import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_greet_union.dart';
 import 'package:flird/dialogue_satellite_after/jealous_bless_practical/reptile_chord_more_dialog.dart';
 import 'package:flird/dialogue_satellite_after/swallow_assume_nuclear/swallow_assume_nuclear.dart';
@@ -93,7 +92,7 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                   ),
                 ),
               ],
-            ).liberalPowerBlame(clothesTeachCalendar['pQ1uVd84Km']!),
+            ),
             actions: [
               GestureDetector(
                 onTap: () {
@@ -503,7 +502,7 @@ class _SplurgeObjectThemeChatState extends State<SplurgeObjectThemeChat> {
                       )
                     ],
                   ),
-                ).liberalPowerBlame(clothesTeachCalendar['aLD72xM9nJ']!),
+                ),
               ],
             ),
           ),

@@ -1,6 +1,5 @@
 import 'package:easy_debounce/easy_debounce.dart';
-import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growth_defeat.dart';
-import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
+
 import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_greet_union.dart';
 import 'package:flird/though_crevice_dough_grand/debut_maximum_council_wallet/controllers/debut_maximum_wallet_controller.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
@@ -193,23 +192,7 @@ class _DebutMaximumCouncilWalletState extends State<DebutMaximumCouncilWallet> {
                             )
                           ],
                         ),
-                      ).liberalPowerBlame(clothesTeachCalendar['Yc3WmV6bRt']!,
-                          divideWaterHealth: [
-                            FadeEffect(
-                              curve: Curves.easeInOut,
-                              delay: (40 * index).ms,
-                              duration: 212.4.ms,
-                              begin: 0.0,
-                              end: 1.0,
-                            ),
-                            MoveEffect(
-                              curve: Curves.easeInOut,
-                              delay: (40 * index).ms,
-                              duration: 212.4.ms,
-                              begin: const Offset(0.0, -21.8),
-                              end: const Offset(0.0, 0.0),
-                            )
-                          ]),
+                      ),
                     );
                   },
                   separatorBuilder: (_, __) => Gap(12.h),

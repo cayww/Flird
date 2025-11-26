@@ -1,5 +1,3 @@
-import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/density_growth_defeat.dart';
-import 'package:flird/dialogue_satellite_after/reduce_heaven_carve/escape_horror_creed.dart';
 import 'package:flird/dialogue_satellite_after/jealous_bless_practical/rabbit_greet_union.dart';
 import 'package:flird/though_crevice_dough_grand/recovery_tribute_decay_sign/controllers/recovery_tribute_login_controller.dart';
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
@@ -77,23 +75,7 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                     height: 1.h,
                     color: Colors.white,
                   ),
-                ).liberalPowerBlame(clothesTeachCalendar['Yc3WmV6bRt']!,
-                    divideWaterHealth: [
-                      FadeEffect(
-                        curve: Curves.easeInOut,
-                        delay: 0.0.ms,
-                        duration: 212.4.ms,
-                        begin: 0.0,
-                        end: 1.0,
-                      ),
-                      MoveEffect(
-                        curve: Curves.easeInOut,
-                        delay: 0.0.ms,
-                        duration: 212.4.ms,
-                        begin: const Offset(-21.8, 0.0),
-                        end: const Offset(0.0, 0.0),
-                      ),
-                    ]),
+                ),
                 Flexible(
                     child: Gap(
                   58.h,
@@ -123,23 +105,7 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                               ),
                             ),
                           ],
-                        ).liberalPowerBlame(clothesTeachCalendar['Yc3WmV6bRt']!,
-                            divideWaterHealth: [
-                              FadeEffect(
-                                curve: Curves.easeInOut,
-                                delay: 30.0.ms,
-                                duration: 212.4.ms,
-                                begin: 0.0,
-                                end: 1.0,
-                              ),
-                              MoveEffect(
-                                curve: Curves.easeInOut,
-                                delay: 30.0.ms,
-                                duration: 212.4.ms,
-                                begin: const Offset(-21.8, 0.0),
-                                end: const Offset(0.0, 0.0),
-                              ),
-                            ]),
+                        ),
                         Gap(14.h),
                         TextFormField(
                           controller: controller.emailController,
@@ -171,23 +137,7 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                           ),
                           cursorColor: Colors.white,
                           validator: controller.emailValidator,
-                        ).liberalPowerBlame(clothesTeachCalendar['Yc3WmV6bRt']!,
-                            divideWaterHealth: [
-                              FadeEffect(
-                                curve: Curves.easeInOut,
-                                delay: 60.0.ms,
-                                duration: 212.4.ms,
-                                begin: 0.0,
-                                end: 1.0,
-                              ),
-                              MoveEffect(
-                                curve: Curves.easeInOut,
-                                delay: 60.0.ms,
-                                duration: 212.4.ms,
-                                begin: const Offset(-21.8, 0.0),
-                                end: const Offset(0.0, 0.0),
-                              ),
-                            ]),
+                        ),
                         Gap(38.h),
                         Row(
                           children: [
@@ -208,74 +158,39 @@ class _RecoveryTributeDecayLoginState extends State<RecoveryTributeDecayLogin> {
                               ),
                             ),
                           ],
-                        ).liberalPowerBlame(clothesTeachCalendar['Yc3WmV6bRt']!,
-                            divideWaterHealth: [
-                              FadeEffect(
-                                curve: Curves.easeInOut,
-                                delay: 90.0.ms,
-                                duration: 212.4.ms,
-                                begin: 0.0,
-                                end: 1.0,
-                              ),
-                              MoveEffect(
-                                curve: Curves.easeInOut,
-                                delay: 90.0.ms,
-                                duration: 212.4.ms,
-                                begin: const Offset(-21.8, 0.0),
-                                end: const Offset(0.0, 0.0),
-                              ),
-                            ]),
+                        ),
                         Gap(16.h),
                         TextFormField(
-                                controller: controller.passwordController,
-                                textInputAction: TextInputAction.done,
-                                focusNode: controller.passwordFocusNode,
-                                keyboardType: TextInputType.visiblePassword,
-                                obscureText: true,
-                                style: GoogleFonts.roboto(
-                                  fontSize: 14.sp,
-                                  height: 1.h,
-                                  color: const Color.fromRGBO(255, 255, 255, 1),
-                                ),
-                                decoration: InputDecoration(
-                                  hintText: 'Enter Your Password',
-                                  filled: true,
-                                  fillColor:
-                                      const Color.fromRGBO(255, 255, 255, 0.15),
-                                  hintStyle: GoogleFonts.roboto(
-                                    fontSize: 14.sp,
-                                    height: 1.h,
-                                    color: const Color.fromRGBO(
-                                        255, 255, 255, 0.5),
-                                  ),
-                                  border: outlineInputBorder,
-                                  focusedBorder: outlineInputBorder,
-                                  enabledBorder: outlineInputBorder,
-                                  errorBorder: outlineInputBorder,
-                                  focusedErrorBorder: outlineInputBorder,
-                                  contentPadding: EdgeInsets.symmetric(
-                                      horizontal: 24.w, vertical: 16.h),
-                                ),
-                                cursorColor: Colors.white,
-                                validator: controller.loginPasswordValidator)
-                            .liberalPowerBlame(
-                                clothesTeachCalendar['Yc3WmV6bRt']!,
-                                divideWaterHealth: [
-                              FadeEffect(
-                                curve: Curves.easeInOut,
-                                delay: 120.0.ms,
-                                duration: 212.4.ms,
-                                begin: 0.0,
-                                end: 1.0,
+                            controller: controller.passwordController,
+                            textInputAction: TextInputAction.done,
+                            focusNode: controller.passwordFocusNode,
+                            keyboardType: TextInputType.visiblePassword,
+                            obscureText: true,
+                            style: GoogleFonts.roboto(
+                              fontSize: 14.sp,
+                              height: 1.h,
+                              color: const Color.fromRGBO(255, 255, 255, 1),
+                            ),
+                            decoration: InputDecoration(
+                              hintText: 'Enter Your Password',
+                              filled: true,
+                              fillColor:
+                                  const Color.fromRGBO(255, 255, 255, 0.15),
+                              hintStyle: GoogleFonts.roboto(
+                                fontSize: 14.sp,
+                                height: 1.h,
+                                color: const Color.fromRGBO(255, 255, 255, 0.5),
                               ),
-                              MoveEffect(
-                                curve: Curves.easeInOut,
-                                delay: 120.0.ms,
-                                duration: 212.4.ms,
-                                begin: const Offset(-21.8, 0.0),
-                                end: const Offset(0.0, 0.0),
-                              ),
-                            ]),
+                              border: outlineInputBorder,
+                              focusedBorder: outlineInputBorder,
+                              enabledBorder: outlineInputBorder,
+                              errorBorder: outlineInputBorder,
+                              focusedErrorBorder: outlineInputBorder,
+                              contentPadding: EdgeInsets.symmetric(
+                                  horizontal: 24.w, vertical: 16.h),
+                            ),
+                            cursorColor: Colors.white,
+                            validator: controller.loginPasswordValidator),
                       ]),
                 ),
                 Flexible(child: Gap(120.h)),
