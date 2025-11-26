@@ -62,9 +62,6 @@ class FlirdDriftDataBase extends $FlirdDriftDataBase {
         final dbPath = await rootBundle.load('assets/databases/FlirdDB.db');
         await File(cachedPath).writeAsBytes(dbPath.buffer.asUint8List());
       }
-      if (Platform.isAndroid) {
-        await applyWorkaroundToOpenSqlite3OnOldAndroidVersions();
-      }
       sqlite3.tempDirectory = (await getTemporaryDirectory()).path;
       return NativeDatabase.createInBackground(File(cachedPath));
     });
