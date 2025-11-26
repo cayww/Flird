@@ -19,7 +19,6 @@ import 'package:flird/velvet_authority_upward/double_grace_chorus/unlike_angry_h
 
 import 'package:flird/willpower_incident_beard/trolley_indoor_state/trolley_indoor_state.dart';
 
-import 'package:sqlite3_flutter_libs/sqlite3_flutter_libs.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqlite3/sqlite3.dart';
 import 'package:flutter/services.dart' show rootBundle;
